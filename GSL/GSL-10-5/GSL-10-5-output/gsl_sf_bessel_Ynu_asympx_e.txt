@@ -1,0 +1,116 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_Ynu_asympx_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 13:54:02 2016
+[runlim] main pid:		3533
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_Ynu_asympx_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_Ynu_asympx_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1069.16ms
+MainFunc: gsl_sf_bessel_Ynu_asympx_e
+#CallDepth: 2
+#Loc: 45
+#targetsize:	11
+target[0]:q0(2)
+target[1]:q1(4)
+target[2]:q2(6)
+target[3]:q3(8)
+target[4]:q4(10)
+target[5]:q5(12)
+target[6]:q6(14)
+target[7]:q7(18)
+target[8]:q8(20)
+target[9]:q9(22)
+target[10]:q10(24)
+
+target[0]:q0(2)
+target[0]:from s0(0) to q0(2)
+at line 7110 in state q0 is reachable
+gsl_sf_bessel_Ynu_asympx_e_nu = [-0.000000e+00, 0.000000e+00]
+gsl_sf_bessel_Ynu_asympx_e_x = [-1.000000e-02, 0.000000e+00]
+gsl_sf_bessel_Ynu_asympx_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_Ynu_asympx_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:3
+Witness:
+	s0:	LocLine:7361;7363;7364;7365;7366;7367;
+	e0
+	s1:	LocLine:7108;7110;
+	e1
+	q0:	LocLine:7110;
+#Avg_var: 2.300000e+01
+#Avg_nolinearop: 6.666667e-01
+Dreal Time: 	3.161ms
+
+target[1]:q1(4)
+target[1]:from s0(0) to q1(4)
+at line 7113 in state q1 is reachable
+gsl_sf_bessel_Ynu_asympx_e_nu = [-5.000000e+01, -5.000000e+01]
+gsl_sf_bessel_Ynu_asympx_e_x = [0.000000e+00, 1.112537e-306]
+gsl_sf_bessel_Ynu_asympx_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_Ynu_asympx_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:8
+Witness:
+	s0:	LocLine:7361;7363;7364;7365;7366;7367;
+	e0
+	s1:	LocLine:7108;7110;
+	e2
+	s2:	LocLine:7110;7111;7112;7113;
+	e3
+	q1:	LocLine:7113;
+#Avg_var: 2.375000e+01
+#Avg_nolinearop: 7.500000e-01
+Dreal Time: 	11.615ms
+
+target[2]:q2(6)
+[runlim] sample:		10.0 seconds, 76.1 MB
+[runlim] sample:		20.0 seconds, 76.1 MB
+[runlim] sample:		30.0 seconds, 76.1 MB
+[runlim] sample:		40.0 seconds, 76.1 MB
+[runlim] sample:		50.0 seconds, 76.1 MB
+[runlim] sample:		60.0 seconds, 78.1 MB
+[runlim] sample:		70.0 seconds, 82.1 MB
+[runlim] sample:		80.0 seconds, 82.1 MB
+[runlim] sample:		90.0 seconds, 82.1 MB
+[runlim] sample:		100.0 seconds, 82.1 MB
+[runlim] sample:		110.0 seconds, 82.1 MB
+[runlim] sample:		120.0 seconds, 82.1 MB
+[runlim] sample:		129.9 seconds, 82.1 MB
+[runlim] sample:		139.9 seconds, 82.1 MB
+[runlim] sample:		149.9 seconds, 82.1 MB
+[runlim] sample:		159.9 seconds, 82.1 MB
+[runlim] sample:		169.9 seconds, 82.1 MB
+[runlim] sample:		179.9 seconds, 82.1 MB
+[runlim] sample:		189.9 seconds, 82.1 MB
+[runlim] sample:		199.9 seconds, 82.1 MB
+[runlim] sample:		209.9 seconds, 82.1 MB
+[runlim] sample:		219.9 seconds, 82.1 MB
+[runlim] sample:		229.9 seconds, 82.1 MB
+[runlim] sample:		239.9 seconds, 82.1 MB
+[runlim] sample:		249.9 seconds, 82.1 MB
+[runlim] sample:		259.9 seconds, 82.1 MB
+[runlim] sample:		269.9 seconds, 82.1 MB
+[runlim] sample:		279.9 seconds, 82.1 MB
+[runlim] sample:		289.9 seconds, 82.1 MB
+[runlim] sample:		299.9 seconds, 82.1 MB
+[runlim] end:			Fri May 27 13:59:02 2016
+[runlim] status:		out of time
+[runlim] result:		1
+[runlim] children:		6002
+[runlim] real:			300.32 seconds
+[runlim] time:			300.01 seconds
+[runlim] space:			82.1 MB
+[runlim] samples:		3001
+Killed

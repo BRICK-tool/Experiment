@@ -1,0 +1,103 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_expint_E1_scaled_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:08:12 2016
+[runlim] main pid:		4014
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_expint_E1_scaled_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_expint_E1_scaled_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1984.19ms
+MainFunc: gsl_sf_expint_E1_scaled_e
+#CallDepth: 4
+#Loc: 109
+#targetsize:	10
+target[0]:q0(6)
+target[1]:q1(11)
+target[2]:q2(14)
+target[3]:q3(19)
+target[4]:q4(24)
+target[5]:q5(27)
+target[6]:q6(32)
+target[7]:q7(38)
+target[8]:q8(45)
+target[9]:q9(52)
+
+target[0]:q0(6)
+target[0]:from s0(0) to q0(6)
+at line 20633 is unreachable under bound 10 when check=
+Number of path checked:34
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.500000e+00
+Dreal Time: 	3594.5ms
+
+target[1]:q1(11)
+target[1]:from s0(0) to q1(11)
+at line 20635 is unreachable under bound 10 when check=
+Number of path checked:68
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.500000e+00
+Dreal Time: 	7182.83ms
+
+target[2]:q2(14)
+[runlim] sample:		10.0 seconds, 1845.8 MB
+[runlim] end:			Fri May 27 14:08:22 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		216
+[runlim] real:			10.99 seconds
+[runlim] time:			10.78 seconds
+[runlim] space:			2076.8 MB
+[runlim] samples:		108
+target[2]:from s0(0) to q2(14)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:102
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.500000e+00
+Dreal Time: 	11540ms
+
+target[3]:q3(19)
+target[3]:from s0(0) to q3(19)
+at line 20642 is unreachable under bound 10 when check=
+Number of path checked:136
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.500000e+00
+Dreal Time: 	16085.6ms
+
+target[4]:q4(24)
+target[4]:from s0(0) to q4(24)
+at line 20644 is unreachable under bound 10 when check=
+Number of path checked:170
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.500000e+00
+Dreal Time: 	20039.5ms
+
+target[5]:q5(27)
+target[5]:from s0(0) to q5(27)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:204
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.500000e+00
+Dreal Time: 	23980.8ms
+
+target[6]:q6(32)
+target[6]:from s0(0) to q6(32)
+at line 20651 is unreachable under bound 10 when check=
+Number of path checked:238
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.500000e+00
+Dreal Time: 	28802.9ms
+
+target[7]:q7(38)

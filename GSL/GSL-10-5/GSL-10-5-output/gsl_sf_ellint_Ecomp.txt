@@ -1,0 +1,72 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_ellint_Ecomp
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:00:41 2016
+[runlim] main pid:		3707
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_ellint_Ecomp <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_ellint_Ecomp> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1232.77ms
+MainFunc: gsl_sf_ellint_Ecomp
+#CallDepth: 2
+#Loc: 78
+#targetsize:	1
+target[0]:q0(5)
+
+target[0]:q0(5)
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007f914f4ef340
+3  libc.so.6       0x00007f914e71dcc9 gsignal + 57
+4  libc.so.6       0x00007f914e7210d8 abort + 328
+5  libc.so.6       0x00007f914e75a394
+6  libc.so.6       0x00007f914e7f1c9c __fortify_fail + 92
+7  libc.so.6       0x00007f914e7f0b60
+8  libc.so.6       0x00007f914e7f0069
+9  libc.so.6       0x00007f914e76270c _IO_default_xsputn + 188
+10 libc.so.6       0x00007f914e737b29 __printf_fp + 6217
+11 libc.so.6       0x00007f914e735793 _IO_vfprintf + 19107
+12 libc.so.6       0x00007f914e7f00f4 __vsprintf_chk + 132
+13 libc.so.6       0x00007f914e7f004d __sprintf_chk + 125
+14 libdreal.so     0x00007f914e14dfee Egraph::mkNum(double) + 78
+15 buildCFG.so     0x00007f914e4caad1
+16 buildCFG.so     0x00007f914e4cd05a
+17 buildCFG.so     0x00007f914e4cd99b
+18 buildCFG.so     0x00007f914e4ce207
+19 buildCFG.so     0x00007f914e4ce4a3
+20 buildCFG.so     0x00007f914e4ce6b4
+21 buildCFG.so     0x00007f914e4ce6b4
+22 buildCFG.so     0x00007f914e4ce6b4
+23 buildCFG.so     0x00007f914e4ce6b4
+24 buildCFG.so     0x00007f914e4ceb34
+25 buildCFG.so     0x00007f914e4d51c7
+26 buildCFG.so     0x00007f914e4cf7f3
+27 opt             0x0000000001599ed7 llvm::FPPassManager::doInitialization(llvm::Module&) + 87
+28 opt             0x00000000015a33c7 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 375
+29 opt             0x00000000005df45c main + 3548
+30 libc.so.6       0x00007f914e708ec5 __libc_start_main + 245
+31 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_ellint_Ecomp 
+Aborted (core dumped)
+[runlim] end:			Fri May 27 14:00:45 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		80
+[runlim] real:			4.08 seconds
+[runlim] time:			3.91 seconds
+[runlim] space:			66.3 MB
+[runlim] samples:		40

@@ -1,0 +1,85 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_airy_Bi_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 18:24:14 2016
+[runlim] main pid:		2359
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_airy_Bi_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_airy_Bi_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	4533.6ms
+MainFunc: gsl_sf_airy_Bi_e
+#CallDepth: 10
+#Loc: 142
+#targetsize:	14
+target[0]:q0(4)
+target[1]:q1(7)
+target[2]:q2(19)
+target[3]:q3(22)
+target[4]:q4(34)
+target[5]:q5(45)
+target[6]:q6(52)
+target[7]:q7(64)
+target[8]:q8(70)
+target[9]:q9(72)
+target[10]:q10(74)
+target[11]:q11(78)
+target[12]:q12(80)
+target[13]:q13(82)
+
+target[0]:q0(4)
+[runlim] sample:		10.0 seconds, 199.4 MB
+[runlim] sample:		20.0 seconds, 302.8 MB
+[runlim] sample:		30.0 seconds, 1066.2 MB
+[runlim] end:			Fri May 27 18:24:51 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		734
+[runlim] real:			37.28 seconds
+[runlim] time:			36.66 seconds
+[runlim] space:			2053.6 MB
+[runlim] samples:		367
+target[0]:from s0(0) to q0(4)
+at line 4776 is unreachable under bound 10 when check=
+Number of path checked:58
+#Avg_var: 2.120517e+02
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	35773.7ms
+
+target[1]:q1(7)
+target[1]:from s0(0) to q1(7)
+at line 15136 is unreachable under bound 10 when check=
+Number of path checked:116
+#Avg_var: 2.120517e+02
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	84420.9ms
+
+target[2]:q2(19)
+target[2]:from s0(0) to q2(19)
+at line 4781 is unreachable under bound 10 when check=
+Number of path checked:174
+#Avg_var: 2.120517e+02
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	132500ms
+
+target[3]:q3(22)
+target[3]:from s0(0) to q3(22)
+at line 15136 is unreachable under bound 10 when check=
+Number of path checked:232
+#Avg_var: 2.120517e+02
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	180649ms
+
+target[4]:q4(34)

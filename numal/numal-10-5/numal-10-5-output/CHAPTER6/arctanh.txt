@@ -1,0 +1,129 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/arctanh.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 19:11:52 2016
+[runlim] main pid:		26320
+bench/CHAPTER6/arctanh.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/arctanh.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/arctanh.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/arctanh.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/arctanh.bc>bench/CHAPTER6/arctanhbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+3.PHINode warning 10086:   %cond34 = phi double [ 0.000000e+00, %cond.true ], [ %cond32, %cond.end ], !dbg <badref>	arctanh_cond32	4
+#BUILDCFG Time: 	745.958ms
+MainFunc: test
+#CallDepth: 3
+#Loc: 33
+#targetsize:	6
+target[0]:q0(10)
+target[1]:q1(17)
+target[2]:q2(20)
+target[3]:q3(24)
+target[4]:q4(31)
+target[5]:q5(34)
+
+target[0]:q0(10)
+target[0]:from s0(0) to q0(10)
+at line 6061 in state q0 is reachable
+Number of path checked:14
+Witness:
+	s0:	LocLine:8294;8295;
+	e0
+	s1:	LocLine:6051;6054;6056;
+	e1
+	s6:	LocLine:6059;6060;
+	e8
+	s8:	LocLine:6060;
+	e12
+	s9:	LocLine:6061;
+	e13
+	q0:	LocLine:6061;
+#Avg_var: 6.357143e+00
+#Avg_nolinearop: 2.357143e+00
+Dreal Time: 	1851.39ms
+
+target[1]:q1(17)
+target[1]:from s0(0) to q1(17)
+at line 7540 is unreachable under bound 10 when check=
+Number of path checked:47
+#Avg_var: 6.170213e+00
+#Avg_nolinearop: 2.106383e+00
+Dreal Time: 	6373.33ms
+
+target[2]:q2(20)
+[runlim] sample:		9.6 seconds, 201.6 MB
+target[2]:from s0(0) to q2(20)
+at line 7542 is unreachable under bound 10 when check=
+Number of path checked:80
+#Avg_var: 6.137500e+00
+#Avg_nolinearop: 2.062500e+00
+Dreal Time: 	11083.5ms
+
+target[3]:q3(24)
+target[3]:from s0(0) to q3(24)
+at line 6062 in state q3 is reachable
+Number of path checked:86
+Witness:
+	s0:	LocLine:8294;8295;
+	e0
+	s1:	LocLine:6051;6054;6056;
+	e1
+	s6:	LocLine:6059;6060;
+	e8
+	s8:	LocLine:6060;
+	e11
+	s20:	LocLine:6062;
+	e29
+	q3:	LocLine:6062;
+#Avg_var: 5.953488e+00
+#Avg_nolinearop: 2.046512e+00
+Dreal Time: 	11102.6ms
+
+target[4]:q4(31)
+target[4]:from s0(0) to q4(31)
+at line 7540 is unreachable under bound 10 when check=
+Number of path checked:119
+#Avg_var: 5.991597e+00
+#Avg_nolinearop: 2.033613e+00
+Dreal Time: 	15802.5ms
+
+target[5]:q5(34)
+[runlim] sample:		19.6 seconds, 374.3 MB
+target[5]:from s0(0) to q5(34)
+at line 7542 is unreachable under bound 10 when check=
+Number of path checked:152
+#Avg_var: 6.013158e+00
+#Avg_nolinearop: 2.026316e+00
+Dreal Time: 	20459.5ms
+
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	20.4595s
+#CPU Time: 21.308 s
+#Memory used: 530.00 MB
+[runlim] end:			Sat May 28 19:12:15 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		444
+[runlim] real:			23.08 seconds
+[runlim] time:			21.56 seconds
+[runlim] space:			410.7 MB
+[runlim] samples:		220

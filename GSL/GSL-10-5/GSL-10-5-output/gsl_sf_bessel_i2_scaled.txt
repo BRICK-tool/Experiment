@@ -1,0 +1,57 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_i2_scaled
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:21:12 2016
+[runlim] main pid:		2700
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_i2_scaled <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_i2_scaled> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	850.828ms
+MainFunc: gsl_sf_bessel_i2_scaled
+#CallDepth: 1
+#Loc: 33
+#targetsize:	1
+target[0]:q0(6)
+
+target[0]:q0(6)
+[runlim] sample:		10.0 seconds, 65.2 MB
+[runlim] sample:		20.0 seconds, 70.6 MB
+[runlim] sample:		30.0 seconds, 70.6 MB
+[runlim] sample:		40.0 seconds, 73.7 MB
+[runlim] sample:		50.0 seconds, 73.7 MB
+[runlim] sample:		60.0 seconds, 76.8 MB
+[runlim] sample:		70.0 seconds, 76.8 MB
+[runlim] sample:		80.0 seconds, 80.2 MB
+[runlim] sample:		90.0 seconds, 80.2 MB
+target[0]:from s0(0) to q0(6)
+at line 8710 is unreachable under bound 10 when check=
+Number of path checked:12
+#Avg_var: 2.283333e+01
+#Avg_nolinearop: 3.250000e+00
+Dreal Time: 	96939.6ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_i2_scaled	check:	
+#Dreal Time: 	96.9396s
+#CPU Time: 97.912 s
+#Memory used: 154.00 MB
+[runlim] end:			Fri May 27 14:22:50 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1964
+[runlim] real:			98.44 seconds
+[runlim] time:			98.09 seconds
+[runlim] space:			107.8 MB
+[runlim] samples:		982

@@ -1,0 +1,158 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/bessi.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 20:16:39 2016
+[runlim] main pid:		9403
+bench/CHAPTER6/bessi.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/bessi.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/bessi.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/bessi.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/bessi.bc>bench/CHAPTER6/bessibuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	620.788ms
+MainFunc: test
+#CallDepth: 3
+#Loc: 71
+#targetsize:	12
+target[0]:q0(15)
+target[1]:q1(18)
+target[2]:q2(20)
+target[3]:q3(24)
+target[4]:q4(26)
+target[5]:q5(30)
+target[6]:q6(35)
+target[7]:q7(37)
+target[8]:q8(40)
+target[9]:q9(42)
+target[10]:q10(44)
+target[11]:q11(46)
+
+target[0]:q0(15)
+target[0]:from s0(0) to q0(15)
+at line 7752 in state q0 is reachable
+Number of path checked:6
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:6251;6253;
+	e1
+	s7:	LocLine:6258;6259;6260;
+	e9
+	s8:	LocLine:7740;7742;
+	e10
+	s14:	LocLine:7747;7748;7749;7750;7751;7752;
+	e18
+	q0:	LocLine:7752;
+#Avg_var: 1.033333e+01
+#Avg_nolinearop: 2.000000e+00
+Dreal Time: 	83.664ms
+
+target[1]:q1(18)
+target[1]:from s0(0) to q1(18)
+at line 8150 in state q1 is reachable
+Number of path checked:15
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:6251;6253;
+	e1
+	s7:	LocLine:6258;6259;6260;
+	e9
+	s8:	LocLine:7740;7742;
+	e10
+	s14:	LocLine:7747;7748;7749;7750;7751;7752;
+	e19
+	s15:	LocLine:7752;7753;
+	e20
+	s16:	LocLine:8144;8146;8147;8149;8150;
+	e21
+	q1:	LocLine:8150;
+#Avg_var: 1.233333e+01
+#Avg_nolinearop: 2.333333e+00
+Dreal Time: 	698.393ms
+
+target[2]:q2(20)
+target[2]:from s0(0) to q2(20)
+at line 8151 in state q2 is reachable
+Number of path checked:26
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:6251;6253;
+	e1
+	s7:	LocLine:6258;6259;6260;
+	e9
+	s8:	LocLine:7740;7742;
+	e10
+	s14:	LocLine:7747;7748;7749;7750;7751;7752;
+	e19
+	s15:	LocLine:7752;7753;
+	e20
+	s16:	LocLine:8144;8146;8147;8149;8150;
+	e22
+	s17:	LocLine:8150;8151;
+	e23
+	q2:	LocLine:8151;
+#Avg_var: 1.361538e+01
+#Avg_nolinearop: 2.538462e+00
+Dreal Time: 	2464.55ms
+
+target[3]:q3(24)
+[runlim] sample:		9.7 seconds, 147.9 MB
+[runlim] sample:		19.7 seconds, 147.9 MB
+[runlim] sample:		29.7 seconds, 147.9 MB
+[runlim] sample:		39.7 seconds, 147.9 MB
+[runlim] sample:		49.7 seconds, 147.9 MB
+[runlim] sample:		59.7 seconds, 147.9 MB
+[runlim] sample:		69.7 seconds, 147.9 MB
+[runlim] sample:		79.7 seconds, 147.9 MB
+[runlim] sample:		89.7 seconds, 147.9 MB
+[runlim] sample:		99.7 seconds, 147.9 MB
+[runlim] sample:		109.7 seconds, 147.9 MB
+[runlim] sample:		119.7 seconds, 147.9 MB
+[runlim] sample:		129.7 seconds, 147.9 MB
+[runlim] sample:		139.7 seconds, 147.9 MB
+[runlim] sample:		149.7 seconds, 147.9 MB
+[runlim] sample:		159.6 seconds, 147.9 MB
+[runlim] sample:		169.6 seconds, 147.9 MB
+[runlim] sample:		179.6 seconds, 147.9 MB
+[runlim] sample:		189.6 seconds, 147.9 MB
+[runlim] sample:		199.6 seconds, 147.9 MB
+[runlim] sample:		209.6 seconds, 147.9 MB
+[runlim] sample:		219.6 seconds, 147.9 MB
+[runlim] sample:		229.6 seconds, 147.9 MB
+[runlim] sample:		239.6 seconds, 147.9 MB
+[runlim] sample:		249.6 seconds, 147.9 MB
+[runlim] sample:		259.6 seconds, 147.9 MB
+[runlim] sample:		269.6 seconds, 147.9 MB
+[runlim] sample:		279.6 seconds, 147.9 MB
+[runlim] sample:		289.6 seconds, 147.9 MB
+[runlim] sample:		299.6 seconds, 147.9 MB
+[runlim] end:			Sat May 28 20:21:40 2016
+[runlim] status:		out of time
+[runlim] result:		1
+[runlim] children:		6012
+[runlim] real:			301.02 seconds
+[runlim] time:			300.06 seconds
+[runlim] space:			147.9 MB
+[runlim] samples:		3005
+Killed

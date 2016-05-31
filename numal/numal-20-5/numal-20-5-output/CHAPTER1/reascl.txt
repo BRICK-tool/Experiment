@@ -1,0 +1,64 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/reascl.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:31:53 2016
+[runlim] main pid:		8329
+bench/CHAPTER1/reascl.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/reascl.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/reascl.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/reascl.c:8298:9: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+reascl( a, n, n1, n2);
+        ^
+bench/CHAPTER1/reascl.c:1285:22: note: passing argument to parameter 'a' here
+void reascl(real_t **a, int n, int n1, int n2)
+                     ^
+3 warnings generated.
+<bench/CHAPTER1/reascl.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/reascl.bc>bench/CHAPTER1/reasclbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecayis PTR
+#BUILDCFG Time: 	216.231ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 19
+#targetsize:	1
+target[0]:q0(13)
+
+target[0]:q0(13)
+target[0]:from s0(0) to q0(13)
+at line 1295 is unreachable under bound 20 when check=
+Number of path checked:28
+#Avg_var: 4.600000e+01
+#Avg_nolinearop: 7.142857e-01
+Dreal Time: 	742.54ms
+
+bound:	20	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0.74254s
+#CPU Time: 1.02439 s
+#Memory used: 167.00 MB
+[runlim] end:			Sat May 28 18:31:54 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		28
+[runlim] real:			1.83 seconds
+[runlim] time:			1.04 seconds
+[runlim] space:			86.6 MB
+[runlim] samples:		13

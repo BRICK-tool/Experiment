@@ -1,0 +1,115 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_asymp_thetanu_corr_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:37:10 2016
+[runlim] main pid:		3014
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_asymp_thetanu_corr_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_asymp_thetanu_corr_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	343.232ms
+MainFunc: gsl_sf_bessel_asymp_thetanu_corr_e
+#CallDepth: 0
+#Loc: 9
+#targetsize:	4
+target[0]:q0(1)
+target[1]:q1(3)
+target[2]:q2(5)
+target[3]:q3(7)
+
+target[0]:q0(1)
+target[0]:from s0(0) to q0(1)
+at line 7124 in state q0 is reachable
+gsl_sf_bessel_asymp_thetanu_corr_e_nu = [-1.000000e+02, -9.999390e+01]
+gsl_sf_bessel_asymp_thetanu_corr_e_x = [-1.000000e-02, 0.000000e+00]
+gsl_sf_bessel_asymp_thetanu_corr_e_result_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:2
+Witness:
+	s0:	LocLine:7122;7124;
+	e0
+	q0:	LocLine:7124;
+#Avg_var: 9.000000e+00
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	1.148ms
+
+target[1]:q1(3)
+target[1]:from s0(0) to q1(3)
+at line 7127 in state q1 is reachable
+gsl_sf_bessel_asymp_thetanu_corr_e_nu = [-1.000000e+02, -9.999390e+01]
+gsl_sf_bessel_asymp_thetanu_corr_e_x = [-0.000000e+00, 1.112537e-306]
+gsl_sf_bessel_asymp_thetanu_corr_e_result_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:6
+Witness:
+	s0:	LocLine:7122;7124;
+	e1
+	s1:	LocLine:7124;7125;7126;7127;
+	e2
+	q1:	LocLine:7127;
+#Avg_var: 9.000000e+00
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	5.658ms
+
+target[2]:q2(5)
+target[2]:from s0(0) to q2(5)
+at line 7128 in state q2 is reachable
+gsl_sf_bessel_asymp_thetanu_corr_e_nu = [-1.563446e-03, 0.000000e+00]
+gsl_sf_bessel_asymp_thetanu_corr_e_x = [9.999412e-02, 1.000137e-01]
+gsl_sf_bessel_asymp_thetanu_corr_e_result_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:12
+Witness:
+	s0:	LocLine:7122;7124;
+	e1
+	s1:	LocLine:7124;7125;7126;7127;
+	e3
+	s2:	LocLine:7127;7128;
+	e4
+	q2:	LocLine:7128;
+#Avg_var: 9.000000e+00
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	1290.51ms
+
+target[3]:q3(7)
+target[3]:from s0(0) to q3(7)
+at line 7128 in state q3 is reachable
+gsl_sf_bessel_asymp_thetanu_corr_e_nu = [-7.813701e-04, 0.000000e+00]
+gsl_sf_bessel_asymp_thetanu_corr_e_x = [9.998617e-02, 9.999923e-02]
+gsl_sf_bessel_asymp_thetanu_corr_e_result_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:20
+Witness:
+	s0:	LocLine:7122;7124;
+	e1
+	s1:	LocLine:7124;7125;7126;7127;
+	e3
+	s2:	LocLine:7127;7128;
+	e5
+	s3:	LocLine:7128;
+	e6
+	q3:	LocLine:7128;
+#Avg_var: 9.000000e+00
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	5827.7ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_asymp_thetanu_corr_e	check:	
+#Dreal Time: 	5.8277s
+#CPU Time: 6.312 s
+#Memory used: 136.00 MB
+[runlim] end:			Fri May 27 14:37:17 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		128
+[runlim] real:			7.45 seconds
+[runlim] time:			6.38 seconds
+[runlim] space:			89.0 MB
+[runlim] samples:		64

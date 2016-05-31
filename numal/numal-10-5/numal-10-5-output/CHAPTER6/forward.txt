@@ -1,0 +1,71 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/forward.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 19:35:33 2016
+[runlim] main pid:		26564
+bench/CHAPTER6/forward.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/forward.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/forward.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/forward.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/forward.bc>bench/CHAPTER6/forwardbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	532.884ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 24
+#targetsize:	1
+target[0]:q0(6)
+
+target[0]:q0(6)
+target[0]:from s0(0) to q0(6)
+at line 7199 in state q0 is reachable
+Number of path checked:13
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;8298;8299;8300;8301;
+	e0
+	s1:	LocLine:7187;7189;7190;7192;7193;
+	e2
+	s2:	LocLine:7193;
+	e3
+	s3:	LocLine:7194;7195;7196;7197;
+	e4
+	s4:	LocLine:7197;
+	e6
+	s5:	LocLine:7198;7199;
+	e7
+	q0:	LocLine:7199;
+#Avg_var: 1.953846e+01
+#Avg_nolinearop: 1.538462e-01
+Dreal Time: 	716.425ms
+
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0.716425s
+#CPU Time: 1.316 s
+#Memory used: 130.00 MB
+[runlim] end:			Sat May 28 19:35:35 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		42
+[runlim] real:			2.65 seconds
+[runlim] time:			1.41 seconds
+[runlim] space:			81.3 MB
+[runlim] samples:		19

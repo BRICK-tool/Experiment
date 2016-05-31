@@ -1,0 +1,148 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_K0_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 16:08:11 2016
+[runlim] main pid:		2867
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_K0_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_K0_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	3244.67ms
+MainFunc: gsl_sf_bessel_K0_e
+#CallDepth: 6
+#Loc: 130
+#targetsize:	10
+target[0]:q0(4)
+target[1]:q1(7)
+target[2]:q2(25)
+target[3]:q3(28)
+target[4]:q4(37)
+target[5]:q5(39)
+target[6]:q6(42)
+target[7]:q7(46)
+target[8]:q8(48)
+target[9]:q9(51)
+
+target[0]:q0(4)
+target[0]:from s0(0) to q0(4)
+at line 10410 is unreachable under bound 10 when check=
+Number of path checked:22
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	655.643ms
+
+target[1]:q1(7)
+target[1]:from s0(0) to q1(7)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:44
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	1310.75ms
+
+target[2]:q2(25)
+target[2]:from s0(0) to q2(25)
+at line 10369 is unreachable under bound 10 when check=
+Number of path checked:66
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	1964.59ms
+
+target[3]:q3(28)
+target[3]:from s0(0) to q3(28)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:88
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	2619.42ms
+
+target[4]:q4(37)
+target[4]:from s0(0) to q4(37)
+at line 10382 is unreachable under bound 10 when check=
+Number of path checked:110
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	3274.1ms
+
+target[5]:q5(39)
+target[5]:from s0(0) to q5(39)
+at line 10384 is unreachable under bound 10 when check=
+Number of path checked:132
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	3928.32ms
+
+target[6]:q6(42)
+target[6]:from s0(0) to q6(42)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:154
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	4582.24ms
+
+target[7]:q7(46)
+[runlim] end:			Fri May 27 16:08:20 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		178
+[runlim] real:			9.21 seconds
+[runlim] time:			8.87 seconds
+[runlim] space:			2079.5 MB
+[runlim] samples:		89
+target[7]:from s0(0) to q7(46)
+at line 10391 is unreachable under bound 10 when check=
+Number of path checked:176
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	5255.65ms
+
+target[8]:q8(48)
+target[8]:from s0(0) to q8(48)
+at line 10393 is unreachable under bound 10 when check=
+Number of path checked:198
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	6005.56ms
+
+target[9]:q9(51)
+target[9]:from s0(0) to q9(51)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:220
+#Avg_var: 1.220909e+02
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	6757.22ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_K0_e	check:	
+#Dreal Time: 	6.75722s
+#CPU Time: 10.236 s
+#Memory used: 2926.00 MB
+While deleting: [14 x double]* %ak02_data
+Use still stuck around after Def is destroyed:@ak02_data = internal global [14 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007fa907504340
+3  libc.so.6       0x00007fa906732cc9 gsignal + 57
+4  libc.so.6       0x00007fa9067360d8 abort + 328
+5  libc.so.6       0x00007fa90672bb86
+6  libc.so.6       0x00007fa90672bc32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007fa90671dec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_K0_e 
+Aborted (core dumped)

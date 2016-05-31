@@ -1,0 +1,121 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_jl_steed_array
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 16:01:01 2016
+[runlim] main pid:		2721
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_jl_steed_array <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_jl_steed_array> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1295.69ms
+MainFunc: gsl_sf_bessel_jl_steed_array
+#CallDepth: 0
+#Loc: 86
+#targetsize:	5
+target[0]:q0(17)
+target[1]:q1(19)
+target[2]:q2(24)
+target[3]:q3(26)
+target[4]:q4(29)
+
+target[0]:q0(17)
+target[0]:from s0(0) to q0(17)
+at line 9758 is unreachable under bound 10 when check=
+Number of path checked:32
+#Avg_var: 2.875000e+01
+#Avg_nolinearop: 3.125000e-01
+Dreal Time: 	4978.48ms
+
+target[1]:q1(19)
+[runlim] sample:		10.0 seconds, 170.2 MB
+target[1]:from s0(0) to q1(19)
+at line 9759 is unreachable under bound 10 when check=
+Number of path checked:64
+#Avg_var: 2.875000e+01
+#Avg_nolinearop: 3.125000e-01
+Dreal Time: 	9898.56ms
+
+target[2]:q2(24)
+target[2]:from s0(0) to q2(24)
+at line 9766 in state q2 is reachable
+gsl_sf_bessel_jl_steed_array_lmax = [0.000000e+00, 0.000000e+00]
+gsl_sf_bessel_jl_steed_array_x = [2.441410e-04, 1.000000e-02]
+gsl_sf_bessel_jl_steed_array_jl_x_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:70
+Witness:
+	s0:	LocLine:9736;9740;
+	e0
+	s1:	LocLine:9740;
+	e2
+	s7:	LocLine:9745;
+	e9
+	s13:	LocLine:9751;
+	e17
+	s21:	LocLine:9766;
+	e29
+	q2:	LocLine:9766;
+#Avg_var: 2.825714e+01
+#Avg_nolinearop: 3.142857e-01
+Dreal Time: 	9905.33ms
+
+target[3]:q3(26)
+target[3]:from s0(0) to q3(26)
+at line 9772 is unreachable under bound 10 when check=
+Number of path checked:102
+#Avg_var: 2.841176e+01
+#Avg_nolinearop: 3.137255e-01
+Dreal Time: 	14878.9ms
+
+target[4]:q4(29)
+target[4]:from s0(0) to q4(29)
+at line 9780 in state q4 is reachable
+gsl_sf_bessel_jl_steed_array_lmax = [4.800000e+01, 4.800000e+01]
+gsl_sf_bessel_jl_steed_array_x = [9.999135e+01, 1.000000e+02]
+gsl_sf_bessel_jl_steed_array_jl_x_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:112
+Witness:
+	s0:	LocLine:9736;9740;
+	e0
+	s1:	LocLine:9740;
+	e2
+	s7:	LocLine:9745;
+	e9
+	s13:	LocLine:9751;
+	e17
+	s21:	LocLine:9766;
+	e30
+	s22:	LocLine:9766;9767;9768;9769;9770;9771;9772;
+	e32
+	s23:	LocLine:9772;9773;9775;9778;
+	e33
+	s24:	LocLine:9779;9780;
+	e34
+	q4:	LocLine:9780;
+#Avg_var: 2.813393e+01
+#Avg_nolinearop: 3.392857e-01
+Dreal Time: 	15021.2ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_jl_steed_array	check:	
+#Dreal Time: 	15.0212s
+#CPU Time: 16.496 s
+#Memory used: 436.00 MB
+[runlim] end:			Fri May 27 16:01:18 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		334
+[runlim] real:			17.16 seconds
+[runlim] time:			16.68 seconds
+[runlim] space:			328.6 MB
+[runlim] samples:		167

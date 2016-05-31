@@ -1,0 +1,93 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/sincosfg.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 20:28:24 2016
+[runlim] main pid:		2920
+bench/CHAPTER6/sincosfg.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/sincosfg.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/sincosfg.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/sincosfg.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/sincosfg.bc>bench/CHAPTER6/sincosfgbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1636.39ms
+MainFunc: test
+#CallDepth: 12
+#Loc: 104
+#targetsize:	5
+target[0]:q0(32)
+target[1]:q1(36)
+target[2]:q2(46)
+target[3]:q3(59)
+target[4]:q4(61)
+
+target[0]:q0(32)
+target[0]:from s0(0) to q0(32)
+at line 8006 is unreachable under bound 10 when check=
+Number of path checked:18
+#Avg_var: 7.011111e+01
+#Avg_nolinearop: 2.111111e+00
+Dreal Time: 	279.321ms
+
+target[1]:q1(36)
+target[1]:from s0(0) to q1(36)
+at line 8006 is unreachable under bound 10 when check=
+Number of path checked:36
+#Avg_var: 7.011111e+01
+#Avg_nolinearop: 2.111111e+00
+Dreal Time: 	559.039ms
+
+target[2]:q2(46)
+target[2]:from s0(0) to q2(46)
+at line 8006 is unreachable under bound 10 when check=
+Number of path checked:54
+#Avg_var: 7.011111e+01
+#Avg_nolinearop: 2.111111e+00
+Dreal Time: 	838.454ms
+
+target[3]:q3(59)
+target[3]:from s0(0) to q3(59)
+at line 8006 is unreachable under bound 10 when check=
+Number of path checked:72
+#Avg_var: 7.011111e+01
+#Avg_nolinearop: 2.111111e+00
+Dreal Time: 	1117.61ms
+
+target[4]:q4(61)
+target[4]:from s0(0) to q4(61)
+at line 8019 is unreachable under bound 10 when check=
+Number of path checked:90
+#Avg_var: 7.011111e+01
+#Avg_nolinearop: 2.111111e+00
+Dreal Time: 	1397.21ms
+
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	1.39721s
+#CPU Time: 3.252 s
+#Memory used: 713.00 MB
+[runlim] end:			Sat May 28 20:28:28 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		74
+[runlim] real:			4.37 seconds
+[runlim] time:			3.34 seconds
+[runlim] space:			596.7 MB
+[runlim] samples:		36

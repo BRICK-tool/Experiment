@@ -1,0 +1,62 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_airy_Ai
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 22:06:08 2016
+[runlim] main pid:		2486
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_airy_Ai <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_airy_Ai> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	7273.96ms
+MainFunc: gsl_sf_airy_Ai
+#CallDepth: 10
+#Loc: 115
+#targetsize:	20
+target[0]:q0(5)
+target[1]:q1(8)
+target[2]:q2(19)
+target[3]:q3(31)
+target[4]:q4(34)
+target[5]:q5(45)
+target[6]:q6(58)
+target[7]:q7(60)
+target[8]:q8(62)
+target[9]:q9(64)
+target[10]:q10(66)
+target[11]:q11(72)
+target[12]:q12(83)
+target[13]:q13(94)
+target[14]:q14(97)
+target[15]:q15(99)
+target[16]:q16(101)
+target[17]:q17(104)
+target[18]:q18(114)
+target[19]:q19(116)
+
+target[0]:q0(5)
+[runlim] sample:		10.0 seconds, 463.9 MB
+[runlim] sample:		20.0 seconds, 934.4 MB
+[runlim] sample:		30.0 seconds, 1301.9 MB
+[runlim] sample:		33.9 seconds, 1371.7 MB
+[runlim] sample:		36.4 seconds, 1585.7 MB
+[runlim] sample:		44.0 seconds, 1890.9 MB
+[runlim] end:			Fri May 27 22:07:17 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		1310
+[runlim] real:			69.63 seconds
+[runlim] time:			51.14 seconds
+[runlim] space:			2064.0 MB
+[runlim] samples:		655

@@ -1,0 +1,222 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_dilog_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 13:59:43 2016
+[runlim] main pid:		3604
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_dilog_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_dilog_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	5665.31ms
+MainFunc: gsl_sf_dilog_e
+#CallDepth: 11
+#Loc: 113
+#targetsize:	20
+target[0]:q0(4)
+target[1]:q1(6)
+target[2]:q2(11)
+target[3]:q3(13)
+target[4]:q4(23)
+target[5]:q5(25)
+target[6]:q6(27)
+target[7]:q7(29)
+target[8]:q8(37)
+target[9]:q9(43)
+target[10]:q10(61)
+target[11]:q11(63)
+target[12]:q12(68)
+target[13]:q13(70)
+target[14]:q14(80)
+target[15]:q15(82)
+target[16]:q16(84)
+target[17]:q17(86)
+target[18]:q18(94)
+target[19]:q19(100)
+
+target[0]:q0(4)
+target[0]:from s0(0) to q0(4)
+at line 17977 is unreachable under bound 10 when check=
+Number of path checked:71
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	3477.75ms
+
+target[1]:q1(6)
+[runlim] sample:		10.0 seconds, 370.4 MB
+target[1]:from s0(0) to q1(6)
+at line 17979 is unreachable under bound 10 when check=
+Number of path checked:142
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	6928.48ms
+
+target[2]:q2(11)
+target[2]:from s0(0) to q2(11)
+at line 17952 is unreachable under bound 10 when check=
+Number of path checked:213
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	10389.7ms
+
+target[3]:q3(13)
+[runlim] sample:		20.0 seconds, 1030.6 MB
+target[3]:from s0(0) to q3(13)
+at line 17956 is unreachable under bound 10 when check=
+Number of path checked:284
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	13857.4ms
+
+target[4]:q4(23)
+target[4]:from s0(0) to q4(23)
+at line 17990 is unreachable under bound 10 when check=
+Number of path checked:355
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	17361.6ms
+
+target[5]:q5(25)
+target[5]:from s0(0) to q5(25)
+at line 17991 is unreachable under bound 10 when check=
+Number of path checked:426
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	20676.5ms
+
+target[6]:q6(27)
+[runlim] sample:		30.0 seconds, 1774.7 MB
+target[6]:from s0(0) to q6(27)
+at line 17991 is unreachable under bound 10 when check=
+Number of path checked:497
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	24004.9ms
+
+target[7]:q7(29)
+[runlim] end:			Fri May 27 14:00:17 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		680
+[runlim] real:			34.14 seconds
+[runlim] time:			33.97 seconds
+[runlim] space:			2051.6 MB
+[runlim] samples:		340
+target[7]:from s0(0) to q7(29)
+at line 17993 is unreachable under bound 10 when check=
+Number of path checked:568
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	27597.9ms
+
+target[8]:q8(37)
+target[8]:from s0(0) to q8(37)
+at line 18006 is unreachable under bound 10 when check=
+Number of path checked:639
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	32009ms
+
+target[9]:q9(43)
+target[9]:from s0(0) to q9(43)
+at line 18026 is unreachable under bound 10 when check=
+Number of path checked:710
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	36431.1ms
+
+target[10]:q10(61)
+target[10]:from s0(0) to q10(61)
+at line 17977 is unreachable under bound 10 when check=
+Number of path checked:781
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	39835.5ms
+
+target[11]:q11(63)
+target[11]:from s0(0) to q11(63)
+at line 17979 is unreachable under bound 10 when check=
+Number of path checked:852
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	43803.9ms
+
+target[12]:q12(68)
+target[12]:from s0(0) to q12(68)
+at line 17952 is unreachable under bound 10 when check=
+Number of path checked:923
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	47317.5ms
+
+target[13]:q13(70)
+target[13]:from s0(0) to q13(70)
+at line 17956 is unreachable under bound 10 when check=
+Number of path checked:994
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	51475.6ms
+
+target[14]:q14(80)
+target[14]:from s0(0) to q14(80)
+at line 17990 is unreachable under bound 10 when check=
+Number of path checked:1065
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	55169.8ms
+
+target[15]:q15(82)
+target[15]:from s0(0) to q15(82)
+at line 17991 is unreachable under bound 10 when check=
+Number of path checked:1136
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	58902.8ms
+
+target[16]:q16(84)
+target[16]:from s0(0) to q16(84)
+at line 17991 is unreachable under bound 10 when check=
+Number of path checked:1207
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	62629.1ms
+
+target[17]:q17(86)
+target[17]:from s0(0) to q17(86)
+at line 17993 is unreachable under bound 10 when check=
+Number of path checked:1278
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	66266.4ms
+
+target[18]:q18(94)
+target[18]:from s0(0) to q18(94)
+at line 18006 is unreachable under bound 10 when check=
+Number of path checked:1349
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	69691.6ms
+
+target[19]:q19(100)
+target[19]:from s0(0) to q19(100)
+at line 18026 is unreachable under bound 10 when check=
+Number of path checked:1420
+#Avg_var: 6.115493e+01
+#Avg_nolinearop: 1.154930e+00
+Dreal Time: 	73087ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_dilog_e	check:	
+#Dreal Time: 	73.087s
+#CPU Time: 82.112 s
+#Memory used: 6112.00 MB

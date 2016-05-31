@@ -1,0 +1,144 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/fg.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 19:34:55 2016
+[runlim] main pid:		26554
+bench/CHAPTER6/fg.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/fg.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/fg.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/fg.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/fg.bc>bench/CHAPTER6/fgbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	5844.05ms
+MainFunc: test
+#CallDepth: 4
+#Loc: 131
+#targetsize:	24
+target[0]:q0(5)
+target[1]:q1(7)
+target[2]:q2(11)
+target[3]:q3(13)
+target[4]:q4(21)
+target[5]:q5(23)
+target[6]:q6(31)
+target[7]:q7(33)
+target[8]:q8(35)
+target[9]:q9(39)
+target[10]:q10(41)
+target[11]:q11(43)
+target[12]:q12(46)
+target[13]:q13(48)
+target[14]:q14(50)
+target[15]:q15(63)
+target[16]:q16(65)
+target[17]:q17(67)
+target[18]:q18(71)
+target[19]:q19(73)
+target[20]:q20(75)
+target[21]:q21(78)
+target[22]:q22(80)
+target[23]:q23(82)
+
+target[0]:q0(5)
+[runlim] sample:		9.5 seconds, 345.5 MB
+target[0]:from s0(0) to q0(5)
+at line 7219 is unreachable under bound 10 when check=
+Number of path checked:35
+#Avg_var: 2.934286e+01
+#Avg_nolinearop: 2.571429e+00
+Dreal Time: 	9113.12ms
+
+target[1]:q1(7)
+[runlim] sample:		19.5 seconds, 965.0 MB
+target[1]:from s0(0) to q1(7)
+at line 7225 is unreachable under bound 10 when check=
+Number of path checked:70
+#Avg_var: 2.934286e+01
+#Avg_nolinearop: 2.571429e+00
+Dreal Time: 	18126.5ms
+
+target[2]:q2(11)
+[runlim] sample:		29.5 seconds, 1569.1 MB
+target[2]:from s0(0) to q2(11)
+at line 7236 is unreachable under bound 10 when check=
+Number of path checked:105
+#Avg_var: 2.934286e+01
+#Avg_nolinearop: 2.571429e+00
+Dreal Time: 	27112ms
+
+target[3]:q3(13)
+[runlim] end:			Sat May 28 19:35:33 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		758
+[runlim] real:			38.69 seconds
+[runlim] time:			37.21 seconds
+[runlim] space:			2063.8 MB
+[runlim] samples:		377
+target[3]:from s0(0) to q3(13)
+at line 7243 is unreachable under bound 10 when check=
+Number of path checked:140
+#Avg_var: 2.934286e+01
+#Avg_nolinearop: 2.571429e+00
+Dreal Time: 	36415.4ms
+
+target[4]:q4(21)
+target[4]:from s0(0) to q4(21)
+at line 7219 is unreachable under bound 10 when check=
+Number of path checked:175
+#Avg_var: 2.934286e+01
+#Avg_nolinearop: 2.571429e+00
+Dreal Time: 	44673.4ms
+
+target[5]:q5(23)
+target[5]:from s0(0) to q5(23)
+at line 7225 is unreachable under bound 10 when check=
+Number of path checked:210
+#Avg_var: 2.934286e+01
+#Avg_nolinearop: 2.571429e+00
+Dreal Time: 	52911.3ms
+
+target[6]:q6(31)
+target[6]:from s0(0) to q6(31)
+at line 7128 is unreachable under bound 10 when check=
+Number of path checked:245
+#Avg_var: 2.934286e+01
+#Avg_nolinearop: 2.571429e+00
+Dreal Time: 	61058ms
+
+target[7]:q7(33)
+target[7]:from s0(0) to q7(33)
+at line 7137 is unreachable under bound 10 when check=
+Number of path checked:280
+#Avg_var: 2.934286e+01
+#Avg_nolinearop: 2.571429e+00
+Dreal Time: 	69073.2ms
+
+target[8]:q8(35)
+target[8]:from s0(0) to q8(35)
+at line 7144 is unreachable under bound 10 when check=
+Number of path checked:315
+#Avg_var: 2.934286e+01
+#Avg_nolinearop: 2.571429e+00
+Dreal Time: 	76422.4ms
+
+target[9]:q9(39)

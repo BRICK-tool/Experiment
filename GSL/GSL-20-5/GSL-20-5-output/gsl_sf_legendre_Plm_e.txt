@@ -1,0 +1,510 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4096 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_legendre_Plm_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Thu May 26 15:27:36 2016
+[runlim] main pid:		3623
+gsl_sf.c:24094:54: warning: taking the absolute value of unsigned type 'unsigned int' has no effect [-Wabsolute-value]
+        result->err = 2.0 * GSL_DBL_EPSILON * prod * fabs(n-m);
+                                                     ^
+gsl_sf.c:24094:54: note: remove the call to 'fabs' since unsigned values cannot be negative
+        result->err = 2.0 * GSL_DBL_EPSILON * prod * fabs(n-m);
+                                                     ^~~~
+gsl_sf.c:26149:44: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    result->err = 2.0 * GSL_DBL_EPSILON * (fabs(a) + 1.0) * fabs(Ma/Mn);
+                                           ^
+gsl_sf.c:26149:44: note: use function 'abs' instead
+    result->err = 2.0 * GSL_DBL_EPSILON * (fabs(a) + 1.0) * fabs(Ma/Mn);
+                                           ^~~~
+                                           abs
+gsl_sf.c:26180:45: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    result->err += 4.0 * GSL_DBL_EPSILON * (fabs(b-a)+1.0) * fabs(result->val);
+                                            ^
+gsl_sf.c:26180:45: note: use function 'abs' instead
+    result->err += 4.0 * GSL_DBL_EPSILON * (fabs(b-a)+1.0) * fabs(result->val);
+                                            ^~~~
+                                            abs
+gsl_sf.c:26203:24: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        result->err *= fabs(a-b)+1.0;
+                       ^
+gsl_sf.c:26203:24: note: use function 'abs' instead
+        result->err *= fabs(a-b)+1.0;
+                       ^~~~
+                       abs
+gsl_sf.c:26232:40: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+      result->err  = fabs(Mn) * (1.0 + fabs(a)) * fabs(r_Mn.err / r_Mn.val);
+                                       ^
+gsl_sf.c:26232:40: note: use function 'abs' instead
+      result->err  = fabs(Mn) * (1.0 + fabs(a)) * fabs(r_Mn.err / r_Mn.val);
+                                       ^~~~
+                                       abs
+gsl_sf.c:26259:22: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+      result->err *= fabs(b-a)+1.0;
+                     ^
+gsl_sf.c:26259:22: note: use function 'abs' instead
+      result->err *= fabs(b-a)+1.0;
+                     ^~~~
+                     abs
+gsl_sf.c:26315:22: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+      result->err *= fabs(b-a)+1.0;
+                     ^
+gsl_sf.c:26315:22: note: use function 'abs' instead
+      result->err *= fabs(b-a)+1.0;
+                     ^~~~
+                     abs
+gsl_sf.c:26959:41: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(x > 100.0  && GSL_MAX_DBL(1.0,fabs(b-a))*GSL_MAX_DBL(1.0,fabs(1-a)) < 0.5 * x) {
+                                        ^
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:30: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                             ^
+gsl_sf.c:26959:41: note: use function 'abs' instead
+  else if(x > 100.0  && GSL_MAX_DBL(1.0,fabs(b-a))*GSL_MAX_DBL(1.0,fabs(1-a)) < 0.5 * x) {
+                                        ^~~~
+                                        abs
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:30: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                             ^
+gsl_sf.c:26959:41: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(x > 100.0  && GSL_MAX_DBL(1.0,fabs(b-a))*GSL_MAX_DBL(1.0,fabs(1-a)) < 0.5 * x) {
+                                        ^
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:42: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                         ^
+gsl_sf.c:26959:41: note: use function 'abs' instead
+  else if(x > 100.0  && GSL_MAX_DBL(1.0,fabs(b-a))*GSL_MAX_DBL(1.0,fabs(1-a)) < 0.5 * x) {
+                                        ^~~~
+                                        abs
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:42: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                         ^
+gsl_sf.c:26959:68: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(x > 100.0  && GSL_MAX_DBL(1.0,fabs(b-a))*GSL_MAX_DBL(1.0,fabs(1-a)) < 0.5 * x) {
+                                                                   ^
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:30: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                             ^
+gsl_sf.c:26959:68: note: use function 'abs' instead
+  else if(x > 100.0  && GSL_MAX_DBL(1.0,fabs(b-a))*GSL_MAX_DBL(1.0,fabs(1-a)) < 0.5 * x) {
+                                                                   ^~~~
+                                                                   abs
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:30: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                             ^
+gsl_sf.c:26959:68: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(x > 100.0  && GSL_MAX_DBL(1.0,fabs(b-a))*GSL_MAX_DBL(1.0,fabs(1-a)) < 0.5 * x) {
+                                                                   ^
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:42: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                         ^
+gsl_sf.c:26959:68: note: use function 'abs' instead
+  else if(x > 100.0  && GSL_MAX_DBL(1.0,fabs(b-a))*GSL_MAX_DBL(1.0,fabs(1-a)) < 0.5 * x) {
+                                                                   ^~~~
+                                                                   abs
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:42: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                         ^
+gsl_sf.c:26963:41: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(x < -100.0 && GSL_MAX_DBL(1.0,fabs(a))*GSL_MAX_DBL(1.0,fabs(1+a-b)) < 0.5 * fabs(x)) {
+                                        ^
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:30: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                             ^
+gsl_sf.c:26963:41: note: use function 'abs' instead
+  else if(x < -100.0 && GSL_MAX_DBL(1.0,fabs(a))*GSL_MAX_DBL(1.0,fabs(1+a-b)) < 0.5 * fabs(x)) {
+                                        ^~~~
+                                        abs
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:30: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                             ^
+gsl_sf.c:26963:41: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(x < -100.0 && GSL_MAX_DBL(1.0,fabs(a))*GSL_MAX_DBL(1.0,fabs(1+a-b)) < 0.5 * fabs(x)) {
+                                        ^
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:42: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                         ^
+gsl_sf.c:26963:41: note: use function 'abs' instead
+  else if(x < -100.0 && GSL_MAX_DBL(1.0,fabs(a))*GSL_MAX_DBL(1.0,fabs(1+a-b)) < 0.5 * fabs(x)) {
+                                        ^~~~
+                                        abs
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:42: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                         ^
+gsl_sf.c:26963:66: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(x < -100.0 && GSL_MAX_DBL(1.0,fabs(a))*GSL_MAX_DBL(1.0,fabs(1+a-b)) < 0.5 * fabs(x)) {
+                                                                 ^
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:30: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                             ^
+gsl_sf.c:26963:66: note: use function 'abs' instead
+  else if(x < -100.0 && GSL_MAX_DBL(1.0,fabs(a))*GSL_MAX_DBL(1.0,fabs(1+a-b)) < 0.5 * fabs(x)) {
+                                                                 ^~~~
+                                                                 abs
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:30: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                             ^
+gsl_sf.c:26963:66: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(x < -100.0 && GSL_MAX_DBL(1.0,fabs(a))*GSL_MAX_DBL(1.0,fabs(1+a-b)) < 0.5 * fabs(x)) {
+                                                                 ^
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:42: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                         ^
+gsl_sf.c:26963:66: note: use function 'abs' instead
+  else if(x < -100.0 && GSL_MAX_DBL(1.0,fabs(a))*GSL_MAX_DBL(1.0,fabs(1+a-b)) < 0.5 * fabs(x)) {
+                                                                 ^~~~
+                                                                 abs
+gsl_sf.c:117:38: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                     ^
+gsl_sf.c:113:42: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                         ^
+gsl_sf.c:28752:38: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    result->err += fabs(poch.val) * (fabs(N) + 2.0) * GSL_DBL_EPSILON * fabs(sum_val);
+                                     ^
+gsl_sf.c:28752:38: note: use function 'abs' instead
+    result->err += fabs(poch.val) * (fabs(N) + 2.0) * GSL_DBL_EPSILON * fabs(sum_val);
+                                     ^~~~
+                                     abs
+gsl_sf.c:29166:45: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    result->err  = 2.0 * GSL_DBL_EPSILON * (fabs(b) + fabs(x));
+                                            ^
+gsl_sf.c:29166:45: note: use function 'abs' instead
+    result->err  = 2.0 * GSL_DBL_EPSILON * (fabs(b) + fabs(x));
+                                            ^~~~
+                                            abs
+gsl_sf.c:29176:11: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(ASYMP_EVAL_OK(a,b,x)) {
+          ^
+gsl_sf.c:28506:43: note: expanded from macro 'ASYMP_EVAL_OK'
+#define ASYMP_EVAL_OK(a,b,x) (GSL_MAX_DBL(fabs(a),1.0)*GSL_MAX_DBL(fabs(1.0+a-b),1.0) < 0.99*fabs(x))
+                                          ^
+gsl_sf.c:117:36: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                   ^
+gsl_sf.c:113:24: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                       ^
+gsl_sf.c:29176:11: note: use function 'abs' instead
+gsl_sf.c:28506:43: note: expanded from macro 'ASYMP_EVAL_OK'
+#define ASYMP_EVAL_OK(a,b,x) (GSL_MAX_DBL(fabs(a),1.0)*GSL_MAX_DBL(fabs(1.0+a-b),1.0) < 0.99*fabs(x))
+                                          ^
+gsl_sf.c:117:36: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                   ^
+gsl_sf.c:113:24: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                       ^
+gsl_sf.c:29176:11: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(ASYMP_EVAL_OK(a,b,x)) {
+          ^
+gsl_sf.c:28506:43: note: expanded from macro 'ASYMP_EVAL_OK'
+#define ASYMP_EVAL_OK(a,b,x) (GSL_MAX_DBL(fabs(a),1.0)*GSL_MAX_DBL(fabs(1.0+a-b),1.0) < 0.99*fabs(x))
+                                          ^
+gsl_sf.c:117:36: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                   ^
+gsl_sf.c:113:36: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                   ^
+gsl_sf.c:29176:11: note: use function 'abs' instead
+gsl_sf.c:28506:43: note: expanded from macro 'ASYMP_EVAL_OK'
+#define ASYMP_EVAL_OK(a,b,x) (GSL_MAX_DBL(fabs(a),1.0)*GSL_MAX_DBL(fabs(1.0+a-b),1.0) < 0.99*fabs(x))
+                                          ^
+gsl_sf.c:117:36: note: expanded from macro 'GSL_MAX_DBL'
+#define GSL_MAX_DBL(a,b)   GSL_MAX(a,b)
+                                   ^
+gsl_sf.c:113:36: note: expanded from macro 'GSL_MAX'
+#define GSL_MAX(a,b) ((a) > (b) ? (a) : (b))
+                                   ^
+gsl_sf.c:29186:11: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(SERIES_EVAL_OK(a,b,x)) {
+          ^
+gsl_sf.c:28504:33: note: expanded from macro 'SERIES_EVAL_OK'
+#define SERIES_EVAL_OK(a,b,x) ((fabs(a) < 5 && b < 5 && x < 2.0) || (fabs(a) <  10 && b < 10 && x < 1.0))
+                                ^
+gsl_sf.c:29186:11: note: use function 'abs' instead
+gsl_sf.c:28504:33: note: expanded from macro 'SERIES_EVAL_OK'
+#define SERIES_EVAL_OK(a,b,x) ((fabs(a) < 5 && b < 5 && x < 2.0) || (fabs(a) <  10 && b < 10 && x < 1.0))
+                                ^
+gsl_sf.c:29186:11: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  else if(SERIES_EVAL_OK(a,b,x)) {
+          ^
+gsl_sf.c:28504:70: note: expanded from macro 'SERIES_EVAL_OK'
+#define SERIES_EVAL_OK(a,b,x) ((fabs(a) < 5 && b < 5 && x < 2.0) || (fabs(a) <  10 && b < 10 && x < 1.0))
+                                                                     ^
+gsl_sf.c:29186:11: note: use function 'abs' instead
+gsl_sf.c:28504:70: note: expanded from macro 'SERIES_EVAL_OK'
+#define SERIES_EVAL_OK(a,b,x) ((fabs(a) < 5 && b < 5 && x < 2.0) || (fabs(a) <  10 && b < 10 && x < 1.0))
+                                                                     ^
+gsl_sf.c:29218:38: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    y.err = 4.0 * GSL_DBL_EPSILON * (fabs(a)+1.0) * fabs(Ua);
+                                     ^
+gsl_sf.c:29218:38: note: use function 'abs' instead
+    y.err = 4.0 * GSL_DBL_EPSILON * (fabs(a)+1.0) * fabs(Ua);
+                                     ^~~~
+                                     abs
+gsl_sf.c:29252:39: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    y.err += 2.0 * GSL_DBL_EPSILON * (fabs(a) + 1.0) * fabs(Ua);
+                                      ^
+gsl_sf.c:29252:39: note: use function 'abs' instead
+    y.err += 2.0 * GSL_DBL_EPSILON * (fabs(a) + 1.0) * fabs(Ua);
+                                      ^~~~
+                                      abs
+gsl_sf.c:29303:35: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        double oUa_err   = 2.0 * (fabs(a_target-a) + CF1_count + 1.0) * GSL_DBL_EPSILON * fabs(1.0/Ua);
+                                  ^
+gsl_sf.c:29303:35: note: use function 'abs' instead
+        double oUa_err   = 2.0 * (fabs(a_target-a) + CF1_count + 1.0) * GSL_DBL_EPSILON * fabs(1.0/Ua);
+                                  ^~~~
+                                  abs
+gsl_sf.c:29347:48: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        Ua1_bck_err = 2.0 * GSL_DBL_EPSILON * (fabs(a1-a)+CF1_count+1.0) * fabs(Ua);
+                                               ^
+gsl_sf.c:29347:48: note: use function 'abs' instead
+        Ua1_bck_err = 2.0 * GSL_DBL_EPSILON * (fabs(a1-a)+CF1_count+1.0) * fabs(Ua);
+                                               ^~~~
+                                               abs
+gsl_sf.c:29413:49: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        Ua1_for_err += 2.0 * GSL_DBL_EPSILON * (fabs(a1-a0)+1.0) * fabs(Ua1_for_val);
+                                                ^
+gsl_sf.c:29413:49: note: use function 'abs' instead
+        Ua1_for_err += 2.0 * GSL_DBL_EPSILON * (fabs(a1-a0)+1.0) * fabs(Ua1_for_val);
+                                                ^~~~
+                                                abs
+gsl_sf.c:29744:57: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+      lnm.err = 2.0 * GSL_DBL_EPSILON * (fabs(lm_for) + fabs(scale_count_for - scale_count_bck)*fabs(lnscale));
+                                                        ^
+gsl_sf.c:29744:57: note: use function 'abs' instead
+      lnm.err = 2.0 * GSL_DBL_EPSILON * (fabs(lm_for) + fabs(scale_count_for - scale_count_bck)*fabs(lnscale));
+                                                        ^~~~
+                                                        abs
+gsl_sf.c:29781:52: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+      double ln_pre_err = 2.0 * GSL_DBL_EPSILON * (fabs(b)+1.0) * fabs(ln_x);
+                                                   ^
+gsl_sf.c:29781:52: note: use function 'abs' instead
+      double ln_pre_err = 2.0 * GSL_DBL_EPSILON * (fabs(b)+1.0) * fabs(ln_x);
+                                                   ^~~~
+                                                   abs
+gsl_sf.c:32897:67: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    lnpre_err = 0.25*M_LNPI*GSL_DBL_EPSILON + 0.5 * (lnpoch.err + fabs(m)*lncirc.err);
+                                                                  ^
+gsl_sf.c:32897:67: note: use function 'abs' instead
+    lnpre_err = 0.25*M_LNPI*GSL_DBL_EPSILON + 0.5 * (lnpoch.err + fabs(m)*lncirc.err);
+                                                                  ^~~~
+                                                                  abs
+gsl_sf.c:33926:46: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+      result->err = 2.0 * GSL_DBL_EPSILON * (fabs(incr) + 1.0) * fabs(result->val);
+                                             ^
+gsl_sf.c:33926:46: note: use function 'abs' instead
+      result->err = 2.0 * GSL_DBL_EPSILON * (fabs(incr) + 1.0) * fabs(result->val);
+                                             ^~~~
+                                             abs
+gsl_sf.c:33941:47: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+      result->err += 2.0 * GSL_DBL_EPSILON * (fabs(incr) + 1.0) * fabs(result->val);
+                                              ^
+gsl_sf.c:33941:47: note: use function 'abs' instead
+      result->err += 2.0 * GSL_DBL_EPSILON * (fabs(incr) + 1.0) * fabs(result->val);
+                                              ^~~~
+                                              abs
+31 warnings generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_legendre_Plm_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_legendre_Plm_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1297.35ms
+MainFunc: gsl_sf_legendre_Plm_e
+#CallDepth: 1
+#Loc: 84
+#targetsize:	6
+target[0]:q0(1)
+target[1]:q1(3)
+target[2]:q2(5)
+target[3]:q3(14)
+target[4]:q4(19)
+target[5]:q5(21)
+
+target[0]:q0(1)
+target[0]:from s0(0) to q0(1)
+at line 32656 in state q0 is reachable
+gsl_sf_legendre_Plm_e_l = [-1.000000e+02, -1.000000e+02]
+gsl_sf_legendre_Plm_e_m = [-1.000000e+02, -1.000000e+02]
+gsl_sf_legendre_Plm_e_x = [-1.000000e+02, 1.000000e+02]
+gsl_sf_legendre_Plm_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_legendre_Plm_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:2
+Witness:
+	s0:	LocLine:32648;32654;32655;32656;
+	e0
+	q0:	LocLine:32656;
+#Avg_var: 1.700000e+01
+#Avg_nolinearop: 0.000000e+00
+Dreal Time: 	4.397ms
+
+target[1]:q1(3)
+target[1]:from s0(0) to q1(3)
+at line 32657 in state q1 is reachable
+gsl_sf_legendre_Plm_e_l = [-0.000000e+00, 0.000000e+00]
+gsl_sf_legendre_Plm_e_m = [-0.000000e+00, 0.000000e+00]
+gsl_sf_legendre_Plm_e_x = [-1.000000e+02, 1.000000e+02]
+gsl_sf_legendre_Plm_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_legendre_Plm_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:6
+Witness:
+	s0:	LocLine:32648;32654;32655;32656;
+	e1
+	s1:	LocLine:32656;32657;
+	e2
+	q1:	LocLine:32657;
+#Avg_var: 1.700000e+01
+#Avg_nolinearop: 3.333333e-01
+Dreal Time: 	12.67ms
+
+target[2]:q2(5)
+target[2]:from s0(0) to q2(5)
+at line 32658 in state q2 is reachable
+gsl_sf_legendre_Plm_e_l = [-0.000000e+00, 0.000000e+00]
+gsl_sf_legendre_Plm_e_m = [-0.000000e+00, 0.000000e+00]
+gsl_sf_legendre_Plm_e_x = [-1.000000e+02, 1.000000e+02]
+gsl_sf_legendre_Plm_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_legendre_Plm_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:12
+Witness:
+	s0:	LocLine:32648;32654;32655;32656;
+	e1
+	s1:	LocLine:32656;32657;
+	e3
+	s2:	LocLine:32657;32658;
+	e4
+	q2:	LocLine:32658;
+#Avg_var: 1.700000e+01
+#Avg_nolinearop: 6.666667e-01
+Dreal Time: 	35.318ms
+
+target[3]:q3(14)
+target[3]:from s0(0) to q3(14)
+at line 32673 in state q3 is reachable
+gsl_sf_legendre_Plm_e_l = [-0.000000e+00, 0.000000e+00]
+gsl_sf_legendre_Plm_e_m = [0.000000e+00, 0.000000e+00]
+gsl_sf_legendre_Plm_e_x = [-1.000000e+00, -9.900000e-01]
+gsl_sf_legendre_Plm_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_legendre_Plm_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:25
+Witness:
+	s0:	LocLine:32648;32654;32655;32656;
+	e1
+	s1:	LocLine:32656;32657;
+	e3
+	s2:	LocLine:32657;32658;
+	e5
+	s3:	LocLine:32658;32662;
+	e6
+	s4:	LocLine:32662;
+	e8
+	s5:	LocLine:32662;
+	e10
+	s6:	LocLine:32662;
+	e12
+	s8:	LocLine:32665;
+	e14
+	s10:	LocLine:32673;
+	e16
+	q3:	LocLine:32673;
+#Avg_var: 1.700000e+01
+#Avg_nolinearop: 1.640000e+00
+Dreal Time: 	232.488ms
+
+target[4]:q4(19)
+[runlim] sample:		9.3 seconds, 159.8 MB
+[runlim] sample:		19.3 seconds, 171.9 MB
+[runlim] sample:		29.3 seconds, 178.9 MB
+[runlim] sample:		39.3 seconds, 185.6 MB
+[runlim] sample:		49.3 seconds, 185.6 MB
+[runlim] sample:		59.3 seconds, 185.6 MB
+[runlim] sample:		69.3 seconds, 185.6 MB
+[runlim] sample:		79.3 seconds, 185.6 MB
+[runlim] sample:		89.3 seconds, 185.6 MB
+[runlim] sample:		99.3 seconds, 185.6 MB
+[runlim] sample:		109.3 seconds, 185.6 MB
+[runlim] sample:		119.3 seconds, 185.6 MB
+[runlim] sample:		129.3 seconds, 185.6 MB
+[runlim] sample:		139.3 seconds, 185.6 MB
+[runlim] sample:		149.3 seconds, 185.6 MB
+[runlim] sample:		159.3 seconds, 185.6 MB
+[runlim] sample:		169.3 seconds, 185.6 MB
+[runlim] sample:		179.3 seconds, 185.6 MB
+[runlim] sample:		189.3 seconds, 185.6 MB
+[runlim] sample:		199.3 seconds, 185.6 MB
+[runlim] sample:		209.3 seconds, 185.6 MB
+[runlim] sample:		219.3 seconds, 185.6 MB
+[runlim] sample:		229.3 seconds, 185.6 MB
+[runlim] sample:		239.3 seconds, 185.6 MB
+[runlim] sample:		249.3 seconds, 185.6 MB
+[runlim] sample:		259.3 seconds, 185.6 MB
+[runlim] sample:		269.3 seconds, 185.6 MB
+[runlim] sample:		279.3 seconds, 185.6 MB
+[runlim] sample:		289.3 seconds, 188.3 MB
+[runlim] sample:		299.3 seconds, 192.5 MB
+[runlim] end:			Thu May 26 15:32:37 2016
+[runlim] status:		out of time
+[runlim] result:		1
+[runlim] children:		6022
+[runlim] real:			301.55 seconds
+[runlim] time:			300.06 seconds
+[runlim] space:			192.5 MB
+[runlim] samples:		3008
+Killed

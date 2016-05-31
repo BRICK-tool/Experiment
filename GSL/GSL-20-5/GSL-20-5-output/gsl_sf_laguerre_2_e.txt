@@ -1,0 +1,58 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_laguerre_2_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 21:44:58 2016
+[runlim] main pid:		2426
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_laguerre_2_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_laguerre_2_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	562.18ms
+MainFunc: gsl_sf_laguerre_2_e
+#CallDepth: 0
+#Loc: 19
+#targetsize:	1
+target[0]:q0(3)
+
+target[0]:q0(3)
+target[0]:from s0(0) to q0(3)
+at line 30057 in state q0 is reachable
+gsl_sf_laguerre_2_e_a = [-2.010000e+00, -2.005000e+00]
+gsl_sf_laguerre_2_e_x = [-1.000000e+02, 1.000000e+02]
+gsl_sf_laguerre_2_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_laguerre_2_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:3
+Witness:
+	s0:	LocLine:30045;30049;
+	e0
+	s2:	LocLine:30055;30056;30057;
+	e3
+	q0:	LocLine:30057;
+#Avg_var: 9.000000e+00
+#Avg_nolinearop: 6.666667e-01
+Dreal Time: 	8.621ms
+
+bound:	20	precision:	1.000000e-02	functionName:	gsl_sf_laguerre_2_e	check:	
+#Dreal Time: 	0.008621s
+#CPU Time: 0.708 s
+#Memory used: 106.00 MB
+[runlim] end:			Fri May 27 21:44:59 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		16
+[runlim] real:			1.44 seconds
+[runlim] time:			0.78 seconds
+[runlim] space:			67.3 MB
+[runlim] samples:		8

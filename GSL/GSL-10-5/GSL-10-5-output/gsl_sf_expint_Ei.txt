@@ -1,0 +1,93 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_expint_Ei
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:07:45 2016
+[runlim] main pid:		3944
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_expint_Ei <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_expint_Ei> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1104.81ms
+MainFunc: gsl_sf_expint_Ei
+#CallDepth: 5
+#Loc: 120
+#targetsize:	6
+target[0]:q0(8)
+target[1]:q1(13)
+target[2]:q2(18)
+target[3]:q3(23)
+target[4]:q4(28)
+target[5]:q5(37)
+
+target[0]:q0(8)
+target[0]:from s0(0) to q0(8)
+at line 20633 is unreachable under bound 10 when check=
+Number of path checked:24
+#Avg_var: 4.312500e+01
+#Avg_nolinearop: 2.125000e+00
+Dreal Time: 	161.83ms
+
+target[1]:q1(13)
+target[1]:from s0(0) to q1(13)
+at line 20635 is unreachable under bound 10 when check=
+Number of path checked:48
+#Avg_var: 4.312500e+01
+#Avg_nolinearop: 2.125000e+00
+Dreal Time: 	322.96ms
+
+target[2]:q2(18)
+target[2]:from s0(0) to q2(18)
+at line 20642 is unreachable under bound 10 when check=
+Number of path checked:72
+#Avg_var: 4.312500e+01
+#Avg_nolinearop: 2.125000e+00
+Dreal Time: 	484.96ms
+
+target[3]:q3(23)
+target[3]:from s0(0) to q3(23)
+at line 20644 is unreachable under bound 10 when check=
+Number of path checked:96
+#Avg_var: 4.312500e+01
+#Avg_nolinearop: 2.125000e+00
+Dreal Time: 	647.095ms
+
+target[4]:q4(28)
+target[4]:from s0(0) to q4(28)
+at line 20651 is unreachable under bound 10 when check=
+Number of path checked:120
+#Avg_var: 4.312500e+01
+#Avg_nolinearop: 2.125000e+00
+Dreal Time: 	810.013ms
+
+target[5]:q5(37)
+target[5]:from s0(0) to q5(37)
+at line 20664 is unreachable under bound 10 when check=
+Number of path checked:144
+#Avg_var: 4.312500e+01
+#Avg_nolinearop: 2.125000e+00
+Dreal Time: 	972.93ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_expint_Ei	check:	
+#Dreal Time: 	0.97293s
+#CPU Time: 2.256 s
+#Memory used: 566.00 MB
+[runlim] end:			Fri May 27 14:07:48 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		50
+[runlim] real:			3.16 seconds
+[runlim] time:			2.48 seconds
+[runlim] space:			431.2 MB
+[runlim] samples:		25

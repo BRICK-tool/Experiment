@@ -1,0 +1,92 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_elljac_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 16:11:08 2016
+[runlim] main pid:		2997
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_elljac_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_elljac_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1187.95ms
+MainFunc: gsl_sf_elljac_e
+#CallDepth: 0
+#Loc: 75
+#targetsize:	4
+target[0]:q0(6)
+target[1]:q1(9)
+target[2]:q2(11)
+target[3]:q3(15)
+
+target[0]:q0(6)
+target[0]:from s0(0) to q0(6)
+at line 19055 is unreachable under bound 10 when check=
+Number of path checked:17
+#Avg_var: 1.281176e+02
+#Avg_nolinearop: 5.941176e+00
+Dreal Time: 	169.833ms
+
+target[1]:q1(9)
+target[1]:from s0(0) to q1(9)
+at line 19071 is unreachable under bound 10 when check=
+Number of path checked:34
+#Avg_var: 1.281176e+02
+#Avg_nolinearop: 5.941176e+00
+Dreal Time: 	338.353ms
+
+target[2]:q2(11)
+target[2]:from s0(0) to q2(11)
+at line 19072 in state q2 is reachable
+gsl_sf_elljac_e_u = [-1.000000e+02, 1.000000e+02]
+gsl_sf_elljac_e_m = [-7.812500e-03, -4.440890e-16]
+gsl_sf_elljac_e_sn_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_elljac_e_cn_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_elljac_e_dn_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:40
+Witness:
+	s0:	LocLine:19039;19041;
+	e0
+	s2:	LocLine:19047;
+	e2
+	s4:	LocLine:19053;
+	e5
+	s7:	LocLine:19060;19061;19062;19063;19064;19065;19066;19067;19068;19070;19071;
+	e11
+	s8:	LocLine:19071;19072;
+	e12
+	q2:	LocLine:19072;
+#Avg_var: 1.262250e+02
+#Avg_nolinearop: 5.550000e+00
+Dreal Time: 	355.128ms
+
+target[3]:q3(15)
+target[3]:from s0(0) to q3(15)
+at line 19076 is unreachable under bound 10 when check=
+Number of path checked:57
+#Avg_var: 1.267895e+02
+#Avg_nolinearop: 5.666667e+00
+Dreal Time: 	523.638ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_elljac_e	check:	
+#Dreal Time: 	0.523638s
+#CPU Time: 1.856 s
+#Memory used: 321.00 MB
+[runlim] end:			Fri May 27 16:11:10 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		42
+[runlim] real:			2.93 seconds
+[runlim] time:			2.05 seconds
+[runlim] space:			243.8 MB
+[runlim] samples:		21

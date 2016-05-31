@@ -1,0 +1,67 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER2/norderpo.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:19:47 2016
+[runlim] main pid:		25595
+bench/CHAPTER2/norderpo.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER2/norderpo.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER2/norderpo.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER2/norderpo.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER2/norderpo.bc>bench/CHAPTER2/norderpobuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	616.379ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 31
+#targetsize:	1
+target[0]:q0(17)
+
+target[0]:q0(17)
+
+
+
+
+
+
+
+
+
+
+target[0]:from s0(0) to q0(17)
+at line 1924 is unreachable under bound 10 when check=
+Number of path checked:16
+#Avg_var: 1.618750e+01
+#Avg_nolinearop: 0.000000e+00
+Dreal Time: 	438.11ms
+
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0.43811s
+#CPU Time: 1.152 s
+#Memory used: 126.00 MB
+[runlim] end:			Sat May 28 18:19:48 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		36
+[runlim] real:			1.91 seconds
+[runlim] time:			1.16 seconds
+[runlim] space:			74.0 MB
+[runlim] samples:		16

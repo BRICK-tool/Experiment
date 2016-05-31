@@ -1,0 +1,84 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_gegenpoly_n_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:06:28 2016
+[runlim] main pid:		3768
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_gegenpoly_n_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_gegenpoly_n_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1963.5ms
+MainFunc: gsl_sf_gegenpoly_n_e
+#CallDepth: 4
+#Loc: 98
+#targetsize:	2
+target[0]:q0(30)
+target[1]:q1(32)
+
+target[0]:q0(30)
+target[0]:from s0(0) to q0(30)
+at line 24944 in state q0 is reachable
+gsl_sf_gegenpoly_n_e_n = [4.000000e+00, 4.000000e+00]
+gsl_sf_gegenpoly_n_e_lambda = [0.000000e+00, 0.000000e+00]
+gsl_sf_gegenpoly_n_e_x = [-1.000000e+00, -9.921875e-01]
+gsl_sf_gegenpoly_n_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_gegenpoly_n_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:15
+Witness:
+	s0:	LocLine:24920;24924;
+	e0
+	s1:	LocLine:24924;
+	e2
+	s3:	LocLine:24927;
+	e4
+	s5:	LocLine:24932;
+	e7
+	s12:	LocLine:24935;
+	e16
+	s19:	LocLine:24938;
+	e25
+	s26:	LocLine:24942;
+	e35
+	s27:	LocLine:24942;
+	e37
+	s29:	LocLine:24944;
+	e40
+	q0:	LocLine:24944;
+#Avg_var: 2.253333e+01
+#Avg_nolinearop: 1.333333e-01
+Dreal Time: 	195.942ms
+
+target[1]:q1(32)
+[runlim] sample:		10.0 seconds, 118.1 MB
+[runlim] sample:		20.0 seconds, 123.2 MB
+target[1]:from s0(0) to q1(32)
+at line 24945 is unreachable under bound 10 when check=
+Number of path checked:59
+#Avg_var: 2.242373e+01
+#Avg_nolinearop: 5.762712e-01
+Dreal Time: 	25086.8ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_gegenpoly_n_e	check:	
+#Dreal Time: 	25.0868s
+#CPU Time: 27.232 s
+#Memory used: 240.00 MB
+[runlim] end:			Fri May 27 14:06:56 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		548
+[runlim] real:			28.07 seconds
+[runlim] time:			27.37 seconds
+[runlim] space:			173.3 MB
+[runlim] samples:		274

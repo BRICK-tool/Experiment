@@ -1,0 +1,222 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_dilog
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 13:59:02 2016
+[runlim] main pid:		3575
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_dilog <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_dilog> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	4747.22ms
+MainFunc: gsl_sf_dilog
+#CallDepth: 11
+#Loc: 116
+#targetsize:	20
+target[0]:q0(5)
+target[1]:q1(7)
+target[2]:q2(12)
+target[3]:q3(14)
+target[4]:q4(24)
+target[5]:q5(26)
+target[6]:q6(28)
+target[7]:q7(30)
+target[8]:q8(36)
+target[9]:q9(42)
+target[10]:q10(56)
+target[11]:q11(58)
+target[12]:q12(63)
+target[13]:q13(65)
+target[14]:q14(75)
+target[15]:q15(77)
+target[16]:q16(79)
+target[17]:q17(81)
+target[18]:q18(87)
+target[19]:q19(93)
+
+target[0]:q0(5)
+target[0]:from s0(0) to q0(5)
+at line 17977 is unreachable under bound 10 when check=
+Number of path checked:59
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	2552.41ms
+
+target[1]:q1(7)
+[runlim] sample:		10.0 seconds, 437.1 MB
+target[1]:from s0(0) to q1(7)
+at line 17979 is unreachable under bound 10 when check=
+Number of path checked:118
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	5114.25ms
+
+target[2]:q2(12)
+target[2]:from s0(0) to q2(12)
+at line 17952 is unreachable under bound 10 when check=
+Number of path checked:177
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	7669.76ms
+
+target[3]:q3(14)
+target[3]:from s0(0) to q3(14)
+at line 17956 is unreachable under bound 10 when check=
+Number of path checked:236
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	10237.2ms
+
+target[4]:q4(24)
+target[4]:from s0(0) to q4(24)
+at line 17990 is unreachable under bound 10 when check=
+Number of path checked:295
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	12790.1ms
+
+target[5]:q5(26)
+[runlim] sample:		20.0 seconds, 1233.2 MB
+target[5]:from s0(0) to q5(26)
+at line 17991 is unreachable under bound 10 when check=
+Number of path checked:354
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	15344.3ms
+
+target[6]:q6(28)
+target[6]:from s0(0) to q6(28)
+at line 17991 is unreachable under bound 10 when check=
+Number of path checked:413
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	17898.2ms
+
+target[7]:q7(30)
+target[7]:from s0(0) to q7(30)
+at line 17993 is unreachable under bound 10 when check=
+Number of path checked:472
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	20454.4ms
+
+target[8]:q8(36)
+target[8]:from s0(0) to q8(36)
+at line 18006 is unreachable under bound 10 when check=
+Number of path checked:531
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	23006.6ms
+
+target[9]:q9(42)
+[runlim] sample:		30.0 seconds, 1962.3 MB
+[runlim] end:			Fri May 27 13:59:33 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		616
+[runlim] real:			31.68 seconds
+[runlim] time:			30.77 seconds
+[runlim] space:			2052.1 MB
+[runlim] samples:		308
+target[9]:from s0(0) to q9(42)
+at line 18026 is unreachable under bound 10 when check=
+Number of path checked:590
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	25938.2ms
+
+target[10]:q10(56)
+target[10]:from s0(0) to q10(56)
+at line 17977 is unreachable under bound 10 when check=
+Number of path checked:649
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	29578.6ms
+
+target[11]:q11(58)
+target[11]:from s0(0) to q11(58)
+at line 17979 is unreachable under bound 10 when check=
+Number of path checked:708
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	33261.3ms
+
+target[12]:q12(63)
+target[12]:from s0(0) to q12(63)
+at line 17952 is unreachable under bound 10 when check=
+Number of path checked:767
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	36883.7ms
+
+target[13]:q13(65)
+target[13]:from s0(0) to q13(65)
+at line 17956 is unreachable under bound 10 when check=
+Number of path checked:826
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	40114.7ms
+
+target[14]:q14(75)
+target[14]:from s0(0) to q14(75)
+at line 17990 is unreachable under bound 10 when check=
+Number of path checked:885
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	42795ms
+
+target[15]:q15(77)
+target[15]:from s0(0) to q15(77)
+at line 17991 is unreachable under bound 10 when check=
+Number of path checked:944
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	45456.2ms
+
+target[16]:q16(79)
+target[16]:from s0(0) to q16(79)
+at line 17991 is unreachable under bound 10 when check=
+Number of path checked:1003
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	48139.3ms
+
+target[17]:q17(81)
+target[17]:from s0(0) to q17(81)
+at line 17993 is unreachable under bound 10 when check=
+Number of path checked:1062
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	50801.8ms
+
+target[18]:q18(87)
+target[18]:from s0(0) to q18(87)
+at line 18006 is unreachable under bound 10 when check=
+Number of path checked:1121
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	53455.3ms
+
+target[19]:q19(93)
+target[19]:from s0(0) to q19(93)
+at line 18026 is unreachable under bound 10 when check=
+Number of path checked:1180
+#Avg_var: 6.313559e+01
+#Avg_nolinearop: 1.084746e+00
+Dreal Time: 	56143.5ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_dilog	check:	
+#Dreal Time: 	56.1435s
+#CPU Time: 63.288 s
+#Memory used: 4963.00 MB

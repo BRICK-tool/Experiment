@@ -1,0 +1,62 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/hshcolma.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:08:19 2016
+[runlim] main pid:		24991
+bench/CHAPTER1/hshcolma.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/hshcolma.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/hshcolma.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/hshcolma.c:8302:34: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcolmat( lr, ur, lc, uc, i, x, u, a);
+                                 ^
+bench/CHAPTER1/hshcolma.c:593:73: note: passing argument to parameter 'u' here
+void hshcolmat(int lr, int ur, int lc, int uc, int i,real_t x, real_t **u, real_t **a)
+                                                                        ^
+bench/CHAPTER1/hshcolma.c:8302:37: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcolmat( lr, ur, lc, uc, i, x, u, a);
+                                    ^
+bench/CHAPTER1/hshcolma.c:593:85: note: passing argument to parameter 'a' here
+void hshcolmat(int lr, int ur, int lc, int uc, int i,real_t x, real_t **u, real_t **a)
+                                                                                    ^
+4 warnings generated.
+<bench/CHAPTER1/hshcolma.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/hshcolma.bc>bench/CHAPTER1/hshcolmabuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecayis PTR
+1.Transform: warning 10086: test_arraydecay1is PTR
+#BUILDCFG Time: 	807ms
+MainFunc: test
+#CallDepth: 3
+#Loc: 29
+#targetsize:	0
+Has no exceptions~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0s
+#CPU Time: 0.896 s
+#Memory used: 88.00 MB
+[runlim] end:			Sat May 28 18:08:20 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		32
+[runlim] real:			1.95 seconds
+[runlim] time:			0.94 seconds
+[runlim] space:			67.7 MB
+[runlim] samples:		14

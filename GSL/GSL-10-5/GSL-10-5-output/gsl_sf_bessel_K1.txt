@@ -1,0 +1,130 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_K1
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 15:50:00 2016
+[runlim] main pid:		2590
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_K1 <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_K1> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	2089.77ms
+MainFunc: gsl_sf_bessel_K1
+#CallDepth: 7
+#Loc: 149
+#targetsize:	8
+target[0]:q0(7)
+target[1]:q1(10)
+target[2]:q2(25)
+target[3]:q3(28)
+target[4]:q4(33)
+target[5]:q5(35)
+target[6]:q6(39)
+target[7]:q7(41)
+
+target[0]:q0(7)
+target[0]:from s0(0) to q0(7)
+at line 10631 is unreachable under bound 10 when check=
+Number of path checked:18
+#Avg_var: 5.677778e+01
+#Avg_nolinearop: 8.888889e-01
+Dreal Time: 	161.526ms
+
+target[1]:q1(10)
+target[1]:from s0(0) to q1(10)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:36
+#Avg_var: 5.677778e+01
+#Avg_nolinearop: 8.888889e-01
+Dreal Time: 	322.074ms
+
+target[2]:q2(25)
+target[2]:from s0(0) to q2(25)
+at line 10587 is unreachable under bound 10 when check=
+Number of path checked:54
+#Avg_var: 5.677778e+01
+#Avg_nolinearop: 8.888889e-01
+Dreal Time: 	482.419ms
+
+target[3]:q3(28)
+target[3]:from s0(0) to q3(28)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:72
+#Avg_var: 5.677778e+01
+#Avg_nolinearop: 8.888889e-01
+Dreal Time: 	642.918ms
+
+target[4]:q4(33)
+target[4]:from s0(0) to q4(33)
+at line 10600 is unreachable under bound 10 when check=
+Number of path checked:90
+#Avg_var: 5.677778e+01
+#Avg_nolinearop: 8.888889e-01
+Dreal Time: 	803.76ms
+
+target[5]:q5(35)
+target[5]:from s0(0) to q5(35)
+at line 10602 is unreachable under bound 10 when check=
+Number of path checked:108
+#Avg_var: 5.677778e+01
+#Avg_nolinearop: 8.888889e-01
+Dreal Time: 	964.122ms
+
+target[6]:q6(39)
+target[6]:from s0(0) to q6(39)
+at line 10609 is unreachable under bound 10 when check=
+Number of path checked:126
+#Avg_var: 5.677778e+01
+#Avg_nolinearop: 8.888889e-01
+Dreal Time: 	1124.78ms
+
+target[7]:q7(41)
+target[7]:from s0(0) to q7(41)
+at line 10611 is unreachable under bound 10 when check=
+Number of path checked:144
+#Avg_var: 5.677778e+01
+#Avg_nolinearop: 8.888889e-01
+Dreal Time: 	1285.47ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_K1	check:	
+#Dreal Time: 	1.28547s
+#CPU Time: 3.576 s
+#Memory used: 831.00 MB
+While deleting: [11 x double]* %bk1_data
+Use still stuck around after Def is destroyed:@bk1_data = internal global [11 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007fabc41b9340
+3  libc.so.6       0x00007fabc33e7cc9 gsignal + 57
+4  libc.so.6       0x00007fabc33eb0d8 abort + 328
+5  libc.so.6       0x00007fabc33e0b86
+6  libc.so.6       0x00007fabc33e0c32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007fabc33d2ec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_K1 
+Aborted (core dumped)
+[runlim] end:			Fri May 27 15:50:04 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		78
+[runlim] real:			4.51 seconds
+[runlim] time:			3.84 seconds
+[runlim] space:			694.8 MB
+[runlim] samples:		40

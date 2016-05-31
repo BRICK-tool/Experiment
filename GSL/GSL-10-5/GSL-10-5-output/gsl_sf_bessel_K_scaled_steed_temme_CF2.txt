@@ -1,0 +1,200 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_K_scaled_steed_temme_CF2
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:42:41 2016
+[runlim] main pid:		3056
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_K_scaled_steed_temme_CF2 <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_K_scaled_steed_temme_CF2> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1179.97ms
+MainFunc: gsl_sf_bessel_K_scaled_steed_temme_CF2
+#CallDepth: 0
+#Loc: 49
+#targetsize:	10
+target[0]:q0(1)
+target[1]:q1(5)
+target[2]:q2(7)
+target[3]:q3(9)
+target[4]:q4(11)
+target[5]:q5(17)
+target[6]:q6(19)
+target[7]:q7(21)
+target[8]:q8(23)
+target[9]:q9(25)
+
+target[0]:q0(1)
+target[0]:from s0(0) to q0(1)
+at line 7820 in state q0 is reachable
+gsl_sf_bessel_K_scaled_steed_temme_CF2_nu = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_x = [-1.005000e+00, -1.000000e+00]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_K_nu_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_K_nup1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_Kp_nu_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:2
+Witness:
+	s0:	LocLine:7812;7813;7814;7816;7818;7819;7820;
+	e0
+	q0:	LocLine:7820;
+#Avg_var: 2.300000e+01
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	1.603ms
+
+target[1]:q1(5)
+target[1]:from s0(0) to q1(5)
+at line 7838 is unreachable under bound 10 when check=
+Number of path checked:18
+#Avg_var: 2.555556e+01
+#Avg_nolinearop: 9.444444e-01
+Dreal Time: 	7640.97ms
+
+target[2]:q2(7)
+target[2]:from s0(0) to q2(7)
+at line 7839 in state q2 is reachable
+gsl_sf_bessel_K_scaled_steed_temme_CF2_nu = [-1.503344e+00, -1.496884e+00]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_x = [-1.000000e+00, -1.000000e+00]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_K_nu_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_K_nup1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_Kp_nu_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:25
+Witness:
+	s0:	LocLine:7812;7813;7814;7816;7818;7819;7820;
+	e1
+	s1:	LocLine:7820;7821;7822;7824;7825;7827;7828;7829;7830;7832;7834;
+	e2
+	s2:	LocLine:7834;
+	e4
+	s3:	LocLine:7835;7836;7837;7838;
+	e6
+	s4:	LocLine:7838;7839;
+	e7
+	q2:	LocLine:7839;
+#Avg_var: 2.668000e+01
+#Avg_nolinearop: 9.200000e-01
+Dreal Time: 	7848.23ms
+
+target[3]:q3(9)
+[runlim] sample:		10.0 seconds, 209.1 MB
+target[3]:from s0(0) to q3(9)
+at line 7844 in state q3 is reachable
+gsl_sf_bessel_K_scaled_steed_temme_CF2_nu = [-1.501386e+00, -1.498616e+00]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_x = [-1.000000e+00, -1.000000e+00]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_K_nu_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_K_nup1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_Kp_nu_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:34
+Witness:
+	s0:	LocLine:7812;7813;7814;7816;7818;7819;7820;
+	e1
+	s1:	LocLine:7820;7821;7822;7824;7825;7827;7828;7829;7830;7832;7834;
+	e2
+	s2:	LocLine:7834;
+	e4
+	s3:	LocLine:7835;7836;7837;7838;
+	e6
+	s4:	LocLine:7838;7839;
+	e8
+	s5:	LocLine:7839;7840;7841;7842;7843;7844;
+	e9
+	q3:	LocLine:7844;
+#Avg_var: 2.705882e+01
+#Avg_nolinearop: 9.117647e-01
+Dreal Time: 	9431.5ms
+
+target[4]:q4(11)
+target[4]:from s0(0) to q4(11)
+at line 7849 in state q4 is reachable
+gsl_sf_bessel_K_scaled_steed_temme_CF2_nu = [-1.501386e+00, -1.498616e+00]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_x = [-1.000000e+00, -1.000000e+00]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_K_nu_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_K_nup1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_K_scaled_steed_temme_CF2_Kp_nu_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:45
+Witness:
+	s0:	LocLine:7812;7813;7814;7816;7818;7819;7820;
+	e1
+	s1:	LocLine:7820;7821;7822;7824;7825;7827;7828;7829;7830;7832;7834;
+	e2
+	s2:	LocLine:7834;
+	e4
+	s3:	LocLine:7835;7836;7837;7838;
+	e6
+	s4:	LocLine:7838;7839;
+	e8
+	s5:	LocLine:7839;7840;7841;7842;7843;7844;
+	e10
+	s6:	LocLine:7844;7845;7846;7847;7848;7849;
+	e11
+	q4:	LocLine:7849;
+#Avg_var: 2.708889e+01
+#Avg_nolinearop: 9.111111e-01
+Dreal Time: 	14131.8ms
+
+target[5]:q5(17)
+[runlim] sample:		20.0 seconds, 317.4 MB
+target[5]:from s0(0) to q5(17)
+at line 7854 is unreachable under bound 10 when check=
+Number of path checked:61
+#Avg_var: 2.677049e+01
+#Avg_nolinearop: 9.180328e-01
+Dreal Time: 	21790.1ms
+
+target[6]:q6(19)
+[runlim] sample:		30.0 seconds, 462.3 MB
+target[6]:from s0(0) to q6(19)
+at line 7854 is unreachable under bound 10 when check=
+Number of path checked:77
+#Avg_var: 2.658442e+01
+#Avg_nolinearop: 9.220779e-01
+Dreal Time: 	29498ms
+
+target[7]:q7(21)
+target[7]:from s0(0) to q7(21)
+at line 7854 is unreachable under bound 10 when check=
+Number of path checked:93
+#Avg_var: 2.646237e+01
+#Avg_nolinearop: 9.247312e-01
+Dreal Time: 	37184.5ms
+
+target[8]:q8(23)
+[runlim] sample:		40.0 seconds, 593.5 MB
+target[8]:from s0(0) to q8(23)
+at line 7855 is unreachable under bound 10 when check=
+Number of path checked:109
+#Avg_var: 2.637615e+01
+#Avg_nolinearop: 9.266055e-01
+Dreal Time: 	44873.9ms
+
+target[9]:q9(25)
+[runlim] sample:		50.0 seconds, 708.7 MB
+target[9]:from s0(0) to q9(25)
+at line 7856 is unreachable under bound 10 when check=
+Number of path checked:125
+#Avg_var: 2.631200e+01
+#Avg_nolinearop: 9.280000e-01
+Dreal Time: 	52659.3ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_K_scaled_steed_temme_CF2	check:	
+#Dreal Time: 	52.6593s
+#CPU Time: 53.928 s
+#Memory used: 863.00 MB
+[runlim] end:			Fri May 27 14:43:36 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1084
+[runlim] real:			55.04 seconds
+[runlim] time:			54.17 seconds
+[runlim] space:			766.4 MB
+[runlim] samples:		542

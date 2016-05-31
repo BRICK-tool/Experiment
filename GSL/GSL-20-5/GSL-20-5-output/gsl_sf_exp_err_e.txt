@@ -1,0 +1,57 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_exp_err_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 20:30:39 2016
+[runlim] main pid:		8153
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_exp_err_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_exp_err_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	416.432ms
+MainFunc: gsl_sf_exp_err_e
+#CallDepth: 0
+#Loc: 19
+#targetsize:	2
+target[0]:q0(5)
+target[1]:q1(9)
+
+target[0]:q0(5)
+target[0]:from s0(0) to q0(5)
+at line 20126 is unreachable under bound 20 when check=
+Number of path checked:9
+#Avg_var: 1.155556e+01
+#Avg_nolinearop: 4.111111e+00
+Dreal Time: 	404.607ms
+
+target[1]:q1(9)
+target[1]:from s0(0) to q1(9)
+at line 20126 is unreachable under bound 20 when check=
+Number of path checked:18
+#Avg_var: 1.155556e+01
+#Avg_nolinearop: 4.111111e+00
+Dreal Time: 	809.995ms
+
+bound:	20	precision:	1.000000e-02	functionName:	gsl_sf_exp_err_e	check:	
+#Dreal Time: 	0.809995s
+#CPU Time: 1.336 s
+#Memory used: 159.00 MB
+[runlim] end:			Fri May 27 20:30:40 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		30
+[runlim] real:			1.58 seconds
+[runlim] time:			1.49 seconds
+[runlim] space:			106.0 MB
+[runlim] samples:		15

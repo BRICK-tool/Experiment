@@ -1,0 +1,89 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_airy_Bi_scaled_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 17:31:53 2016
+[runlim] main pid:		2576
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_airy_Bi_scaled_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_airy_Bi_scaled_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+[runlim] sample:		1.4 seconds, 32.6 MB
+[runlim] sample:		1.4 seconds, 32.5 MB
+[runlim] sample:		1.7 seconds, 33.3 MB
+[runlim] sample:		2.2 seconds, 32.8 MB
+[runlim] sample:		2.2 seconds, 32.5 MB
+[runlim] sample:		3.0 seconds, 33.2 MB
+#BUILDCFG Time: 	5262.73ms
+MainFunc: gsl_sf_airy_Bi_scaled_e
+#CallDepth: 9
+#Loc: 137
+[runlim] sample:		5.4 seconds, 33.9 MB
+[runlim] sample:		5.4 seconds, 35.0 MB
+#targetsize:	16
+target[0]:q0(4)
+target[1]:q1(7)
+target[2]:q2(19)
+target[3]:q3(22)
+target[4]:q4(34)
+target[5]:q5(45)
+target[6]:q6(51)
+target[7]:q7(54)
+target[8]:q8(67)
+target[9]:q9(69)
+target[10]:q10(71)
+target[11]:q11(74)
+target[12]:q12(79)
+target[13]:q13(81)
+target[14]:q14(83)
+target[15]:q15(86)
+
+target[0]:q0(4)
+[runlim] sample:		5.4 seconds, 31.6 MB
+[runlim] sample:		5.4 seconds, 31.6 MB
+[runlim] sample:		5.5 seconds, 31.6 MB
+[runlim] sample:		5.5 seconds, 31.6 MB
+[runlim] sample:		5.5 seconds, 31.6 MB
+[runlim] sample:		5.6 seconds, 37.9 MB
+[runlim] sample:		5.7 seconds, 38.6 MB
+[runlim] sample:		5.8 seconds, 39.7 MB
+[runlim] sample:		5.8 seconds, 40.1 MB
+[runlim] sample:		5.9 seconds, 40.9 MB
+[runlim] sample:		6.0 seconds, 41.6 MB
+[runlim] sample:		6.0 seconds, 42.2 MB
+[runlim] sample:		6.1 seconds, 43.1 MB
+[runlim] sample:		6.2 seconds, 43.8 MB
+[runlim] sample:		6.3 seconds, 44.5 MB
+[runlim] sample:		6.4 seconds, 45.5 MB
+[runlim] sample:		6.5 seconds, 46.2 MB
+[runlim] sample:		6.6 seconds, 46.7 MB
+[runlim] sample:		6.6 seconds, 47.5 MB
+[runlim] sample:		7.7 seconds, 229.4 MB
+[runlim] sample:		17.5 seconds, 1493.7 MB
+[runlim] end:			Fri May 27 17:54:07 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		5910
+[runlim] real:			1334.04 seconds
+[runlim] time:			23.02 seconds
+[runlim] space:			2050.3 MB
+[runlim] samples:		2955
+target[0]:from s0(0) to q0(4)
+at line 4776 is unreachable under bound 10 when check=
+Number of path checked:59
+#Avg_var: 2.871525e+02
+#Avg_nolinearop: 9.491525e-01
+Dreal Time: 	35651.9ms
+
+target[1]:q1(7)

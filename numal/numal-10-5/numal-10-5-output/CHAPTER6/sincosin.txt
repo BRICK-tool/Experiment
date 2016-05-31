@@ -1,0 +1,75 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/sincosin.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 20:28:28 2016
+[runlim] main pid:		2933
+bench/CHAPTER6/sincosin.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/sincosin.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/sincosin.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/sincosin.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/sincosin.bc>bench/CHAPTER6/sincosinbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1546.78ms
+MainFunc: test
+#CallDepth: 12
+#Loc: 104
+#targetsize:	3
+target[0]:q0(14)
+target[1]:q1(41)
+target[2]:q2(47)
+
+target[0]:q0(14)
+target[0]:from s0(0) to q0(14)
+at line 8050 is unreachable under bound 10 when check=
+Number of path checked:17
+#Avg_var: 6.323529e+01
+#Avg_nolinearop: 2.176471e+00
+Dreal Time: 	266.522ms
+
+target[1]:q1(41)
+target[1]:from s0(0) to q1(41)
+at line 8006 is unreachable under bound 10 when check=
+Number of path checked:34
+#Avg_var: 6.323529e+01
+#Avg_nolinearop: 2.176471e+00
+Dreal Time: 	533.404ms
+
+target[2]:q2(47)
+target[2]:from s0(0) to q2(47)
+at line 8006 is unreachable under bound 10 when check=
+Number of path checked:51
+#Avg_var: 6.323529e+01
+#Avg_nolinearop: 2.176471e+00
+Dreal Time: 	799.253ms
+
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0.799253s
+#CPU Time: 2.472 s
+#Memory used: 436.00 MB
+[runlim] end:			Sat May 28 20:28:31 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		58
+[runlim] real:			3.27 seconds
+[runlim] time:			2.52 seconds
+[runlim] space:			344.8 MB
+[runlim] samples:		28

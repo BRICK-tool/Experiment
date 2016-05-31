@@ -1,0 +1,76 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/hshcompr.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 22:04:12 2016
+[runlim] main pid:		1054
+bench/CHAPTER1/hshcompr.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/hshcompr.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/hshcompr.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/hshcompr.c:8295:30: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcomprd(i, ii,  l,  u,  j, ar, ai, br, bi, t);
+                             ^~
+bench/CHAPTER1/hshcompr.c:641:61: note: passing argument to parameter 'ar' here
+void hshcomprd(int i, int ii, int l, int u, int j, real_t **ar,real_t **ai,     real_t **br, real_t **bi, real_t t)
+                                                            ^
+bench/CHAPTER1/hshcompr.c:8295:34: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcomprd(i, ii,  l,  u,  j, ar, ai, br, bi, t);
+                                 ^~
+bench/CHAPTER1/hshcompr.c:641:73: note: passing argument to parameter 'ai' here
+void hshcomprd(int i, int ii, int l, int u, int j, real_t **ar,real_t **ai,     real_t **br, real_t **bi, real_t t)
+                                                                        ^
+bench/CHAPTER1/hshcompr.c:8295:38: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcomprd(i, ii,  l,  u,  j, ar, ai, br, bi, t);
+                                     ^~
+bench/CHAPTER1/hshcompr.c:641:86: note: passing argument to parameter 'br' here
+void hshcomprd(int i, int ii, int l, int u, int j, real_t **ar,real_t **ai,     real_t **br, real_t **bi, real_t t)
+                                                                                         ^
+bench/CHAPTER1/hshcompr.c:8295:42: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcomprd(i, ii,  l,  u,  j, ar, ai, br, bi, t);
+                                         ^~
+bench/CHAPTER1/hshcompr.c:641:99: note: passing argument to parameter 'bi' here
+void hshcomprd(int i, int ii, int l, int u, int j, real_t **ar,real_t **ai,     real_t **br, real_t **bi, real_t t)
+                                                                                                      ^
+6 warnings generated.
+<bench/CHAPTER1/hshcompr.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/hshcompr.bc>bench/CHAPTER1/hshcomprbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecayis PTR
+1.Transform: warning 10086: test_arraydecay1is PTR
+1.Transform: warning 10086: test_arraydecay2is PTR
+1.Transform: warning 10086: test_arraydecay3is PTR
+#BUILDCFG Time: 	414.054ms
+MainFunc: test
+#CallDepth: 3
+#Loc: 22
+#targetsize:	0
+Has no exceptions~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0s
+#CPU Time: 0.488 s
+#Memory used: 88.00 MB
+[runlim] end:			Sat May 28 22:04:13 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		18
+[runlim] real:			1.62 seconds
+[runlim] time:			0.53 seconds
+[runlim] space:			59.0 MB
+[runlim] samples:		8

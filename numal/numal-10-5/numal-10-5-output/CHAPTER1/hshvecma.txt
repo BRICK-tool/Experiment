@@ -1,0 +1,55 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/hshvecma.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:08:26 2016
+[runlim] main pid:		25037
+bench/CHAPTER1/hshvecma.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/hshvecma.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/hshvecma.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/hshvecma.c:8301:34: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshvecmat( lr, ur, lc, uc, x, u, a);
+                                 ^
+bench/CHAPTER1/hshvecma.c:669:78: note: passing argument to parameter 'a' here
+void hshvecmat(int lr, int ur, int lc, int uc,real_t x, real_t u[], real_t **a)
+                                                                             ^
+3 warnings generated.
+<bench/CHAPTER1/hshvecma.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/hshvecma.bc>bench/CHAPTER1/hshvecmabuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecay1is PTR
+#BUILDCFG Time: 	701.538ms
+MainFunc: test
+#CallDepth: 3
+#Loc: 28
+#targetsize:	0
+Has no exceptions~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0s
+#CPU Time: 0.776 s
+#Memory used: 88.00 MB
+[runlim] end:			Sat May 28 18:08:27 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		30
+[runlim] real:			1.53 seconds
+[runlim] time:			0.84 seconds
+[runlim] space:			67.7 MB
+[runlim] samples:		13

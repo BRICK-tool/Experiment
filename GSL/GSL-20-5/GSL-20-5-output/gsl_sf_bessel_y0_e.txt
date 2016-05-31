@@ -1,0 +1,71 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_y0_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 21:04:52 2016
+[runlim] main pid:		8454
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_bessel_y0_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_y0_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	3466.43ms
+MainFunc: gsl_sf_bessel_y0_e
+#CallDepth: 3
+#Loc: 120
+#targetsize:	4
+target[0]:q0(16)
+target[1]:q1(25)
+target[2]:q2(44)
+target[3]:q3(46)
+
+target[0]:q0(16)
+[runlim] sample:		10.0 seconds, 386.5 MB
+[runlim] sample:		20.0 seconds, 843.1 MB
+[runlim] sample:		30.0 seconds, 1181.8 MB
+[runlim] sample:		40.0 seconds, 1181.8 MB
+[runlim] sample:		50.0 seconds, 1181.8 MB
+[runlim] sample:		60.0 seconds, 1181.8 MB
+[runlim] sample:		70.0 seconds, 1181.8 MB
+[runlim] sample:		80.0 seconds, 1181.8 MB
+[runlim] sample:		90.0 seconds, 1181.8 MB
+[runlim] sample:		100.0 seconds, 1181.8 MB
+[runlim] sample:		110.0 seconds, 1181.8 MB
+[runlim] sample:		120.0 seconds, 1181.8 MB
+[runlim] sample:		129.9 seconds, 1181.8 MB
+[runlim] sample:		139.9 seconds, 1181.8 MB
+[runlim] sample:		149.9 seconds, 1181.8 MB
+[runlim] sample:		159.9 seconds, 1181.8 MB
+[runlim] sample:		169.9 seconds, 1181.8 MB
+[runlim] sample:		179.9 seconds, 1181.8 MB
+[runlim] sample:		189.9 seconds, 1181.8 MB
+[runlim] sample:		199.9 seconds, 1181.8 MB
+[runlim] sample:		209.9 seconds, 1181.8 MB
+[runlim] sample:		219.9 seconds, 1181.8 MB
+[runlim] sample:		229.9 seconds, 1181.9 MB
+[runlim] sample:		239.9 seconds, 1183.4 MB
+[runlim] sample:		249.9 seconds, 1183.9 MB
+[runlim] sample:		259.9 seconds, 1184.9 MB
+[runlim] sample:		269.9 seconds, 1185.4 MB
+[runlim] sample:		279.9 seconds, 1185.9 MB
+[runlim] sample:		289.9 seconds, 1186.4 MB
+[runlim] sample:		299.9 seconds, 1186.9 MB
+[runlim] end:			Fri May 27 21:09:52 2016
+[runlim] status:		out of time
+[runlim] result:		1
+[runlim] children:		6002
+[runlim] real:			300.82 seconds
+[runlim] time:			300.01 seconds
+[runlim] space:			1186.9 MB
+[runlim] samples:		3001
+Killed

@@ -1,0 +1,71 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/comeucnr.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:04:52 2016
+[runlim] main pid:		24734
+bench/CHAPTER1/comeucnr.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/comeucnr.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/comeucnr.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/comeucnr.c:8298:12: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+comeucnrm( ar, ai, lw, n);
+           ^~
+bench/CHAPTER1/comeucnr.c:344:27: note: passing argument to parameter 'ar' here
+real_t comeucnrm(real_t **ar, real_t **ai, int lw, int n)
+                          ^
+bench/CHAPTER1/comeucnr.c:8298:16: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+comeucnrm( ar, ai, lw, n);
+               ^~
+bench/CHAPTER1/comeucnr.c:344:40: note: passing argument to parameter 'ai' here
+real_t comeucnrm(real_t **ar, real_t **ai, int lw, int n)
+                                       ^
+4 warnings generated.
+<bench/CHAPTER1/comeucnr.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/comeucnr.bc>bench/CHAPTER1/comeucnrbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecayis PTR
+1.Transform: warning 10086: test_arraydecay1is PTR
+#BUILDCFG Time: 	683.754ms
+MainFunc: test
+#CallDepth: 3
+#Loc: 26
+#targetsize:	1
+target[0]:q0(16)
+
+target[0]:q0(16)
+target[0]:from s0(0) to q0(16)
+at line 355 is unreachable under bound 10 when check=
+Number of path checked:23
+#Avg_var: 6.543478e+01
+#Avg_nolinearop: 8.695652e-02
+Dreal Time: 	811.155ms
+
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0.811155s
+#CPU Time: 1.604 s
+#Memory used: 139.00 MB
+[runlim] end:			Sat May 28 18:04:54 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		46
+[runlim] real:			2.55 seconds
+[runlim] time:			1.63 seconds
+[runlim] space:			85.5 MB
+[runlim] samples:		21

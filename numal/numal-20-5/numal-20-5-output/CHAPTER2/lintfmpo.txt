@@ -1,0 +1,71 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER2/lintfmpo.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:42:16 2016
+[runlim] main pid:		8609
+bench/CHAPTER2/lintfmpo.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER2/lintfmpo.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER2/lintfmpo.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER2/lintfmpo.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER2/lintfmpo.bc>bench/CHAPTER2/lintfmpobuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	398.306ms
+MainFunc: test
+#CallDepth: 2
+#Loc: 44
+#targetsize:	1
+target[0]:q0(18)
+
+target[0]:q0(18)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target[0]:from s0(0) to q0(18)
+at line 1924 is unreachable under bound 20 when check=
+Number of path checked:24
+#Avg_var: 2.420833e+01
+#Avg_nolinearop: 0.000000e+00
+Dreal Time: 	456.077ms
+
+bound:	20	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0.456077s
+#CPU Time: 0.890283 s
+#Memory used: 160.00 MB
+[runlim] end:			Sat May 28 18:42:17 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		26
+[runlim] real:			1.53 seconds
+[runlim] time:			0.95 seconds
+[runlim] space:			86.3 MB
+[runlim] samples:		12

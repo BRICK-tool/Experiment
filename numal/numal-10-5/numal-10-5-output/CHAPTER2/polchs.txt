@@ -1,0 +1,99 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER2/polchs.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:19:52 2016
+[runlim] main pid:		25635
+bench/CHAPTER2/polchs.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER2/polchs.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER2/polchs.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER2/polchs.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER2/polchs.bc>bench/CHAPTER2/polchsbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	689.513ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 24
+#targetsize:	3
+target[0]:q0(5)
+target[1]:q1(9)
+target[2]:q2(11)
+
+target[0]:q0(5)
+
+
+
+
+
+
+
+
+target[0]:from s0(0) to q0(5)
+at line 1998 is unreachable under bound 10 when check=
+Number of path checked:15
+#Avg_var: 9.000000e+00
+#Avg_nolinearop: 4.000000e-01
+Dreal Time: 	159.066ms
+
+target[1]:q1(9)
+
+
+
+
+
+
+
+
+target[1]:from s0(0) to q1(9)
+at line 2001 is unreachable under bound 10 when check=
+Number of path checked:30
+#Avg_var: 9.000000e+00
+#Avg_nolinearop: 4.000000e-01
+Dreal Time: 	320.003ms
+
+target[2]:q2(11)
+
+
+
+
+
+
+
+
+target[2]:from s0(0) to q2(11)
+at line 2002 is unreachable under bound 10 when check=
+Number of path checked:45
+#Avg_var: 9.000000e+00
+#Avg_nolinearop: 4.000000e-01
+Dreal Time: 	484.265ms
+
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0.484265s
+#CPU Time: 1.272 s
+#Memory used: 221.00 MB
+[runlim] end:			Sat May 28 18:19:54 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		42
+[runlim] real:			2.91 seconds
+[runlim] time:			1.44 seconds
+[runlim] space:			148.8 MB
+[runlim] samples:		19

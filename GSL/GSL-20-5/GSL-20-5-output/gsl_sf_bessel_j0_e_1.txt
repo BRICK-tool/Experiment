@@ -1,0 +1,47 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_j0_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 21:19:53 2016
+[runlim] main pid:		8514
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_bessel_j0_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_j0_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	3841.64ms
+MainFunc: gsl_sf_bessel_j0_e
+#CallDepth: 3
+#Loc: 127
+#targetsize:	4
+target[0]:q0(15)
+target[1]:q1(24)
+target[2]:q2(43)
+target[3]:q3(45)
+
+target[0]:q0(15)
+[runlim] sample:		10.0 seconds, 336.7 MB
+[runlim] sample:		20.0 seconds, 731.4 MB
+[runlim] sample:		30.0 seconds, 1142.7 MB
+[runlim] sample:		40.0 seconds, 1425.8 MB
+[runlim] sample:		50.0 seconds, 1703.4 MB
+[runlim] sample:		60.0 seconds, 1825.6 MB
+[runlim] sample:		70.0 seconds, 1952.2 MB
+[runlim] end:			Fri May 27 21:21:04 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		1434
+[runlim] real:			71.74 seconds
+[runlim] time:			71.67 seconds
+[runlim] space:			2048.1 MB
+[runlim] samples:		717

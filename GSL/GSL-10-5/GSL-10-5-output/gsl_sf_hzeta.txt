@@ -1,0 +1,48 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_hzeta
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:42:17 2016
+[runlim] main pid:		3030
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_hzeta <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_hzeta> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	652.214ms
+MainFunc: gsl_sf_hzeta
+#CallDepth: 1
+#Loc: 63
+#targetsize:	1
+target[0]:q0(5)
+
+target[0]:q0(5)
+target[0]:from s0(0) to q0(5)
+at line 37581 is unreachable under bound 10 when check=
+Number of path checked:21
+#Avg_var: 2.652381e+01
+#Avg_nolinearop: 1.142857e+00
+Dreal Time: 	2316.45ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_hzeta	check:	
+#Dreal Time: 	2.31645s
+#CPU Time: 3.08 s
+#Memory used: 166.00 MB
+[runlim] end:			Fri May 27 14:42:20 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		64
+[runlim] real:			3.90 seconds
+[runlim] time:			3.18 seconds
+[runlim] space:			114.2 MB
+[runlim] samples:		32

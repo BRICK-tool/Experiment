@@ -1,0 +1,94 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_lncosh
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:23:57 2016
+[runlim] main pid:		2822
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_lncosh <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_lncosh> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1853.32ms
+MainFunc: gsl_sf_lncosh
+#CallDepth: 4
+#Loc: 103
+#targetsize:	4
+target[0]:q0(11)
+target[1]:q1(14)
+target[2]:q2(18)
+target[3]:q3(24)
+
+target[0]:q0(11)
+target[0]:from s0(0) to q0(11)
+at line 33685 is unreachable under bound 10 when check=
+Number of path checked:25
+#Avg_var: 5.752000e+01
+#Avg_nolinearop: 3.080000e+00
+Dreal Time: 	1270.77ms
+
+target[1]:q1(14)
+target[1]:from s0(0) to q1(14)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:50
+#Avg_var: 5.752000e+01
+#Avg_nolinearop: 3.080000e+00
+Dreal Time: 	2544.22ms
+
+target[2]:q2(18)
+target[2]:from s0(0) to q2(18)
+at line 33693 is unreachable under bound 10 when check=
+Number of path checked:75
+#Avg_var: 5.752000e+01
+#Avg_nolinearop: 3.080000e+00
+Dreal Time: 	3813.42ms
+
+target[3]:q3(24)
+target[3]:from s0(0) to q3(24)
+at line 36778 is unreachable under bound 10 when check=
+Number of path checked:100
+#Avg_var: 5.752000e+01
+#Avg_nolinearop: 3.080000e+00
+Dreal Time: 	5121.52ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_lncosh	check:	
+#Dreal Time: 	5.12152s
+#CPU Time: 7.116 s
+#Memory used: 1031.00 MB
+While deleting: [21 x double]* %lopx_data
+Use still stuck around after Def is destroyed:@lopx_data = internal global [21 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007f926c003340
+3  libc.so.6       0x00007f926b231cc9 gsignal + 57
+4  libc.so.6       0x00007f926b2350d8 abort + 328
+5  libc.so.6       0x00007f926b22ab86
+6  libc.so.6       0x00007f926b22ac32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007f926b21cec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_lncosh 
+Aborted (core dumped)
+[runlim] end:			Fri May 27 14:24:05 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		150
+[runlim] real:			8.18 seconds
+[runlim] time:			7.38 seconds
+[runlim] space:			929.6 MB
+[runlim] samples:		75

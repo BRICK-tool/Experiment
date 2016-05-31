@@ -1,0 +1,75 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/arccosh.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 20:05:18 2016
+[runlim] main pid:		9341
+bench/CHAPTER6/arccosh.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/arccosh.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/arccosh.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/arccosh.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/arccosh.bc>bench/CHAPTER6/arccoshbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	76.035ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 8
+#targetsize:	3
+target[0]:q0(5)
+target[1]:q1(8)
+target[2]:q2(10)
+
+target[0]:q0(5)
+target[0]:from s0(0) to q0(5)
+at line 6027 is unreachable under bound 20 when check=
+Number of path checked:17
+#Avg_var: 2.294118e+00
+#Avg_nolinearop: 8.235294e-01
+Dreal Time: 	744.732ms
+
+target[1]:q1(8)
+target[1]:from s0(0) to q1(8)
+at line 6028 is unreachable under bound 20 when check=
+Number of path checked:34
+#Avg_var: 2.294118e+00
+#Avg_nolinearop: 8.235294e-01
+Dreal Time: 	1488.45ms
+
+target[2]:q2(10)
+target[2]:from s0(0) to q2(10)
+at line 6028 is unreachable under bound 20 when check=
+Number of path checked:51
+#Avg_var: 2.294118e+00
+#Avg_nolinearop: 8.235294e-01
+Dreal Time: 	2230.27ms
+
+bound:	20	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	2.23027s
+#CPU Time: 2.35565 s
+#Memory used: 194.00 MB
+[runlim] end:			Sat May 28 20:05:21 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		54
+[runlim] real:			3.08 seconds
+[runlim] time:			2.35 seconds
+[runlim] space:			99.2 MB
+[runlim] samples:		26

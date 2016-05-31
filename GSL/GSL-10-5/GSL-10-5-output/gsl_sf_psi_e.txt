@@ -1,0 +1,269 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_psi_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:45:20 2016
+[runlim] main pid:		3229
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_psi_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_psi_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	2886.7ms
+MainFunc: gsl_sf_psi_e
+#CallDepth: 5
+#Loc: 108
+#targetsize:	12
+target[0]:q0(6)
+target[1]:q1(9)
+target[2]:q2(20)
+target[3]:q3(22)
+target[4]:q4(24)
+target[5]:q5(27)
+target[6]:q6(32)
+target[7]:q7(34)
+target[8]:q8(37)
+target[9]:q9(42)
+target[10]:q10(45)
+target[11]:q11(50)
+
+target[0]:q0(6)
+target[0]:from s0(0) to q0(6)
+at line 34683 is unreachable under bound 10 when check=
+Number of path checked:36
+#Avg_var: 8.452778e+01
+#Avg_nolinearop: 1.833333e+00
+Dreal Time: 	3089.58ms
+
+target[1]:q1(9)
+target[1]:from s0(0) to q1(9)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:72
+#Avg_var: 8.452778e+01
+#Avg_nolinearop: 1.833333e+00
+Dreal Time: 	6192.38ms
+
+target[2]:q2(20)
+[runlim] sample:		10.0 seconds, 824.9 MB
+target[2]:from s0(0) to q2(20)
+at line 34712 is unreachable under bound 10 when check=
+Number of path checked:108
+#Avg_var: 8.452778e+01
+#Avg_nolinearop: 1.833333e+00
+Dreal Time: 	9286.76ms
+
+target[3]:q3(22)
+target[3]:from s0(0) to q3(22)
+at line 34713 in state q3 is reachable
+gsl_sf_psi_e_x = [-1.010000e+00, -1.005000e+00]
+gsl_sf_psi_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_psi_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:131
+Witness:
+	s0:	LocLine:34673;34675;34679;
+	e0
+	s1:	LocLine:34679;
+	e2
+	s2:	LocLine:34679;
+	e4
+	s4:	LocLine:34682;
+	e6
+	s16:	LocLine:34708;34710;
+	e22
+	s17:	LocLine:34711;34712;
+	e24
+	s18:	LocLine:34712;34713;
+	e25
+	q3:	LocLine:34713;
+#Avg_var: 8.365649e+01
+#Avg_nolinearop: 1.793893e+00
+Dreal Time: 	11911.7ms
+
+target[4]:q4(24)
+target[4]:from s0(0) to q4(24)
+at line 34714 in state q4 is reachable
+gsl_sf_psi_e_x = [-1.995000e+00, -1.990000e+00]
+gsl_sf_psi_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_psi_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:156
+Witness:
+	s0:	LocLine:34673;34675;34679;
+	e0
+	s1:	LocLine:34679;
+	e2
+	s2:	LocLine:34679;
+	e4
+	s4:	LocLine:34682;
+	e6
+	s16:	LocLine:34708;34710;
+	e22
+	s17:	LocLine:34711;34712;
+	e24
+	s18:	LocLine:34712;34713;
+	e26
+	s19:	LocLine:34713;34714;
+	e27
+	q4:	LocLine:34714;
+#Avg_var: 8.289103e+01
+#Avg_nolinearop: 1.769231e+00
+Dreal Time: 	14615.7ms
+
+target[5]:q5(27)
+[runlim] sample:		20.0 seconds, 1570.7 MB
+target[5]:from s0(0) to q5(27)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:192
+#Avg_var: 8.319792e+01
+#Avg_nolinearop: 1.781250e+00
+Dreal Time: 	17719.8ms
+
+target[6]:q6(32)
+target[6]:from s0(0) to q6(32)
+at line 34725 in state q6 is reachable
+gsl_sf_psi_e_x = [-1.000000e-02, 0.000000e+00]
+gsl_sf_psi_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_psi_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:208
+Witness:
+	s0:	LocLine:34673;34675;34679;
+	e0
+	s1:	LocLine:34679;
+	e2
+	s2:	LocLine:34679;
+	e4
+	s4:	LocLine:34682;
+	e6
+	s16:	LocLine:34708;34710;
+	e21
+	s24:	LocLine:34723;
+	e34
+	s25:	LocLine:34724;34725;
+	e35
+	q6:	LocLine:34725;
+#Avg_var: 8.281250e+01
+#Avg_nolinearop: 1.754808e+00
+Dreal Time: 	20260.9ms
+
+target[7]:q7(34)
+[runlim] end:			Fri May 27 14:45:47 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		526
+[runlim] real:			27.28 seconds
+[runlim] time:			26.27 seconds
+[runlim] space:			2054.1 MB
+[runlim] samples:		263
+target[7]:from s0(0) to q7(34)
+at line 34726 in state q7 is reachable
+gsl_sf_psi_e_x = [-9.949749e-01, -9.900000e-01]
+gsl_sf_psi_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_psi_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:226
+Witness:
+	s0:	LocLine:34673;34675;34679;
+	e0
+	s1:	LocLine:34679;
+	e2
+	s2:	LocLine:34679;
+	e4
+	s4:	LocLine:34682;
+	e6
+	s16:	LocLine:34708;34710;
+	e21
+	s24:	LocLine:34723;
+	e34
+	s25:	LocLine:34724;34725;
+	e36
+	s26:	LocLine:34725;34726;
+	e37
+	q7:	LocLine:34726;
+#Avg_var: 8.238053e+01
+#Avg_nolinearop: 1.734513e+00
+Dreal Time: 	22836ms
+
+target[8]:q8(37)
+target[8]:from s0(0) to q8(37)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:262
+#Avg_var: 8.267557e+01
+#Avg_nolinearop: 1.748092e+00
+Dreal Time: 	26460.2ms
+
+target[9]:q9(42)
+target[9]:from s0(0) to q9(42)
+at line 34736 in state q9 is reachable
+gsl_sf_psi_e_x = [0.000000e+00, 1.000000e-02]
+gsl_sf_psi_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_psi_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:274
+Witness:
+	s0:	LocLine:34673;34675;34679;
+	e0
+	s1:	LocLine:34679;
+	e2
+	s2:	LocLine:34679;
+	e4
+	s4:	LocLine:34682;
+	e6
+	s16:	LocLine:34708;34710;
+	e21
+	s24:	LocLine:34723;
+	e33
+	s31:	LocLine:34735;
+	e44
+	s32:	LocLine:34736;
+	e45
+	q9:	LocLine:34736;
+#Avg_var: 8.254380e+01
+#Avg_nolinearop: 1.733577e+00
+Dreal Time: 	26784.7ms
+
+target[10]:q10(45)
+target[10]:from s0(0) to q10(45)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:310
+#Avg_var: 8.277419e+01
+#Avg_nolinearop: 1.745161e+00
+Dreal Time: 	30412ms
+
+target[11]:q11(50)
+target[11]:from s0(0) to q11(50)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:346
+#Avg_var: 8.295665e+01
+#Avg_nolinearop: 1.754335e+00
+Dreal Time: 	33758.9ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_psi_e	check:	
+#Dreal Time: 	33.7589s
+#CPU Time: 36.792 s
+#Memory used: 3375.00 MB
+While deleting: [23 x double]* %psics_data
+Use still stuck around after Def is destroyed:@psics_data = internal global [23 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007fc3f6ad3340
+3  libc.so.6       0x00007fc3f5d01cc9 gsignal + 57
+4  libc.so.6       0x00007fc3f5d050d8 abort + 328
+5  libc.so.6       0x00007fc3f5cfab86
+6  libc.so.6       0x00007fc3f5cfac32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007fc3f5cecec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_psi_e 
+Aborted (core dumped)

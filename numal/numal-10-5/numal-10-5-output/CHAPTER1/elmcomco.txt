@@ -1,0 +1,76 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/elmcomco.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 22:04:10 2016
+[runlim] main pid:		1007
+bench/CHAPTER1/elmcomco.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/elmcomco.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/elmcomco.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/elmcomco.c:8295:23: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+elmcomcol(l, u, i, j, ar, ai, br, bi, xr, xi);
+                      ^~
+bench/CHAPTER1/elmcomco.c:512:53: note: passing argument to parameter 'ar' here
+void elmcomcol(int l, int u, int i, int j, real_t **ar, real_t **ai,real_t **br, real_t **bi, real_t xr, real_t xi)
+                                                    ^
+bench/CHAPTER1/elmcomco.c:8295:27: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+elmcomcol(l, u, i, j, ar, ai, br, bi, xr, xi);
+                          ^~
+bench/CHAPTER1/elmcomco.c:512:66: note: passing argument to parameter 'ai' here
+void elmcomcol(int l, int u, int i, int j, real_t **ar, real_t **ai,real_t **br, real_t **bi, real_t xr, real_t xi)
+                                                                 ^
+bench/CHAPTER1/elmcomco.c:8295:31: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+elmcomcol(l, u, i, j, ar, ai, br, bi, xr, xi);
+                              ^~
+bench/CHAPTER1/elmcomco.c:512:78: note: passing argument to parameter 'br' here
+void elmcomcol(int l, int u, int i, int j, real_t **ar, real_t **ai,real_t **br, real_t **bi, real_t xr, real_t xi)
+                                                                             ^
+bench/CHAPTER1/elmcomco.c:8295:35: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+elmcomcol(l, u, i, j, ar, ai, br, bi, xr, xi);
+                                  ^~
+bench/CHAPTER1/elmcomco.c:512:91: note: passing argument to parameter 'bi' here
+void elmcomcol(int l, int u, int i, int j, real_t **ar, real_t **ai,real_t **br, real_t **bi, real_t xr, real_t xi)
+                                                                                          ^
+6 warnings generated.
+<bench/CHAPTER1/elmcomco.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/elmcomco.bc>bench/CHAPTER1/elmcomcobuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecayis PTR
+1.Transform: warning 10086: test_arraydecay1is PTR
+1.Transform: warning 10086: test_arraydecay2is PTR
+1.Transform: warning 10086: test_arraydecay3is PTR
+#BUILDCFG Time: 	420.931ms
+MainFunc: test
+#CallDepth: 4
+#Loc: 16
+#targetsize:	0
+Has no exceptions~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0s
+#CPU Time: 0.484 s
+#Memory used: 88.00 MB
+[runlim] end:			Sat May 28 22:04:10 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		18
+[runlim] real:			0.85 seconds
+[runlim] time:			0.51 seconds
+[runlim] space:			57.9 MB
+[runlim] samples:		8

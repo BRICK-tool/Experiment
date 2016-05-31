@@ -1,0 +1,55 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_sin_err_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 22:11:33 2016
+[runlim] main pid:		2278
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_sin_err_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_sin_err_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	3392.41ms
+MainFunc: gsl_sf_sin_err_e
+#CallDepth: 3
+#Loc: 106
+#targetsize:	2
+target[0]:q0(13)
+target[1]:q1(22)
+
+target[0]:q0(13)
+[runlim] sample:		7.2 seconds, 239.5 MB
+[runlim] sample:		17.1 seconds, 646.4 MB
+[runlim] sample:		27.1 seconds, 998.5 MB
+[runlim] sample:		37.1 seconds, 1277.7 MB
+[runlim] sample:		47.1 seconds, 1571.6 MB
+[runlim] sample:		57.1 seconds, 1654.9 MB
+[runlim] sample:		67.1 seconds, 1762.4 MB
+[runlim] sample:		77.1 seconds, 1891.1 MB
+[runlim] end:			Fri May 27 22:12:57 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		1677
+[runlim] real:			84.02 seconds
+[runlim] time:			80.80 seconds
+[runlim] space:			2055.3 MB
+[runlim] samples:		837
+target[0]:from s0(0) to q0(13)
+at line 15102 is unreachable under bound 20 when check=
+Number of path checked:128
+#Avg_var: 9.196875e+01
+#Avg_nolinearop: 4.437500e+00
+Dreal Time: 	152254ms
+
+target[1]:q1(22)
+Killed

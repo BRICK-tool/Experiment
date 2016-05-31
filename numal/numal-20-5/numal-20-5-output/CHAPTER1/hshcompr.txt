@@ -1,0 +1,148 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/hshcompr.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 22:30:21 2016
+[runlim] main pid:		3107
+bench/CHAPTER1/hshcompr.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/hshcompr.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/hshcompr.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/hshcompr.c:8295:30: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcomprd(i, ii,  l,  u,  j, ar, ai, br, bi, t);
+                             ^~
+bench/CHAPTER1/hshcompr.c:641:61: note: passing argument to parameter 'ar' here
+void hshcomprd(int i, int ii, int l, int u, int j, real_t **ar,real_t **ai,     real_t **br, real_t **bi, real_t t)
+                                                            ^
+bench/CHAPTER1/hshcompr.c:8295:34: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcomprd(i, ii,  l,  u,  j, ar, ai, br, bi, t);
+                                 ^~
+bench/CHAPTER1/hshcompr.c:641:73: note: passing argument to parameter 'ai' here
+void hshcomprd(int i, int ii, int l, int u, int j, real_t **ar,real_t **ai,     real_t **br, real_t **bi, real_t t)
+                                                                        ^
+bench/CHAPTER1/hshcompr.c:8295:38: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcomprd(i, ii,  l,  u,  j, ar, ai, br, bi, t);
+                                     ^~
+bench/CHAPTER1/hshcompr.c:641:86: note: passing argument to parameter 'br' here
+void hshcomprd(int i, int ii, int l, int u, int j, real_t **ar,real_t **ai,     real_t **br, real_t **bi, real_t t)
+                                                                                         ^
+bench/CHAPTER1/hshcompr.c:8295:42: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+hshcomprd(i, ii,  l,  u,  j, ar, ai, br, bi, t);
+                                         ^~
+bench/CHAPTER1/hshcompr.c:641:99: note: passing argument to parameter 'bi' here
+void hshcomprd(int i, int ii, int l, int u, int j, real_t **ar,real_t **ai,     real_t **br, real_t **bi, real_t t)
+                                                                                                      ^
+6 warnings generated.
+<bench/CHAPTER1/hshcompr.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/hshcompr.bc>bench/CHAPTER1/hshcomprbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecayis PTR
+1.Transform: warning 10086: test_arraydecay1is PTR
+1.Transform: warning 10086: test_arraydecay2is PTR
+1.Transform: warning 10086: test_arraydecay3is PTR
+#BUILDCFG Time: 	724.578ms
+MainFunc: test
+#CallDepth: 6
+#Loc: 31
+#targetsize:	2
+target[0]:q0(16)
+target[1]:q1(30)
+
+target[0]:q0(16)
+target[0]:from s0(0) to q0(16)
+at line 649 in state q0 is reachable
+Number of path checked:15
+Witness:
+	s0:	LocLine:8294;8295;
+	e0
+	s1:	LocLine:641;647;
+	e1
+	s2:	LocLine:647;
+	e3
+	s3:	LocLine:648;649;
+	e4
+	s4:	LocLine:1433;1435;1436;1438;1439;
+	e5
+	s5:	LocLine:1439;
+	e6
+	s8:	LocLine:1440;
+	e10
+	s9:	LocLine:649;
+	e11
+	s10:	LocLine:1433;1435;1436;1438;1439;
+	e12
+	s11:	LocLine:1439;
+	e13
+	s14:	LocLine:1440;
+	e17
+	s15:	LocLine:649;
+	e18
+	q0:	LocLine:649;
+#Avg_var: 1.228000e+02
+#Avg_nolinearop: 1.333333e-01
+Dreal Time: 	1151.13ms
+
+target[1]:q1(30)
+1  opt             0x0000000001696ad4
+2  libpthread.so.0 0x00007fbcb4d1c340
+3  buildCFG.so     0x00007fbcb3cbed49
+4  buildCFG.so     0x00007fbcb3cf33ec
+5  buildCFG.so     0x00007fbcb3cf63bc
+6  buildCFG.so     0x00007fbcb3cf905a
+7  buildCFG.so     0x00007fbcb3cf999b
+8  buildCFG.so     0x00007fbcb3cfa207
+9  buildCFG.so     0x00007fbcb3cfa4a3
+10 buildCFG.so     0x00007fbcb3cfa6b4
+11 buildCFG.so     0x00007fbcb3cfa6b4
+12 buildCFG.so     0x00007fbcb3cfa6b4
+13 buildCFG.so     0x00007fbcb3cfa6b4
+14 buildCFG.so     0x00007fbcb3cfa6b4
+15 buildCFG.so     0x00007fbcb3cfa6b4
+16 buildCFG.so     0x00007fbcb3cfa6b4
+17 buildCFG.so     0x00007fbcb3cfa6b4
+18 buildCFG.so     0x00007fbcb3cfa6b4
+19 buildCFG.so     0x00007fbcb3cfa6b4
+20 buildCFG.so     0x00007fbcb3cfa6b4
+21 buildCFG.so     0x00007fbcb3cfa6b4
+22 buildCFG.so     0x00007fbcb3cfa6b4
+23 buildCFG.so     0x00007fbcb3cfa6b4
+24 buildCFG.so     0x00007fbcb3cfa6b4
+25 buildCFG.so     0x00007fbcb3cfa6b4
+26 buildCFG.so     0x00007fbcb3cfa6b4
+27 buildCFG.so     0x00007fbcb3cfa6b4
+28 buildCFG.so     0x00007fbcb3cfa6b4
+29 buildCFG.so     0x00007fbcb3cfab34
+30 buildCFG.so     0x00007fbcb3d011c7
+31 buildCFG.so     0x00007fbcb3cfb7f3
+32 opt             0x000000000161a457 llvm::FPPassManager::doInitialization(llvm::Module&) + 87
+33 opt             0x0000000001624167 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 391
+34 opt             0x0000000000617fbd main + 2813
+35 libc.so.6       0x00007fbcb3f34ec5 __libc_start_main + 245
+36 opt             0x000000000063b78a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test 
+Segmentation fault (core dumped)
+[runlim] end:			Sat May 28 22:30:28 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		130
+[runlim] real:			7.42 seconds
+[runlim] time:			5.31 seconds
+[runlim] space:			148.7 MB
+[runlim] samples:		64

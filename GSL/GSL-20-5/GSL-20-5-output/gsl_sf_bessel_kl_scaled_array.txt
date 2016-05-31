@@ -1,0 +1,179 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_kl_scaled_array
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 20:41:39 2016
+[runlim] main pid:		8241
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_bessel_kl_scaled_array <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_kl_scaled_array> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	913.766ms
+MainFunc: gsl_sf_bessel_kl_scaled_array
+#CallDepth: 2
+#Loc: 50
+#targetsize:	4
+target[0]:q0(9)
+target[1]:q1(11)
+target[2]:q2(19)
+target[3]:q3(26)
+
+target[0]:q0(9)
+target[0]:from s0(0) to q0(9)
+at line 10776 in state q0 is reachable
+gsl_sf_bessel_kl_scaled_array_lmax = [1.000000e+00, 1.000000e+00]
+gsl_sf_bessel_kl_scaled_array_x = [0.000000e+00, 5.000000e-03]
+gsl_sf_bessel_kl_scaled_array_result_array_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:7
+Witness:
+	s0:	LocLine:10857;10859;
+	e0
+	s1:	LocLine:10859;
+	e2
+	s3:	LocLine:10863;10864;10865;10866;10867;
+	e4
+	s4:	LocLine:10765;10769;
+	e5
+	s6:	LocLine:10772;
+	e7
+	s8:	LocLine:10776;
+	e9
+	q0:	LocLine:10776;
+#Avg_var: 1.314286e+01
+#Avg_nolinearop: 2.857143e-01
+Dreal Time: 	12.592ms
+
+target[1]:q1(11)
+target[1]:from s0(0) to q1(11)
+at line 10776 in state q1 is reachable
+gsl_sf_bessel_kl_scaled_array_lmax = [1.000000e+00, 1.000000e+00]
+gsl_sf_bessel_kl_scaled_array_x = [9.992049e-03, 1.000000e-02]
+gsl_sf_bessel_kl_scaled_array_result_array_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:16
+Witness:
+	s0:	LocLine:10857;10859;
+	e0
+	s1:	LocLine:10859;
+	e2
+	s3:	LocLine:10863;10864;10865;10866;10867;
+	e4
+	s4:	LocLine:10765;10769;
+	e5
+	s6:	LocLine:10772;
+	e7
+	s8:	LocLine:10776;
+	e10
+	s9:	LocLine:10776;
+	e11
+	q1:	LocLine:10776;
+#Avg_var: 1.325000e+01
+#Avg_nolinearop: 3.750000e-01
+Dreal Time: 	201.116ms
+
+target[2]:q2(19)
+target[2]:from s0(0) to q2(19)
+at line 10757 in state q2 is reachable
+gsl_sf_bessel_kl_scaled_array_lmax = [1.000000e+00, 1.000000e+00]
+gsl_sf_bessel_kl_scaled_array_x = [4.999968e-03, 5.000000e-03]
+gsl_sf_bessel_kl_scaled_array_result_array_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:31
+Witness:
+	s0:	LocLine:10857;10859;
+	e0
+	s1:	LocLine:10859;
+	e2
+	s3:	LocLine:10863;10864;10865;10866;10867;
+	e4
+	s4:	LocLine:10765;10769;
+	e5
+	s6:	LocLine:10772;
+	e7
+	s8:	LocLine:10776;
+	e10
+	s9:	LocLine:10776;
+	e12
+	s10:	LocLine:10776;10777;10778;
+	e13
+	s12:	LocLine:10779;
+	e15
+	s13:	LocLine:10868;
+	e16
+	s14:	LocLine:10749;10753;
+	e17
+	s16:	LocLine:10757;
+	e19
+	q2:	LocLine:10757;
+#Avg_var: 1.361290e+01
+#Avg_nolinearop: 7.741935e-01
+Dreal Time: 	2776.36ms
+
+target[3]:q3(26)
+target[3]:from s0(0) to q3(26)
+at line 10874 in state q3 is reachable
+gsl_sf_bessel_kl_scaled_array_lmax = [1.000000e+00, 1.000000e+00]
+gsl_sf_bessel_kl_scaled_array_x = [9.999073e-03, 1.000000e-02]
+gsl_sf_bessel_kl_scaled_array_result_array_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:53
+Witness:
+	s0:	LocLine:10857;10859;
+	e0
+	s1:	LocLine:10859;
+	e2
+	s3:	LocLine:10863;10864;10865;10866;10867;
+	e4
+	s4:	LocLine:10765;10769;
+	e5
+	s6:	LocLine:10772;
+	e7
+	s8:	LocLine:10776;
+	e10
+	s9:	LocLine:10776;
+	e12
+	s10:	LocLine:10776;10777;10778;
+	e13
+	s12:	LocLine:10779;
+	e15
+	s13:	LocLine:10868;
+	e16
+	s14:	LocLine:10749;10753;
+	e17
+	s16:	LocLine:10757;
+	e20
+	s17:	LocLine:10757;10758;10759;
+	e21
+	s19:	LocLine:10760;
+	e23
+	s20:	LocLine:10869;10870;10871;10872;10873;
+	e24
+	s21:	LocLine:10873;
+	e26
+	s22:	LocLine:10874;
+	e27
+	q3:	LocLine:10874;
+#Avg_var: 1.403774e+01
+#Avg_nolinearop: 1.358491e+00
+Dreal Time: 	8610.1ms
+
+bound:	20	precision:	1.000000e-02	functionName:	gsl_sf_bessel_kl_scaled_array	check:	
+#Dreal Time: 	8.6101s
+#CPU Time: 9.644 s
+#Memory used: 231.00 MB
+[runlim] end:			Fri May 27 20:41:49 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		196
+[runlim] real:			10.55 seconds
+[runlim] time:			9.78 seconds
+[runlim] space:			164.4 MB
+[runlim] samples:		98

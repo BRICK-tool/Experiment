@@ -1,0 +1,73 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_airy_Ai
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 17:31:30 2016
+[runlim] main pid:		2567
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_airy_Ai <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_airy_Ai> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	3119.91ms
+MainFunc: gsl_sf_airy_Ai
+#CallDepth: 8
+#Loc: 115
+#targetsize:	10
+target[0]:q0(5)
+target[1]:q1(8)
+target[2]:q2(18)
+target[3]:q3(21)
+target[4]:q4(31)
+target[5]:q5(43)
+target[6]:q6(46)
+target[7]:q7(48)
+target[8]:q8(50)
+target[9]:q9(53)
+
+target[0]:q0(5)
+[runlim] sample:		10.0 seconds, 556.0 MB
+[runlim] sample:		20.0 seconds, 1783.9 MB
+target[0]:from s0(0) to q0(5)
+at line 4776 is unreachable under bound 10 when check=
+Number of path checked:38
+#Avg_var: 2.289737e+02
+#Avg_nolinearop: 1.105263e+00
+Dreal Time: 	16622.6ms
+
+target[1]:q1(8)
+[runlim] end:			Fri May 27 17:31:52 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		446
+[runlim] real:			22.71 seconds
+[runlim] time:			22.28 seconds
+[runlim] space:			2049.2 MB
+[runlim] samples:		223
+target[1]:from s0(0) to q1(8)
+at line 15136 is unreachable under bound 10 when check=
+Number of path checked:76
+#Avg_var: 2.289737e+02
+#Avg_nolinearop: 1.105263e+00
+Dreal Time: 	33505.6ms
+
+target[2]:q2(18)
+target[2]:from s0(0) to q2(18)
+at line 4781 is unreachable under bound 10 when check=
+Number of path checked:114
+#Avg_var: 2.289737e+02
+#Avg_nolinearop: 1.105263e+00
+Dreal Time: 	49338.3ms
+
+target[3]:q3(21)
+Killed

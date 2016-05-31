@@ -1,0 +1,81 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_pow_int
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 15:49:46 2016
+[runlim] main pid:		2563
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_pow_int <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_pow_int> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	630.857ms
+MainFunc: gsl_sf_pow_int
+#CallDepth: 1
+#Loc: 38
+#targetsize:	2
+target[0]:q0(4)
+target[1]:q1(10)
+
+target[0]:q0(4)
+target[0]:from s0(0) to q0(4)
+at line 34240 in state q0 is reachable
+gsl_sf_pow_int_x = [0.000000e+00, 0.000000e+00]
+gsl_sf_pow_int_n = [-1.000000e+02, -1.000000e+02]
+Number of path checked:26
+Witness:
+	s0:	LocLine:34269;34271;
+	e0
+	s1:	LocLine:34228;34230;34231;34236;
+	e2
+	s2:	LocLine:34237;34239;
+	e4
+	s3:	LocLine:34240;
+	e5
+	q0:	LocLine:34240;
+#Avg_var: 1.246154e+01
+#Avg_nolinearop: 3.461538e-01
+Dreal Time: 	2517.96ms
+
+target[1]:q1(10)
+target[1]:from s0(0) to q1(10)
+at line 34246 in state q1 is reachable
+gsl_sf_pow_int_x = [-1.000000e-02, 0.000000e+00]
+gsl_sf_pow_int_n = [-1.000000e+02, -1.000000e+02]
+Number of path checked:42
+Witness:
+	s0:	LocLine:34269;34271;
+	e0
+	s1:	LocLine:34228;34230;34231;34236;
+	e2
+	s2:	LocLine:34237;34239;
+	e3
+	s8:	LocLine:34246;
+	e11
+	q1:	LocLine:34246;
+#Avg_var: 1.228571e+01
+#Avg_nolinearop: 3.571429e-01
+Dreal Time: 	4497.35ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_pow_int	check:	
+#Dreal Time: 	4.49735s
+#CPU Time: 5.276 s
+#Memory used: 303.00 MB
+[runlim] end:			Fri May 27 15:49:52 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		108
+[runlim] real:			6.48 seconds
+[runlim] time:			5.38 seconds
+[runlim] space:			243.8 MB
+[runlim] samples:		54

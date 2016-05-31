@@ -1,0 +1,48 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_i1_scaled_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 20:48:10 2016
+[runlim] main pid:		8307
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_bessel_i1_scaled_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_i1_scaled_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	733.567ms
+MainFunc: gsl_sf_bessel_i1_scaled_e
+#CallDepth: 0
+#Loc: 30
+#targetsize:	1
+target[0]:q0(5)
+
+target[0]:q0(5)
+target[0]:from s0(0) to q0(5)
+at line 8677 is unreachable under bound 20 when check=
+Number of path checked:11
+#Avg_var: 1.772727e+01
+#Avg_nolinearop: 3.000000e+00
+Dreal Time: 	165.376ms
+
+bound:	20	precision:	1.000000e-02	functionName:	gsl_sf_bessel_i1_scaled_e	check:	
+#Dreal Time: 	0.165376s
+#CPU Time: 1.004 s
+#Memory used: 135.00 MB
+[runlim] end:			Fri May 27 20:48:11 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		22
+[runlim] real:			1.44 seconds
+[runlim] time:			1.08 seconds
+[runlim] space:			92.2 MB
+[runlim] samples:		11

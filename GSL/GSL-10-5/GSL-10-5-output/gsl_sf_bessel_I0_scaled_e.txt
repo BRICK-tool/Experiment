@@ -1,0 +1,176 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_I0_scaled_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 16:09:07 2016
+[runlim] main pid:		2927
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_I0_scaled_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_I0_scaled_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	3754.81ms
+MainFunc: gsl_sf_bessel_I0_scaled_e
+#CallDepth: 3
+#Loc: 70
+#targetsize:	13
+target[0]:q0(5)
+target[1]:q1(14)
+target[2]:q2(16)
+target[3]:q3(19)
+target[4]:q4(26)
+target[5]:q5(28)
+target[6]:q6(30)
+target[7]:q7(33)
+target[8]:q8(35)
+target[9]:q9(38)
+target[10]:q10(45)
+target[11]:q11(47)
+target[12]:q12(49)
+
+target[0]:q0(5)
+target[0]:from s0(0) to q0(5)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:25
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	1304.32ms
+
+target[1]:q1(14)
+target[1]:from s0(0) to q1(14)
+at line 8233 is unreachable under bound 10 when check=
+Number of path checked:50
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	2602.64ms
+
+target[2]:q2(16)
+target[2]:from s0(0) to q2(16)
+at line 8235 is unreachable under bound 10 when check=
+Number of path checked:75
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	3901.24ms
+
+target[3]:q3(19)
+target[3]:from s0(0) to q3(19)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:100
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	5250.56ms
+
+target[4]:q4(26)
+[runlim] sample:		10.0 seconds, 1981.6 MB
+[runlim] end:			Fri May 27 16:09:18 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		204
+[runlim] real:			11.03 seconds
+[runlim] time:			10.18 seconds
+[runlim] space:			2053.2 MB
+[runlim] samples:		102
+target[4]:from s0(0) to q4(26)
+at line 8236 is unreachable under bound 10 when check=
+Number of path checked:125
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	6730.63ms
+
+target[5]:q5(28)
+target[5]:from s0(0) to q5(28)
+at line 8237 is unreachable under bound 10 when check=
+Number of path checked:150
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	8391.14ms
+
+target[6]:q6(30)
+target[6]:from s0(0) to q6(30)
+at line 8238 is unreachable under bound 10 when check=
+Number of path checked:175
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	9933.89ms
+
+target[7]:q7(33)
+target[7]:from s0(0) to q7(33)
+at line 8243 is unreachable under bound 10 when check=
+Number of path checked:200
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	11337.9ms
+
+target[8]:q8(35)
+target[8]:from s0(0) to q8(35)
+at line 8245 is unreachable under bound 10 when check=
+Number of path checked:225
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	12733ms
+
+target[9]:q9(38)
+target[9]:from s0(0) to q9(38)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:250
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	14128.1ms
+
+target[10]:q10(45)
+target[10]:from s0(0) to q10(45)
+at line 8246 is unreachable under bound 10 when check=
+Number of path checked:275
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	15549.1ms
+
+target[11]:q11(47)
+target[11]:from s0(0) to q11(47)
+at line 8247 is unreachable under bound 10 when check=
+Number of path checked:300
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	17391.3ms
+
+target[12]:q12(49)
+target[12]:from s0(0) to q12(49)
+at line 8248 is unreachable under bound 10 when check=
+Number of path checked:325
+#Avg_var: 1.312000e+02
+#Avg_nolinearop: 4.000000e+00
+Dreal Time: 	19502.9ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_I0_scaled_e	check:	
+#Dreal Time: 	19.5029s
+#CPU Time: 23.228 s
+#Memory used: 6029.00 MB
+While deleting: [22 x double]* %ai02_data
+Use still stuck around after Def is destroyed:@ai02_data = internal global [22 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007fec95375340
+3  libc.so.6       0x00007fec945a3cc9 gsignal + 57
+4  libc.so.6       0x00007fec945a70d8 abort + 328
+5  libc.so.6       0x00007fec9459cb86
+6  libc.so.6       0x00007fec9459cc32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007fec9458eec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_I0_scaled_e 
+Aborted (core dumped)

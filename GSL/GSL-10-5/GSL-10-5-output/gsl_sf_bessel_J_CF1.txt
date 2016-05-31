@@ -1,0 +1,173 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_J_CF1
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 15:21:03 2016
+[runlim] main pid:		2462
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_J_CF1 <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_J_CF1> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1129.62ms
+MainFunc: gsl_sf_bessel_J_CF1
+#CallDepth: 0
+#Loc: 56
+#targetsize:	7
+target[0]:q0(1)
+target[1]:q1(3)
+target[2]:q2(7)
+target[3]:q3(12)
+target[4]:q4(14)
+target[5]:q5(16)
+target[6]:q6(18)
+
+target[0]:q0(1)
+target[0]:from s0(0) to q0(1)
+at line 7627 in state q0 is reachable
+gsl_sf_bessel_J_CF1_nu = [-1.005000e+00, -1.000000e+00]
+gsl_sf_bessel_J_CF1_x = [-1.000000e+02, -9.999390e+01]
+gsl_sf_bessel_J_CF1_ratio_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_J_CF1_sgn_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:2
+Witness:
+	s0:	LocLine:7617;7618;7620;7621;7622;7623;7624;7625;7626;7627;
+	e0
+	q0:	LocLine:7627;
+#Avg_var: 2.200000e+01
+#Avg_nolinearop: 1.000000e+00
+Dreal Time: 	3.335ms
+
+target[1]:q1(3)
+target[1]:from s0(0) to q1(3)
+at line 7631 is unreachable under bound 10 when check=
+Number of path checked:25
+#Avg_var: 2.464000e+01
+#Avg_nolinearop: 1.800000e+00
+Dreal Time: 	4311.55ms
+
+target[2]:q2(7)
+target[2]:from s0(0) to q2(7)
+at line 7643 in state q2 is reachable
+gsl_sf_bessel_J_CF1_nu = [-1.000000e+00, -1.000000e+00]
+gsl_sf_bessel_J_CF1_x = [-1.000000e+02, -9.999981e+01]
+gsl_sf_bessel_J_CF1_ratio_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_J_CF1_sgn_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:32
+Witness:
+	s0:	LocLine:7617;7618;7620;7621;7622;7623;7624;7625;7626;7627;
+	e1
+	s1:	LocLine:7627;7628;7629;7630;7631;
+	e3
+	s2:	LocLine:7631;7632;7633;7635;
+	e4
+	s3:	LocLine:7635;
+	e6
+	s4:	LocLine:7636;7637;7638;7639;7640;7641;7642;7643;
+	e7
+	q2:	LocLine:7643;
+#Avg_var: 2.543750e+01
+#Avg_nolinearop: 1.593750e+00
+Dreal Time: 	4368.97ms
+
+target[3]:q3(12)
+target[3]:from s0(0) to q3(12)
+at line 7657 in state q3 is reachable
+gsl_sf_bessel_J_CF1_nu = [-1.000000e+00, -1.000000e+00]
+gsl_sf_bessel_J_CF1_x = [-6.103516e-03, 0.000000e+00]
+gsl_sf_bessel_J_CF1_ratio_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_J_CF1_sgn_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:43
+Witness:
+	s0:	LocLine:7617;7618;7620;7621;7622;7623;7624;7625;7626;7627;
+	e1
+	s1:	LocLine:7627;7628;7629;7630;7631;
+	e3
+	s2:	LocLine:7631;7632;7633;7635;
+	e4
+	s3:	LocLine:7635;
+	e6
+	s4:	LocLine:7636;7637;7638;7639;7640;7641;7642;7643;
+	e8
+	s5:	LocLine:7643;7644;7645;7647;
+	e9
+	s6:	LocLine:7647;
+	e11
+	s8:	LocLine:7656;7657;
+	e14
+	q3:	LocLine:7657;
+#Avg_var: 2.558140e+01
+#Avg_nolinearop: 1.534884e+00
+Dreal Time: 	4921.25ms
+
+target[4]:q4(14)
+target[4]:from s0(0) to q4(14)
+at line 7658 in state q4 is reachable
+gsl_sf_bessel_J_CF1_nu = [-1.000000e+00, -1.000000e+00]
+gsl_sf_bessel_J_CF1_x = [-1.000000e+02, -9.999981e+01]
+gsl_sf_bessel_J_CF1_ratio_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_J_CF1_sgn_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:56
+Witness:
+	s0:	LocLine:7617;7618;7620;7621;7622;7623;7624;7625;7626;7627;
+	e1
+	s1:	LocLine:7627;7628;7629;7630;7631;
+	e3
+	s2:	LocLine:7631;7632;7633;7635;
+	e4
+	s3:	LocLine:7635;
+	e6
+	s4:	LocLine:7636;7637;7638;7639;7640;7641;7642;7643;
+	e8
+	s5:	LocLine:7643;7644;7645;7647;
+	e9
+	s6:	LocLine:7647;
+	e11
+	s8:	LocLine:7656;7657;
+	e15
+	s9:	LocLine:7657;7658;
+	e16
+	q4:	LocLine:7658;
+#Avg_var: 2.553571e+01
+#Avg_nolinearop: 1.553571e+00
+Dreal Time: 	5772.28ms
+
+target[5]:q5(16)
+[runlim] sample:		10.0 seconds, 504.8 MB
+target[5]:from s0(0) to q5(16)
+at line 7660 is unreachable under bound 10 when check=
+Number of path checked:79
+#Avg_var: 2.534177e+01
+#Avg_nolinearop: 1.645570e+00
+Dreal Time: 	9822.9ms
+
+target[6]:q6(18)
+target[6]:from s0(0) to q6(18)
+at line 7660 is unreachable under bound 10 when check=
+Number of path checked:102
+#Avg_var: 2.523529e+01
+#Avg_nolinearop: 1.696078e+00
+Dreal Time: 	13853.1ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_J_CF1	check:	
+#Dreal Time: 	13.8531s
+#CPU Time: 15.076 s
+#Memory used: 762.00 MB
+[runlim] end:			Fri May 27 15:21:18 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		306
+[runlim] real:			15.56 seconds
+[runlim] time:			15.27 seconds
+[runlim] space:			672.1 MB
+[runlim] samples:		153

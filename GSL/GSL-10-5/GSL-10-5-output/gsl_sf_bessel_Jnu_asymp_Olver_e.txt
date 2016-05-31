@@ -1,0 +1,262 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_Jnu_asymp_Olver_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 15:21:18 2016
+[runlim] main pid:		2472
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_Jnu_asymp_Olver_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_Jnu_asymp_Olver_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1617.42ms
+MainFunc: gsl_sf_bessel_Jnu_asymp_Olver_e
+#CallDepth: 2
+#Loc: 111
+#targetsize:	17
+target[0]:q0(4)
+target[1]:q1(7)
+target[2]:q2(9)
+target[3]:q3(11)
+target[4]:q4(15)
+target[5]:q5(17)
+target[6]:q6(19)
+target[7]:q7(21)
+target[8]:q8(23)
+target[9]:q9(25)
+target[10]:q10(28)
+target[11]:q11(30)
+target[12]:q12(32)
+target[13]:q13(34)
+target[14]:q14(36)
+target[15]:q15(38)
+target[16]:q16(40)
+
+target[0]:q0(4)
+target[0]:from s0(0) to q0(4)
+at line 12168 in state q0 is reachable
+gsl_sf_bessel_Jnu_asymp_Olver_e_nu = [0.000000e+00, 1.000000e-02]
+gsl_sf_bessel_Jnu_asymp_Olver_e_x = [0.000000e+00, 6.103516e-03]
+gsl_sf_bessel_Jnu_asymp_Olver_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_Jnu_asymp_Olver_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:4
+Witness:
+	s0:	LocLine:12154;12158;
+	e0
+	s1:	LocLine:12158;
+	e2
+	s3:	LocLine:12162;12163;12164;12165;12166;12167;12168;
+	e4
+	q0:	LocLine:12168;
+#Avg_var: 3.300000e+01
+#Avg_nolinearop: 5.000000e-01
+Dreal Time: 	4.141ms
+
+target[1]:q1(7)
+[runlim] sample:		10.0 seconds, 143.8 MB
+target[1]:from s0(0) to q1(7)
+at line 12186 is unreachable under bound 10 when check=
+Number of path checked:30
+#Avg_var: 4.323333e+01
+#Avg_nolinearop: 3.500000e+00
+Dreal Time: 	10405.4ms
+
+target[2]:q2(9)
+[runlim] sample:		20.0 seconds, 281.2 MB
+target[2]:from s0(0) to q2(9)
+at line 12186 is unreachable under bound 10 when check=
+Number of path checked:56
+#Avg_var: 4.396429e+01
+#Avg_nolinearop: 3.714286e+00
+Dreal Time: 	20770ms
+
+target[3]:q3(11)
+[runlim] sample:		29.9 seconds, 428.4 MB
+target[3]:from s0(0) to q3(11)
+at line 12186 is unreachable under bound 10 when check=
+Number of path checked:82
+#Avg_var: 4.423171e+01
+#Avg_nolinearop: 3.792683e+00
+Dreal Time: 	31189ms
+
+target[4]:q4(15)
+[runlim] sample:		40.0 seconds, 566.9 MB
+target[4]:from s0(0) to q4(15)
+at line 12190 is unreachable under bound 10 when check=
+Number of path checked:108
+#Avg_var: 4.437037e+01
+#Avg_nolinearop: 3.833333e+00
+Dreal Time: 	41602ms
+
+target[5]:q5(17)
+[runlim] sample:		49.9 seconds, 702.5 MB
+target[5]:from s0(0) to q5(17)
+at line 12191 in state q5 is reachable
+gsl_sf_bessel_Jnu_asymp_Olver_e_nu = [0.000000e+00, 3.725236e-07]
+gsl_sf_bessel_Jnu_asymp_Olver_e_x = [0.000000e+00, 2.384161e-07]
+gsl_sf_bessel_Jnu_asymp_Olver_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_Jnu_asymp_Olver_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:123
+Witness:
+	s0:	LocLine:12154;12158;
+	e0
+	s1:	LocLine:12158;
+	e2
+	s3:	LocLine:12162;12163;12164;12165;12166;12167;12168;
+	e5
+	s4:	LocLine:12168;12169;12170;12171;12172;12174;
+	e6
+	s9:	LocLine:12189;
+	e16
+	s10:	LocLine:12190;
+	e18
+	s11:	LocLine:12190;12191;
+	e19
+	q5:	LocLine:12191;
+#Avg_var: 4.405691e+01
+#Avg_nolinearop: 3.764228e+00
+Dreal Time: 	48338.5ms
+
+target[6]:q6(19)
+[runlim] sample:		59.9 seconds, 838.1 MB
+target[6]:from s0(0) to q6(19)
+at line 12191 is unreachable under bound 10 when check=
+Number of path checked:149
+#Avg_var: 4.418792e+01
+#Avg_nolinearop: 3.798658e+00
+Dreal Time: 	58708.5ms
+
+target[7]:q7(21)
+[runlim] sample:		69.9 seconds, 974.1 MB
+target[7]:from s0(0) to q7(21)
+at line 12193 is unreachable under bound 10 when check=
+Number of path checked:175
+#Avg_var: 4.428000e+01
+#Avg_nolinearop: 3.822857e+00
+Dreal Time: 	69105.9ms
+
+target[8]:q8(23)
+[runlim] sample:		79.9 seconds, 1096.0 MB
+target[8]:from s0(0) to q8(23)
+at line 12193 is unreachable under bound 10 when check=
+Number of path checked:201
+#Avg_var: 4.434826e+01
+#Avg_nolinearop: 3.840796e+00
+Dreal Time: 	79673.7ms
+
+target[9]:q9(25)
+[runlim] sample:		89.9 seconds, 1238.7 MB
+target[9]:from s0(0) to q9(25)
+at line 12193 is unreachable under bound 10 when check=
+Number of path checked:227
+#Avg_var: 4.440088e+01
+#Avg_nolinearop: 3.854626e+00
+Dreal Time: 	90145.8ms
+
+target[10]:q10(28)
+[runlim] sample:		99.9 seconds, 1377.3 MB
+target[10]:from s0(0) to q10(28)
+at line 12197 is unreachable under bound 10 when check=
+Number of path checked:253
+#Avg_var: 4.444269e+01
+#Avg_nolinearop: 3.865613e+00
+Dreal Time: 	100502ms
+
+target[11]:q11(30)
+[runlim] sample:		109.9 seconds, 1526.5 MB
+target[11]:from s0(0) to q11(30)
+at line 12197 is unreachable under bound 10 when check=
+Number of path checked:279
+#Avg_var: 4.447670e+01
+#Avg_nolinearop: 3.874552e+00
+Dreal Time: 	110902ms
+
+target[12]:q12(32)
+[runlim] sample:		119.9 seconds, 1666.4 MB
+target[12]:from s0(0) to q12(32)
+at line 12198 is unreachable under bound 10 when check=
+Number of path checked:305
+#Avg_var: 4.450492e+01
+#Avg_nolinearop: 3.881967e+00
+Dreal Time: 	121215ms
+
+target[13]:q13(34)
+target[13]:from s0(0) to q13(34)
+at line 12198 in state q13 is reachable
+gsl_sf_bessel_Jnu_asymp_Olver_e_nu = [0.000000e+00, 2.921760e-06]
+gsl_sf_bessel_Jnu_asymp_Olver_e_x = [0.000000e+00, 3.021119e-06]
+gsl_sf_bessel_Jnu_asymp_Olver_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_Jnu_asymp_Olver_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:316
+Witness:
+	s0:	LocLine:12154;12158;
+	e0
+	s1:	LocLine:12158;
+	e2
+	s3:	LocLine:12162;12163;12164;12165;12166;12167;12168;
+	e5
+	s4:	LocLine:12168;12169;12170;12171;12172;12174;
+	e6
+	s9:	LocLine:12189;
+	e15
+	s17:	LocLine:12197;
+	e31
+	s18:	LocLine:12197;
+	e33
+	s19:	LocLine:12197;12198;
+	e35
+	s20:	LocLine:12198;
+	e36
+	q13:	LocLine:12198;
+#Avg_var: 4.441772e+01
+#Avg_nolinearop: 3.848101e+00
+Dreal Time: 	125738ms
+
+target[14]:q14(36)
+[runlim] sample:		129.9 seconds, 1819.5 MB
+target[14]:from s0(0) to q14(36)
+at line 12200 is unreachable under bound 10 when check=
+Number of path checked:342
+#Avg_var: 4.444737e+01
+#Avg_nolinearop: 3.856725e+00
+Dreal Time: 	136145ms
+
+target[15]:q15(38)
+[runlim] sample:		139.9 seconds, 1960.7 MB
+[runlim] end:			Fri May 27 15:23:46 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		2954
+[runlim] real:			148.30 seconds
+[runlim] time:			147.58 seconds
+[runlim] space:			2054.3 MB
+[runlim] samples:		1477
+target[15]:from s0(0) to q15(38)
+at line 12200 is unreachable under bound 10 when check=
+Number of path checked:368
+#Avg_var: 4.447283e+01
+#Avg_nolinearop: 3.864130e+00
+Dreal Time: 	146711ms
+
+target[16]:q16(40)
+target[16]:from s0(0) to q16(40)
+at line 12200 is unreachable under bound 10 when check=
+Number of path checked:394
+#Avg_var: 4.449492e+01
+#Avg_nolinearop: 3.870558e+00
+Dreal Time: 	157425ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_Jnu_asymp_Olver_e	check:	
+#Dreal Time: 	157.425s
+#CPU Time: 159.344 s
+#Memory used: 2506.00 MB

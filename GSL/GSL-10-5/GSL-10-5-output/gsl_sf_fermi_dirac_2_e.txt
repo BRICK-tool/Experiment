@@ -1,0 +1,87 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_fermi_dirac_2_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:46:25 2016
+[runlim] main pid:		3306
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_fermi_dirac_2_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_fermi_dirac_2_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	4952.58ms
+MainFunc: gsl_sf_fermi_dirac_2_e
+#CallDepth: 5
+#Loc: 88
+#targetsize:	8
+target[0]:q0(6)
+target[1]:q1(8)
+target[2]:q2(17)
+target[3]:q3(27)
+target[4]:q4(37)
+target[5]:q5(47)
+target[6]:q6(56)
+target[7]:q7(59)
+
+target[0]:q0(6)
+[runlim] sample:		10.0 seconds, 1350.0 MB
+target[0]:from s0(0) to q0(6)
+at line 22184 is unreachable under bound 10 when check=
+Number of path checked:42
+#Avg_var: 1.934762e+02
+#Avg_nolinearop: 1.619048e+00
+Dreal Time: 	13905.7ms
+
+target[1]:q1(8)
+[runlim] sample:		20.0 seconds, 1744.5 MB
+[runlim] end:			Fri May 27 14:46:46 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		422
+[runlim] real:			21.70 seconds
+[runlim] time:			21.07 seconds
+[runlim] space:			2064.2 MB
+[runlim] samples:		211
+target[1]:from s0(0) to q1(8)
+at line 22187 in state q1 is reachable
+gsl_sf_fermi_dirac_2_e_x = [-1.000000e+02, -9.999396e+01]
+gsl_sf_fermi_dirac_2_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_fermi_dirac_2_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:78
+Witness:
+	s0:	LocLine:22171;22173;
+	e0
+	s2:	LocLine:22176;
+	e3
+	s3:	LocLine:22179;22180;22181;22182;22183;
+	e4
+	s4:	LocLine:22183;
+	e6
+	s5:	LocLine:22184;
+	e8
+	s6:	LocLine:22184;22185;22186;22187;
+	e9
+	q1:	LocLine:22187;
+#Avg_var: 1.940000e+02
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	19139ms
+
+target[2]:q2(17)
+target[2]:from s0(0) to q2(17)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:120
+#Avg_var: 1.938167e+02
+#Avg_nolinearop: 1.566667e+00
+Dreal Time: 	37143.7ms
+
+target[3]:q3(27)

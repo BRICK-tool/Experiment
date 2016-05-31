@@ -1,0 +1,87 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_complex_sin_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:44:16 2016
+[runlim] main pid:		3167
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_complex_sin_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_complex_sin_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1451.04ms
+MainFunc: gsl_sf_complex_sin_e
+#CallDepth: 2
+#Loc: 57
+#targetsize:	2
+target[0]:q0(8)
+target[1]:q1(10)
+
+target[0]:q0(8)
+target[0]:from s0(0) to q0(8)
+at line 36661 in state q0 is reachable
+gsl_sf_complex_sin_e_zr = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_sin_e_zi = [-1.000000e+02, -9.999418e+01]
+gsl_sf_complex_sin_e_szr_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_sin_e_szr_1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_sin_e_szi_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_sin_e_szi_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:4
+Witness:
+	s0:	LocLine:36643;36644;36649;
+	e0
+	s6:	LocLine:36659;
+	e8
+	s7:	LocLine:36660;36661;
+	e9
+	q0:	LocLine:36661;
+#Avg_var: 1.750000e+01
+#Avg_nolinearop: 3.250000e+00
+Dreal Time: 	11.946ms
+
+target[1]:q1(10)
+target[1]:from s0(0) to q1(10)
+at line 36662 in state q1 is reachable
+gsl_sf_complex_sin_e_zr = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_sin_e_zi = [-4.606671e+00, -4.605170e+00]
+gsl_sf_complex_sin_e_szr_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_sin_e_szr_1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_sin_e_szi_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_sin_e_szi_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:10
+Witness:
+	s0:	LocLine:36643;36644;36649;
+	e0
+	s6:	LocLine:36659;
+	e8
+	s7:	LocLine:36660;36661;
+	e10
+	s8:	LocLine:36661;36662;
+	e11
+	q1:	LocLine:36662;
+#Avg_var: 1.680000e+01
+#Avg_nolinearop: 3.400000e+00
+Dreal Time: 	63.917ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_complex_sin_e	check:	
+#Dreal Time: 	0.063917s
+#CPU Time: 1.624 s
+#Memory used: 122.00 MB
+[runlim] end:			Fri May 27 14:44:18 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		34
+[runlim] real:			2.51 seconds
+[runlim] time:			1.68 seconds
+[runlim] space:			78.8 MB
+[runlim] samples:		17

@@ -1,0 +1,139 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_transport_2_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:44:49 2016
+[runlim] main pid:		3211
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_transport_2_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_transport_2_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	2550.5ms
+MainFunc: gsl_sf_transport_2_e
+#CallDepth: 3
+#Loc: 116
+#targetsize:	9
+target[0]:q0(7)
+target[1]:q1(16)
+target[2]:q2(21)
+target[3]:q3(28)
+target[4]:q4(30)
+target[5]:q5(39)
+target[6]:q6(46)
+target[7]:q7(48)
+target[8]:q8(53)
+
+target[0]:q0(7)
+target[0]:from s0(0) to q0(7)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:25
+#Avg_var: 6.592000e+01
+#Avg_nolinearop: 1.120000e+00
+Dreal Time: 	457.572ms
+
+target[1]:q1(16)
+target[1]:from s0(0) to q1(16)
+at line 36004 is unreachable under bound 10 when check=
+Number of path checked:50
+#Avg_var: 6.592000e+01
+#Avg_nolinearop: 1.120000e+00
+Dreal Time: 	914.112ms
+
+target[2]:q2(21)
+target[2]:from s0(0) to q2(21)
+at line 35962 is unreachable under bound 10 when check=
+Number of path checked:75
+#Avg_var: 6.592000e+01
+#Avg_nolinearop: 1.120000e+00
+Dreal Time: 	1370.42ms
+
+target[3]:q3(28)
+target[3]:from s0(0) to q3(28)
+at line 36006 is unreachable under bound 10 when check=
+Number of path checked:100
+#Avg_var: 6.592000e+01
+#Avg_nolinearop: 1.120000e+00
+Dreal Time: 	1826.49ms
+
+target[4]:q4(30)
+target[4]:from s0(0) to q4(30)
+at line 36006 is unreachable under bound 10 when check=
+Number of path checked:125
+#Avg_var: 6.592000e+01
+#Avg_nolinearop: 1.120000e+00
+Dreal Time: 	2282.98ms
+
+target[5]:q5(39)
+target[5]:from s0(0) to q5(39)
+at line 35962 is unreachable under bound 10 when check=
+Number of path checked:150
+#Avg_var: 6.592000e+01
+#Avg_nolinearop: 1.120000e+00
+Dreal Time: 	2739.54ms
+
+target[6]:q6(46)
+target[6]:from s0(0) to q6(46)
+at line 36021 is unreachable under bound 10 when check=
+Number of path checked:175
+#Avg_var: 6.592000e+01
+#Avg_nolinearop: 1.120000e+00
+Dreal Time: 	3195.37ms
+
+target[7]:q7(48)
+target[7]:from s0(0) to q7(48)
+at line 36021 is unreachable under bound 10 when check=
+Number of path checked:200
+#Avg_var: 6.592000e+01
+#Avg_nolinearop: 1.120000e+00
+Dreal Time: 	3651.08ms
+
+target[8]:q8(53)
+target[8]:from s0(0) to q8(53)
+at line 36034 is unreachable under bound 10 when check=
+Number of path checked:225
+#Avg_var: 6.592000e+01
+#Avg_nolinearop: 1.120000e+00
+Dreal Time: 	4107.15ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_transport_2_e	check:	
+#Dreal Time: 	4.10715s
+#CPU Time: 7.004 s
+#Memory used: 1662.00 MB
+While deleting: [18 x double]* %transport2_data
+Use still stuck around after Def is destroyed:@transport2_data = internal global [18 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007f5cec58c340
+3  libc.so.6       0x00007f5ceb7bacc9 gsignal + 57
+4  libc.so.6       0x00007f5ceb7be0d8 abort + 328
+5  libc.so.6       0x00007f5ceb7b3b86
+6  libc.so.6       0x00007f5ceb7b3c32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007f5ceb7a5ec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_transport_2_e 
+Aborted (core dumped)
+[runlim] end:			Fri May 27 14:44:56 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		150
+[runlim] real:			7.63 seconds
+[runlim] time:			7.38 seconds
+[runlim] space:			1470.6 MB
+[runlim] samples:		75

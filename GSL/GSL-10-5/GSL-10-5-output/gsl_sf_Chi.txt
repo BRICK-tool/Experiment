@@ -1,0 +1,75 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_Chi
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:07:23 2016
+[runlim] main pid:		3881
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_Chi <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_Chi> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1048.89ms
+MainFunc: gsl_sf_Chi
+#CallDepth: 5
+#Loc: 140
+#targetsize:	4
+target[0]:q0(9)
+target[1]:q1(14)
+target[2]:q2(19)
+target[3]:q3(26)
+
+target[0]:q0(9)
+target[0]:from s0(0) to q0(9)
+at line 20633 is unreachable under bound 10 when check=
+Number of path checked:20
+#Avg_var: 4.970000e+01
+#Avg_nolinearop: 1.650000e+00
+Dreal Time: 	122.612ms
+
+target[1]:q1(14)
+target[1]:from s0(0) to q1(14)
+at line 20635 is unreachable under bound 10 when check=
+Number of path checked:40
+#Avg_var: 4.970000e+01
+#Avg_nolinearop: 1.650000e+00
+Dreal Time: 	244.547ms
+
+target[2]:q2(19)
+target[2]:from s0(0) to q2(19)
+at line 20642 is unreachable under bound 10 when check=
+Number of path checked:60
+#Avg_var: 4.970000e+01
+#Avg_nolinearop: 1.650000e+00
+Dreal Time: 	367.584ms
+
+target[3]:q3(26)
+target[3]:from s0(0) to q3(26)
+at line 20651 is unreachable under bound 10 when check=
+Number of path checked:80
+#Avg_var: 4.970000e+01
+#Avg_nolinearop: 1.650000e+00
+Dreal Time: 	490.004ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_Chi	check:	
+#Dreal Time: 	0.490004s
+#CPU Time: 1.688 s
+#Memory used: 345.00 MB
+[runlim] end:			Fri May 27 14:07:25 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		38
+[runlim] real:			2.18 seconds
+[runlim] time:			1.88 seconds
+[runlim] space:			255.2 MB
+[runlim] samples:		19

@@ -1,0 +1,73 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_airy_Ai_scaled_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 18:24:51 2016
+[runlim] main pid:		2371
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_airy_Ai_scaled_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_airy_Ai_scaled_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	3653.18ms
+MainFunc: gsl_sf_airy_Ai_scaled_e
+#CallDepth: 7
+#Loc: 111
+#targetsize:	10
+target[0]:q0(4)
+target[1]:q1(7)
+target[2]:q2(19)
+target[3]:q3(22)
+target[4]:q4(34)
+target[5]:q5(45)
+target[6]:q6(51)
+target[7]:q7(53)
+target[8]:q8(55)
+target[9]:q9(58)
+
+target[0]:q0(4)
+[runlim] sample:		10.0 seconds, 740.6 MB
+[runlim] sample:		20.0 seconds, 2037.7 MB
+[runlim] end:			Fri May 27 18:25:11 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		408
+[runlim] real:			20.71 seconds
+[runlim] time:			20.37 seconds
+[runlim] space:			2063.7 MB
+[runlim] samples:		204
+target[0]:from s0(0) to q0(4)
+at line 4776 is unreachable under bound 10 when check=
+Number of path checked:45
+#Avg_var: 2.309556e+02
+#Avg_nolinearop: 7.555556e-01
+Dreal Time: 	19943.2ms
+
+target[1]:q1(7)
+target[1]:from s0(0) to q1(7)
+at line 15136 is unreachable under bound 10 when check=
+Number of path checked:90
+#Avg_var: 2.309556e+02
+#Avg_nolinearop: 7.555556e-01
+Dreal Time: 	40207.1ms
+
+target[2]:q2(19)
+target[2]:from s0(0) to q2(19)
+at line 4781 is unreachable under bound 10 when check=
+Number of path checked:135
+#Avg_var: 2.309556e+02
+#Avg_nolinearop: 7.555556e-01
+Dreal Time: 	60358.9ms
+
+target[3]:q3(22)
+Killed

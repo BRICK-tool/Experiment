@@ -1,0 +1,197 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/inverrfn.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 20:06:14 2016
+[runlim] main pid:		2730
+bench/CHAPTER6/inverrfn.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/inverrfn.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/inverrfn.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/inverrfn.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/inverrfn.bc>bench/CHAPTER6/inverrfnbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	916.583ms
+MainFunc: test
+#CallDepth: 5
+#Loc: 87
+#targetsize:	8
+target[0]:q0(18)
+target[1]:q1(20)
+target[2]:q2(30)
+target[3]:q3(32)
+target[4]:q4(39)
+target[5]:q5(41)
+target[6]:q6(43)
+target[7]:q7(45)
+
+target[0]:q0(18)
+[runlim] sample:		9.7 seconds, 274.7 MB
+target[0]:from s0(0) to q0(18)
+at line 7444 is unreachable under bound 10 when check=
+Number of path checked:44
+#Avg_var: 4.397727e+01
+#Avg_nolinearop: 1.727273e+00
+Dreal Time: 	9331.64ms
+
+target[1]:q1(20)
+target[1]:from s0(0) to q1(20)
+at line 7444 in state q1 is reachable
+Number of path checked:77
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:7415;7418;7420;7421;
+	e2
+	s2:	LocLine:7421;
+	e3
+	s4:	LocLine:7422;
+	e6
+	s16:	LocLine:7435;
+	e21
+	s17:	LocLine:7436;7437;7438;7439;7440;7441;7442;7443;7444;
+	e23
+	s18:	LocLine:7444;
+	e24
+	q1:	LocLine:7444;
+#Avg_var: 4.262338e+01
+#Avg_nolinearop: 1.636364e+00
+Dreal Time: 	13867.1ms
+
+target[2]:q2(30)
+[runlim] sample:		19.7 seconds, 660.9 MB
+target[2]:from s0(0) to q2(30)
+at line 7461 is unreachable under bound 10 when check=
+Number of path checked:121
+#Avg_var: 4.311570e+01
+#Avg_nolinearop: 1.669421e+00
+Dreal Time: 	23125.6ms
+
+target[3]:q3(32)
+target[3]:from s0(0) to q3(32)
+at line 7461 in state q3 is reachable
+Number of path checked:149
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:7415;7418;7420;7421;
+	e2
+	s2:	LocLine:7421;
+	e3
+	s4:	LocLine:7422;
+	e6
+	s16:	LocLine:7435;
+	e20
+	s26:	LocLine:7448;
+	e33
+	s27:	LocLine:7449;7450;7451;7452;7453;7454;7455;7456;7457;7458;7459;7460;7461;
+	e35
+	s28:	LocLine:7461;
+	e36
+	q3:	LocLine:7461;
+#Avg_var: 4.266443e+01
+#Avg_nolinearop: 1.610738e+00
+Dreal Time: 	27346ms
+
+target[4]:q4(39)
+[runlim] sample:		29.7 seconds, 926.0 MB
+target[4]:from s0(0) to q4(39)
+at line 7473 in state q4 is reachable
+Number of path checked:171
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:7415;7418;7420;7421;
+	e2
+	s2:	LocLine:7421;
+	e3
+	s4:	LocLine:7422;
+	e6
+	s16:	LocLine:7435;
+	e20
+	s26:	LocLine:7448;
+	e32
+	s33:	LocLine:7465;
+	e42
+	s34:	LocLine:7466;7467;7468;7469;7470;7471;7472;7473;
+	e43
+	q4:	LocLine:7473;
+#Avg_var: 4.249123e+01
+#Avg_nolinearop: 1.549708e+00
+Dreal Time: 	30139ms
+
+target[5]:q5(41)
+target[5]:from s0(0) to q5(41)
+at line 7473 in state q5 is reachable
+Number of path checked:195
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:7415;7418;7420;7421;
+	e2
+	s2:	LocLine:7421;
+	e3
+	s4:	LocLine:7422;
+	e6
+	s16:	LocLine:7435;
+	e20
+	s26:	LocLine:7448;
+	e32
+	s33:	LocLine:7465;
+	e42
+	s34:	LocLine:7466;7467;7468;7469;7470;7471;7472;7473;
+	e44
+	s35:	LocLine:7473;
+	e45
+	q5:	LocLine:7473;
+#Avg_var: 4.226154e+01
+#Avg_nolinearop: 1.507692e+00
+Dreal Time: 	33481.8ms
+
+target[6]:q6(43)
+[runlim] sample:		39.7 seconds, 1261.1 MB
+target[6]:from s0(0) to q6(43)
+at line 7474 is unreachable under bound 10 when check=
+Number of path checked:239
+#Avg_var: 4.257741e+01
+#Avg_nolinearop: 1.548117e+00
+Dreal Time: 	42737.9ms
+
+target[7]:q7(45)
+[runlim] sample:		49.7 seconds, 1508.9 MB
+target[7]:from s0(0) to q7(45)
+at line 7474 is unreachable under bound 10 when check=
+Number of path checked:283
+#Avg_var: 4.279505e+01
+#Avg_nolinearop: 1.575972e+00
+Dreal Time: 	52003.3ms
+
+bound:	10	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	52.0033s
+#CPU Time: 53.156 s
+#Memory used: 1744.00 MB
+[runlim] end:			Sat May 28 20:07:08 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1078
+[runlim] real:			54.04 seconds
+[runlim] time:			53.51 seconds
+[runlim] space:			1546.7 MB
+[runlim] samples:		538

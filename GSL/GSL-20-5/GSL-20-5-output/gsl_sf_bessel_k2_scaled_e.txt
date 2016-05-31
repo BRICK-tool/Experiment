@@ -1,0 +1,105 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_k2_scaled_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 20:46:56 2016
+[runlim] main pid:		8273
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_bessel_k2_scaled_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_k2_scaled_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	270.537ms
+MainFunc: gsl_sf_bessel_k2_scaled_e
+#CallDepth: 0
+#Loc: 15
+#targetsize:	3
+target[0]:q0(5)
+target[1]:q1(7)
+target[2]:q2(9)
+
+target[0]:q0(5)
+target[0]:from s0(0) to q0(5)
+at line 10795 in state q0 is reachable
+gsl_sf_bessel_k2_scaled_e_x = [0.000000e+00, 5.000000e-03]
+gsl_sf_bessel_k2_scaled_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_k2_scaled_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:4
+Witness:
+	s0:	LocLine:10784;10788;
+	e0
+	s2:	LocLine:10791;
+	e2
+	s4:	LocLine:10795;
+	e4
+	q0:	LocLine:10795;
+#Avg_var: 4.000000e+00
+#Avg_nolinearop: 5.000000e-01
+Dreal Time: 	3.506ms
+
+target[1]:q1(7)
+target[1]:from s0(0) to q1(7)
+at line 10795 in state q1 is reachable
+gsl_sf_bessel_k2_scaled_e_x = [9.998011e-03, 1.000000e-02]
+gsl_sf_bessel_k2_scaled_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_k2_scaled_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:10
+Witness:
+	s0:	LocLine:10784;10788;
+	e0
+	s2:	LocLine:10791;
+	e2
+	s4:	LocLine:10795;
+	e5
+	s5:	LocLine:10795;
+	e6
+	q1:	LocLine:10795;
+#Avg_var: 4.000000e+00
+#Avg_nolinearop: 6.000000e-01
+Dreal Time: 	92.176ms
+
+target[2]:q2(9)
+target[2]:from s0(0) to q2(9)
+at line 10795 in state q2 is reachable
+gsl_sf_bessel_k2_scaled_e_x = [9.999479e-03, 1.000000e-02]
+gsl_sf_bessel_k2_scaled_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_bessel_k2_scaled_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:18
+Witness:
+	s0:	LocLine:10784;10788;
+	e0
+	s2:	LocLine:10791;
+	e2
+	s4:	LocLine:10795;
+	e5
+	s5:	LocLine:10795;
+	e7
+	s6:	LocLine:10795;
+	e8
+	q2:	LocLine:10795;
+#Avg_var: 4.000000e+00
+#Avg_nolinearop: 6.666667e-01
+Dreal Time: 	387.7ms
+
+bound:	20	precision:	1.000000e-02	functionName:	gsl_sf_bessel_k2_scaled_e	check:	
+#Dreal Time: 	0.3877s
+#CPU Time: 0.772 s
+#Memory used: 129.00 MB
+[runlim] end:			Fri May 27 20:46:57 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		18
+[runlim] real:			1.42 seconds
+[runlim] time:			0.88 seconds
+[runlim] space:			78.3 MB
+[runlim] samples:		9

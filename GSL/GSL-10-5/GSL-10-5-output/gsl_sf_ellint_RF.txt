@@ -1,0 +1,39 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_ellint_RF
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:00:18 2016
+[runlim] main pid:		3622
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_ellint_RF <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_ellint_RF> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	811.688ms
+MainFunc: gsl_sf_ellint_RF
+#CallDepth: 2
+#Loc: 55
+#targetsize:	0
+Has no exceptions~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_ellint_RF	check:	
+#Dreal Time: 	0s
+#CPU Time: 0.916 s
+#Memory used: 105.00 MB
+[runlim] end:			Fri May 27 14:00:19 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		20
+[runlim] real:			1.33 seconds
+[runlim] time:			0.99 seconds
+[runlim] space:			64.2 MB
+[runlim] samples:		10

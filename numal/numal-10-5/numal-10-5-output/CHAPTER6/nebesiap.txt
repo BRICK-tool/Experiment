@@ -1,0 +1,184 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/nebesiap.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 20:12:11 2016
+[runlim] main pid:		2770
+bench/CHAPTER6/nebesiap.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/nebesiap.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/nebesiap.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/nebesiap.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/nebesiap.bc>bench/CHAPTER6/nebesiapbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+3.PHINode warning 10086:   %cond23 = phi double [ 1.000000e+00, %cond.true ], [ %cond, %cond.end ], !dbg <badref>	nonexpspherbessi_cond	9
+#BUILDCFG Time: 	870.167ms
+MainFunc: test
+#CallDepth: 6
+#Loc: 118
+#targetsize:	11
+target[0]:q0(19)
+target[1]:q1(22)
+target[2]:q2(24)
+target[3]:q3(33)
+target[4]:q4(45)
+target[5]:q5(48)
+target[6]:q6(57)
+target[7]:q7(60)
+target[8]:q8(62)
+target[9]:q9(66)
+target[10]:q10(68)
+
+target[0]:q0(19)
+target[0]:from s0(0) to q0(19)
+at line 7752 in state q0 is reachable
+Number of path checked:26
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;8298;
+	e0
+	s1:	LocLine:7552;7554;
+	e1
+	s10:	LocLine:7557;
+	e14
+	s11:	LocLine:7559;
+	e15
+	s12:	LocLine:7740;7742;
+	e16
+	s18:	LocLine:7747;7748;7749;7750;7751;7752;
+	e24
+	q0:	LocLine:7752;
+#Avg_var: 2.250000e+01
+#Avg_nolinearop: 8.076923e-01
+Dreal Time: 	5790.42ms
+
+target[1]:q1(22)
+[runlim] sample:		9.7 seconds, 181.0 MB
+target[1]:from s0(0) to q1(22)
+at line 8150 in state q1 is reachable
+Number of path checked:55
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;8298;
+	e0
+	s1:	LocLine:7552;7554;
+	e1
+	s10:	LocLine:7557;
+	e14
+	s11:	LocLine:7559;
+	e15
+	s12:	LocLine:7740;7742;
+	e16
+	s18:	LocLine:7747;7748;7749;7750;7751;7752;
+	e25
+	s19:	LocLine:7752;7753;
+	e26
+	s20:	LocLine:8144;8146;8147;8149;8150;
+	e27
+	q1:	LocLine:8150;
+#Avg_var: 2.292727e+01
+#Avg_nolinearop: 8.545455e-01
+Dreal Time: 	15075.4ms
+
+target[2]:q2(24)
+[runlim] sample:		19.7 seconds, 279.8 MB
+target[2]:from s0(0) to q2(24)
+at line 8151 in state q2 is reachable
+Number of path checked:86
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;8298;
+	e0
+	s1:	LocLine:7552;7554;
+	e1
+	s10:	LocLine:7557;
+	e14
+	s11:	LocLine:7559;
+	e15
+	s12:	LocLine:7740;7742;
+	e16
+	s18:	LocLine:7747;7748;7749;7750;7751;7752;
+	e25
+	s19:	LocLine:7752;7753;
+	e26
+	s20:	LocLine:8144;8146;8147;8149;8150;
+	e28
+	s21:	LocLine:8150;8151;
+	e29
+	q2:	LocLine:8151;
+#Avg_var: 2.329070e+01
+#Avg_nolinearop: 8.953488e-01
+Dreal Time: 	28256.8ms
+
+target[3]:q3(33)
+[runlim] sample:		29.7 seconds, 362.7 MB
+target[3]:from s0(0) to q3(33)
+at line 7563 in state q3 is reachable
+Number of path checked:102
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;8298;
+	e0
+	s1:	LocLine:7552;7554;
+	e1
+	s10:	LocLine:7557;
+	e13
+	s28:	LocLine:7560;
+	e38
+	s29:	LocLine:7562;7563;
+	e39
+	q3:	LocLine:7563;
+#Avg_var: 2.272549e+01
+#Avg_nolinearop: 8.137255e-01
+Dreal Time: 	28881.7ms
+
+target[4]:q4(45)
+[runlim] sample:		39.7 seconds, 465.0 MB
+[runlim] sample:		49.7 seconds, 494.5 MB
+[runlim] sample:		59.7 seconds, 496.5 MB
+[runlim] sample:		69.7 seconds, 499.4 MB
+[runlim] sample:		79.7 seconds, 501.9 MB
+[runlim] sample:		89.7 seconds, 503.6 MB
+[runlim] sample:		99.7 seconds, 505.8 MB
+[runlim] sample:		109.7 seconds, 507.8 MB
+[runlim] sample:		119.7 seconds, 509.7 MB
+[runlim] sample:		129.7 seconds, 511.4 MB
+[runlim] sample:		139.7 seconds, 514.3 MB
+[runlim] sample:		149.7 seconds, 516.3 MB
+[runlim] sample:		159.7 seconds, 517.8 MB
+[runlim] sample:		169.7 seconds, 520.2 MB
+[runlim] sample:		179.7 seconds, 521.7 MB
+[runlim] sample:		189.7 seconds, 523.7 MB
+[runlim] sample:		199.7 seconds, 524.6 MB
+[runlim] sample:		209.7 seconds, 526.6 MB
+[runlim] sample:		219.7 seconds, 529.1 MB
+[runlim] sample:		229.7 seconds, 530.5 MB
+[runlim] sample:		239.7 seconds, 534.0 MB
+[runlim] sample:		249.7 seconds, 536.4 MB
+[runlim] sample:		259.6 seconds, 538.4 MB
+[runlim] sample:		269.6 seconds, 540.8 MB
+[runlim] sample:		279.6 seconds, 542.3 MB
+[runlim] sample:		289.6 seconds, 544.3 MB
+[runlim] sample:		299.6 seconds, 545.7 MB
+[runlim] end:			Sat May 28 20:17:12 2016
+[runlim] status:		out of time
+[runlim] result:		1
+[runlim] children:		6010
+[runlim] real:			301.05 seconds
+[runlim] time:			300.04 seconds
+[runlim] space:			545.7 MB
+[runlim] samples:		3004
+Killed

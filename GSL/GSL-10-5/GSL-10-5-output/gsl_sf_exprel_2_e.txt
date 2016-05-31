@@ -1,0 +1,107 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_exprel_2_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 15:19:18 2016
+[runlim] main pid:		2386
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_exprel_2_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_exprel_2_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	674.036ms
+MainFunc: gsl_sf_exprel_2_e
+#CallDepth: 0
+#Loc: 28
+#targetsize:	4
+target[0]:q0(2)
+target[1]:q1(4)
+target[2]:q2(8)
+target[3]:q3(14)
+
+target[0]:q0(2)
+[runlim] sample:		10.0 seconds, 73.4 MB
+[runlim] sample:		20.0 seconds, 81.9 MB
+target[0]:from s0(0) to q0(2)
+at line 19972 is unreachable under bound 10 when check=
+Number of path checked:14
+#Avg_var: 6.857143e+00
+#Avg_nolinearop: 1.285714e+00
+Dreal Time: 	28197.2ms
+
+target[1]:q1(4)
+[runlim] sample:		30.0 seconds, 96.1 MB
+[runlim] sample:		40.0 seconds, 98.1 MB
+[runlim] sample:		49.9 seconds, 108.4 MB
+target[1]:from s0(0) to q1(4)
+at line 19972 is unreachable under bound 10 when check=
+Number of path checked:28
+#Avg_var: 6.857143e+00
+#Avg_nolinearop: 1.285714e+00
+Dreal Time: 	56477.8ms
+
+target[2]:q2(8)
+[runlim] sample:		59.9 seconds, 121.1 MB
+target[2]:from s0(0) to q2(8)
+at line 19977 in state q2 is reachable
+gsl_sf_exprel_2_e_x = [-1.003843e-01, -9.961719e-02]
+gsl_sf_exprel_2_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_exprel_2_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:40
+Witness:
+	s0:	LocLine:19967;19969;19971;
+	e0
+	s4:	LocLine:19976;
+	e8
+	s5:	LocLine:19977;
+	e9
+	q2:	LocLine:19977;
+#Avg_var: 6.750000e+00
+#Avg_nolinearop: 1.250000e+00
+Dreal Time: 	67668.8ms
+
+target[3]:q3(14)
+target[3]:from s0(0) to q3(14)
+at line 19987 in state q3 is reachable
+gsl_sf_exprel_2_e_x = [1.002535e-02, 1.908036e-02]
+gsl_sf_exprel_2_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_exprel_2_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:46
+Witness:
+	s0:	LocLine:19967;19969;19971;
+	e0
+	s4:	LocLine:19976;
+	e7
+	s7:	LocLine:19981;
+	e12
+	s9:	LocLine:19986;
+	e16
+	s10:	LocLine:19987;
+	e17
+	q3:	LocLine:19987;
+#Avg_var: 6.782609e+00
+#Avg_nolinearop: 1.173913e+00
+Dreal Time: 	67730.2ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_exprel_2_e	check:	
+#Dreal Time: 	67.7302s
+#CPU Time: 68.536 s
+#Memory used: 207.00 MB
+[runlim] end:			Fri May 27 15:20:26 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1374
+[runlim] real:			68.84 seconds
+[runlim] time:			68.64 seconds
+[runlim] space:			147.1 MB
+[runlim] samples:		687

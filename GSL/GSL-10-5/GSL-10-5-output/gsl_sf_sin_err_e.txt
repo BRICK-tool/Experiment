@@ -1,0 +1,81 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_sin_err_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 18:23:18 2016
+[runlim] main pid:		2350
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_sin_err_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_sin_err_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1812.59ms
+MainFunc: gsl_sf_sin_err_e
+#CallDepth: 3
+#Loc: 106
+#targetsize:	2
+target[0]:q0(13)
+target[1]:q1(18)
+
+target[0]:q0(13)
+[runlim] sample:		7.2 seconds, 288.6 MB
+[runlim] sample:		17.1 seconds, 551.9 MB
+[runlim] sample:		27.1 seconds, 1034.0 MB
+target[0]:from s0(0) to q0(13)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:64
+#Avg_var: 6.581250e+01
+#Avg_nolinearop: 1.875000e+00
+Dreal Time: 	26524.3ms
+
+target[1]:q1(18)
+[runlim] sample:		37.1 seconds, 1436.9 MB
+[runlim] sample:		47.1 seconds, 1755.6 MB
+[runlim] end:			Fri May 27 18:24:14 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		1133
+[runlim] real:			56.58 seconds
+[runlim] time:			53.61 seconds
+[runlim] space:			2051.0 MB
+[runlim] samples:		565
+target[1]:from s0(0) to q1(18)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:128
+#Avg_var: 6.581250e+01
+#Avg_nolinearop: 1.875000e+00
+Dreal Time: 	53936.3ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_sin_err_e	check:	
+#Dreal Time: 	53.9363s
+#CPU Time: 55.88 s
+#Memory used: 2201.00 MB
+While deleting: [11 x double]* %cos_data
+Use still stuck around after Def is destroyed:@cos_data = internal global [11 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007fdbc7a1e340
+3  libc.so.6       0x00007fdbc6c4ccc9 gsignal + 57
+4  libc.so.6       0x00007fdbc6c500d8 abort + 328
+5  libc.so.6       0x00007fdbc6c45b86
+6  libc.so.6       0x00007fdbc6c45c32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007fdbc6c37ec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_sin_err_e 
+Aborted (core dumped)

@@ -1,0 +1,62 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/comcolcs.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:20:15 2016
+[runlim] main pid:		7703
+bench/CHAPTER1/comcolcs.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/comcolcs.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/comcolcs.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/comcolcs.c:8301:21: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+comcolcst( l, u, j, ar, ai, xr, xi);
+                    ^~
+bench/CHAPTER1/comcolcs.c:310:45: note: passing argument to parameter 'ar' here
+void comcolcst(int l, int u, int j,real_t **ar, real_t **ai, real_t xr, real_t xi)
+                                            ^
+bench/CHAPTER1/comcolcs.c:8301:25: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+comcolcst( l, u, j, ar, ai, xr, xi);
+                        ^~
+bench/CHAPTER1/comcolcs.c:310:58: note: passing argument to parameter 'ai' here
+void comcolcst(int l, int u, int j,real_t **ar, real_t **ai, real_t xr, real_t xi)
+                                                         ^
+4 warnings generated.
+<bench/CHAPTER1/comcolcs.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/comcolcs.bc>bench/CHAPTER1/comcolcsbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecayis PTR
+1.Transform: warning 10086: test_arraydecay1is PTR
+#BUILDCFG Time: 	248.208ms
+MainFunc: test
+#CallDepth: 2
+#Loc: 21
+#targetsize:	0
+Has no exceptions~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bound:	20	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0s
+#CPU Time: 0.293299 s
+#Memory used: 90.00 MB
+[runlim] end:			Sat May 28 18:20:16 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		12
+[runlim] real:			1.06 seconds
+[runlim] time:			0.24 seconds
+[runlim] space:			33.4 MB
+[runlim] samples:		6

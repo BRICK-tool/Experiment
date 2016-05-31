@@ -1,0 +1,137 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_elljac_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 21:44:49 2016
+[runlim] main pid:		2384
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_elljac_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_elljac_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1793.09ms
+MainFunc: gsl_sf_elljac_e
+#CallDepth: 0
+#Loc: 75
+#targetsize:	9
+target[0]:q0(6)
+target[1]:q1(9)
+target[2]:q2(11)
+target[3]:q3(15)
+target[4]:q4(25)
+target[5]:q5(27)
+target[6]:q6(29)
+target[7]:q7(31)
+target[8]:q8(34)
+
+target[0]:q0(6)
+target[0]:from s0(0) to q0(6)
+at line 19055 is unreachable under bound 20 when check=
+Number of path checked:17
+#Avg_var: 1.339412e+02
+#Avg_nolinearop: 6.411765e+00
+Dreal Time: 	179.428ms
+
+target[1]:q1(9)
+target[1]:from s0(0) to q1(9)
+at line 19071 is unreachable under bound 20 when check=
+Number of path checked:34
+#Avg_var: 1.339412e+02
+#Avg_nolinearop: 6.411765e+00
+Dreal Time: 	358.837ms
+
+target[2]:q2(11)
+target[2]:from s0(0) to q2(11)
+at line 19072 in state q2 is reachable
+gsl_sf_elljac_e_u = [-1.000000e+02, 1.000000e+02]
+gsl_sf_elljac_e_m = [-7.812500e-03, -4.440890e-16]
+gsl_sf_elljac_e_sn_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_elljac_e_cn_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_elljac_e_dn_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:40
+Witness:
+	s0:	LocLine:19039;19041;
+	e0
+	s2:	LocLine:19047;
+	e2
+	s4:	LocLine:19053;
+	e5
+	s7:	LocLine:19060;19061;19062;19063;19064;19065;19066;19067;19068;19070;19071;
+	e11
+	s8:	LocLine:19071;19072;
+	e12
+	q2:	LocLine:19072;
+#Avg_var: 1.311750e+02
+#Avg_nolinearop: 5.950000e+00
+Dreal Time: 	375.818ms
+
+target[3]:q3(15)
+target[3]:from s0(0) to q3(15)
+at line 19076 is unreachable under bound 20 when check=
+Number of path checked:57
+#Avg_var: 1.320000e+02
+#Avg_nolinearop: 6.087719e+00
+Dreal Time: 	554.935ms
+
+target[4]:q4(25)
+target[4]:from s0(0) to q4(25)
+at line 19093 is unreachable under bound 20 when check=
+Number of path checked:74
+#Avg_var: 1.324459e+02
+#Avg_nolinearop: 6.162162e+00
+Dreal Time: 	734.032ms
+
+target[5]:q5(27)
+target[5]:from s0(0) to q5(27)
+at line 19094 is unreachable under bound 20 when check=
+Number of path checked:91
+#Avg_var: 1.327253e+02
+#Avg_nolinearop: 6.208791e+00
+Dreal Time: 	913.297ms
+
+target[6]:q6(29)
+target[6]:from s0(0) to q6(29)
+at line 19095 is unreachable under bound 20 when check=
+Number of path checked:108
+#Avg_var: 1.329167e+02
+#Avg_nolinearop: 6.240741e+00
+Dreal Time: 	1092.88ms
+
+target[7]:q7(31)
+target[7]:from s0(0) to q7(31)
+at line 19096 is unreachable under bound 20 when check=
+Number of path checked:125
+#Avg_var: 1.330560e+02
+#Avg_nolinearop: 6.264000e+00
+Dreal Time: 	1271.79ms
+
+target[8]:q8(34)
+target[8]:from s0(0) to q8(34)
+at line 19106 is unreachable under bound 20 when check=
+Number of path checked:142
+#Avg_var: 1.331620e+02
+#Avg_nolinearop: 6.281690e+00
+Dreal Time: 	1451.56ms
+
+bound:	20	precision:	1.000000e-02	functionName:	gsl_sf_elljac_e	check:	
+#Dreal Time: 	1.45156s
+#CPU Time: 3.532 s
+#Memory used: 727.00 MB
+[runlim] end:			Fri May 27 21:44:53 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		76
+[runlim] real:			4.79 seconds
+[runlim] time:			3.78 seconds
+[runlim] space:			592.8 MB
+[runlim] samples:		38

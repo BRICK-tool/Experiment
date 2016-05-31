@@ -1,0 +1,112 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/bessjapl.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 20:21:41 2016
+[runlim] main pid:		9434
+bench/CHAPTER6/bessjapl.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/bessjapl.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/bessjapl.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/bessjapl.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/bessjapl.bc>bench/CHAPTER6/bessjaplbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1565.02ms
+MainFunc: test
+#CallDepth: 6
+#Loc: 132
+#targetsize:	36
+target[0]:q0(22)
+target[1]:q1(25)
+target[2]:q2(27)
+target[3]:q3(31)
+target[4]:q4(33)
+target[5]:q5(37)
+target[6]:q6(42)
+target[7]:q7(44)
+target[8]:q8(47)
+target[9]:q9(49)
+target[10]:q10(51)
+target[11]:q11(53)
+target[12]:q12(60)
+target[13]:q13(72)
+target[14]:q14(77)
+target[15]:q15(79)
+target[16]:q16(83)
+target[17]:q17(85)
+target[18]:q18(89)
+target[19]:q19(94)
+target[20]:q20(96)
+target[21]:q21(99)
+target[22]:q22(101)
+target[23]:q23(103)
+target[24]:q24(105)
+target[25]:q25(117)
+target[26]:q26(119)
+target[27]:q27(123)
+target[28]:q28(125)
+target[29]:q29(129)
+target[30]:q30(134)
+target[31]:q31(136)
+target[32]:q32(139)
+target[33]:q33(141)
+target[34]:q34(143)
+target[35]:q35(145)
+
+target[0]:q0(22)
+[runlim] sample:		9.7 seconds, 124.7 MB
+[runlim] sample:		19.7 seconds, 159.3 MB
+[runlim] sample:		29.7 seconds, 171.1 MB
+[runlim] sample:		39.7 seconds, 197.9 MB
+[runlim] sample:		49.7 seconds, 247.7 MB
+[runlim] sample:		59.7 seconds, 282.0 MB
+[runlim] sample:		69.7 seconds, 293.8 MB
+[runlim] sample:		79.7 seconds, 320.1 MB
+[runlim] sample:		89.7 seconds, 333.3 MB
+[runlim] sample:		99.7 seconds, 344.1 MB
+[runlim] sample:		109.7 seconds, 344.1 MB
+[runlim] sample:		119.7 seconds, 350.3 MB
+[runlim] sample:		129.7 seconds, 350.3 MB
+[runlim] sample:		139.7 seconds, 356.5 MB
+[runlim] sample:		149.7 seconds, 356.5 MB
+[runlim] sample:		159.7 seconds, 364.0 MB
+[runlim] sample:		169.6 seconds, 364.0 MB
+[runlim] sample:		179.6 seconds, 364.0 MB
+[runlim] sample:		189.6 seconds, 364.0 MB
+[runlim] sample:		199.6 seconds, 364.0 MB
+[runlim] sample:		209.6 seconds, 364.0 MB
+[runlim] sample:		219.6 seconds, 364.0 MB
+[runlim] sample:		229.6 seconds, 364.0 MB
+[runlim] sample:		239.6 seconds, 364.0 MB
+[runlim] sample:		249.6 seconds, 364.0 MB
+[runlim] sample:		259.6 seconds, 364.0 MB
+[runlim] sample:		269.6 seconds, 364.0 MB
+[runlim] sample:		279.6 seconds, 371.7 MB
+[runlim] sample:		289.6 seconds, 371.7 MB
+[runlim] sample:		299.6 seconds, 371.7 MB
+[runlim] end:			Sat May 28 20:26:41 2016
+[runlim] status:		out of time
+[runlim] result:		1
+[runlim] children:		6012
+[runlim] real:			300.62 seconds
+[runlim] time:			300.07 seconds
+[runlim] space:			371.7 MB
+[runlim] samples:		3005
+Killed

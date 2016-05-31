@@ -1,0 +1,48 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_log_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:45:59 2016
+[runlim] main pid:		3280
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_log_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_log_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	144.157ms
+MainFunc: gsl_sf_log_e
+#CallDepth: 0
+#Loc: 11
+#targetsize:	1
+target[0]:q0(3)
+
+target[0]:q0(3)
+target[0]:from s0(0) to q0(3)
+at line 33615 is unreachable under bound 10 when check=
+Number of path checked:4
+#Avg_var: 5.000000e+00
+#Avg_nolinearop: 5.000000e-01
+Dreal Time: 	4.566ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_log_e	check:	
+#Dreal Time: 	0.004566s
+#CPU Time: 0.284 s
+#Memory used: 108.00 MB
+[runlim] end:			Fri May 27 14:46:00 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		8
+[runlim] real:			1.40 seconds
+[runlim] time:			0.37 seconds
+[runlim] space:			72.6 MB
+[runlim] samples:		4

@@ -1,0 +1,92 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_exprel_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 20:30:43 2016
+[runlim] main pid:		8177
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_exprel_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_exprel_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	623.002ms
+MainFunc: gsl_sf_exprel_e
+#CallDepth: 0
+#Loc: 28
+#targetsize:	3
+target[0]:q0(2)
+target[1]:q1(6)
+target[2]:q2(12)
+
+target[0]:q0(2)
+target[0]:from s0(0) to q0(2)
+at line 19942 is unreachable under bound 20 when check=
+Number of path checked:14
+#Avg_var: 6.857143e+00
+#Avg_nolinearop: 1.285714e+00
+Dreal Time: 	133.176ms
+
+target[1]:q1(6)
+target[1]:from s0(0) to q1(6)
+at line 19947 in state q1 is reachable
+gsl_sf_exprel_e_x = [-1.000000e-02, -2.000000e-03]
+gsl_sf_exprel_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_exprel_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:26
+Witness:
+	s0:	LocLine:19937;19939;19941;
+	e0
+	s3:	LocLine:19946;
+	e6
+	s4:	LocLine:19947;
+	e7
+	q1:	LocLine:19947;
+#Avg_var: 6.692308e+00
+#Avg_nolinearop: 1.230769e+00
+Dreal Time: 	261.347ms
+
+target[2]:q2(12)
+target[2]:from s0(0) to q2(12)
+at line 19957 in state q2 is reachable
+gsl_sf_exprel_e_x = [2.000000e-03, 1.000000e-02]
+gsl_sf_exprel_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_exprel_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:32
+Witness:
+	s0:	LocLine:19937;19939;19941;
+	e0
+	s3:	LocLine:19946;
+	e5
+	s6:	LocLine:19951;
+	e10
+	s8:	LocLine:19956;
+	e14
+	s9:	LocLine:19957;
+	e15
+	q2:	LocLine:19957;
+#Avg_var: 6.750000e+00
+#Avg_nolinearop: 1.125000e+00
+Dreal Time: 	283.405ms
+
+bound:	20	precision:	1.000000e-02	functionName:	gsl_sf_exprel_e	check:	
+#Dreal Time: 	0.283405s
+#CPU Time: 1.032 s
+#Memory used: 169.00 MB
+[runlim] end:			Fri May 27 20:30:44 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		22
+[runlim] real:			1.25 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			112.5 MB
+[runlim] samples:		11

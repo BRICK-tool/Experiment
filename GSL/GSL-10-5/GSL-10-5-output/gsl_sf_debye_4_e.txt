@@ -1,0 +1,152 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_debye_4_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 13:51:49 2016
+[runlim] main pid:		3399
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_debye_4_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_debye_4_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	2593.92ms
+MainFunc: gsl_sf_debye_4_e
+#CallDepth: 1
+#Loc: 86
+#targetsize:	10
+target[0]:q0(7)
+target[1]:q1(16)
+target[2]:q2(20)
+target[3]:q3(22)
+target[4]:q4(26)
+target[5]:q5(30)
+target[6]:q6(33)
+target[7]:q7(35)
+target[8]:q8(37)
+target[9]:q9(39)
+
+target[0]:q0(7)
+target[0]:from s0(0) to q0(7)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:26
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	1092.59ms
+
+target[1]:q1(16)
+target[1]:from s0(0) to q1(16)
+at line 17851 is unreachable under bound 10 when check=
+Number of path checked:52
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	2175.58ms
+
+target[2]:q2(20)
+target[2]:from s0(0) to q2(20)
+at line 17858 is unreachable under bound 10 when check=
+Number of path checked:78
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	3245.87ms
+
+target[3]:q3(22)
+target[3]:from s0(0) to q3(22)
+at line 17860 is unreachable under bound 10 when check=
+Number of path checked:104
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	4313.76ms
+
+target[4]:q4(26)
+target[4]:from s0(0) to q4(26)
+at line 17864 is unreachable under bound 10 when check=
+Number of path checked:130
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	5385.94ms
+
+target[5]:q5(30)
+target[5]:from s0(0) to q5(30)
+at line 17872 is unreachable under bound 10 when check=
+Number of path checked:156
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	6462.86ms
+
+target[6]:q6(33)
+[runlim] sample:		10.0 seconds, 1227.7 MB
+target[6]:from s0(0) to q6(33)
+at line 17877 is unreachable under bound 10 when check=
+Number of path checked:182
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	7546.58ms
+
+target[7]:q7(35)
+target[7]:from s0(0) to q7(35)
+at line 17877 is unreachable under bound 10 when check=
+Number of path checked:208
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	8636.06ms
+
+target[8]:q8(37)
+target[8]:from s0(0) to q8(37)
+at line 17877 is unreachable under bound 10 when check=
+Number of path checked:234
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	9715.14ms
+
+target[9]:q9(39)
+[runlim] sample:		13.4 seconds, 1735.7 MB
+target[9]:from s0(0) to q9(39)
+at line 17877 is unreachable under bound 10 when check=
+Number of path checked:260
+#Avg_var: 5.992308e+01
+#Avg_nolinearop: 1.538462e+00
+Dreal Time: 	10797.5ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_debye_4_e	check:	
+#Dreal Time: 	10.7975s
+#CPU Time: 13.636 s
+#Memory used: 2083.00 MB
+While deleting: [17 x double]* %adeb4_data
+Use still stuck around after Def is destroyed:@adeb4_data = internal global [17 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 [runlim] sample:		14.2 seconds, 1848.3 MB
+llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007f8f3e027340
+3  libc.so.6       0x00007f8f3d255cc9 gsignal + 57
+4  libc.so.6       0x00007f8f3d2590d8 abort + 328
+5  libc.so.6       0x00007f8f3d24eb86
+6  libc.so.6       0x00007f8f3d24ec32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007f8f3d240ec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_debye_4_e 
+[runlim] sample:		14.2 seconds, 1848.2 MB
+Aborted (core dumped)
+[runlim] end:			Fri May 27 13:52:39 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		943
+[runlim] real:			50.89 seconds
+[runlim] time:			14.27 seconds
+[runlim] space:			1854.3 MB
+[runlim] samples:		475

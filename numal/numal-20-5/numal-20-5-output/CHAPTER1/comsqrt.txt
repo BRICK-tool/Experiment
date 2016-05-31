@@ -1,0 +1,116 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/comsqrt.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:21:21 2016
+[runlim] main pid:		7767
+bench/CHAPTER1/comsqrt.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/comsqrt.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/comsqrt.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER1/comsqrt.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/comsqrt.bc>bench/CHAPTER1/comsqrtbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	385.435ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 43
+#targetsize:	14
+target[0]:q0(6)
+target[1]:q1(9)
+target[2]:q2(11)
+target[3]:q3(14)
+target[4]:q4(16)
+target[5]:q5(21)
+target[6]:q6(23)
+target[7]:q7(25)
+target[8]:q8(29)
+target[9]:q9(32)
+target[10]:q10(34)
+target[11]:q11(36)
+target[12]:q12(42)
+target[13]:q13(48)
+
+target[0]:q0(6)
+[runlim] sample:		9.7 seconds, 183.2 MB
+[runlim] sample:		19.7 seconds, 225.3 MB
+[runlim] sample:		29.7 seconds, 256.2 MB
+[runlim] sample:		39.7 seconds, 285.1 MB
+[runlim] sample:		49.7 seconds, 311.4 MB
+target[0]:from s0(0) to q0(6)
+at line 434 in state q0 is reachable
+Number of path checked:60
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;8298;
+	e0
+	s1:	LocLine:424;426;428;
+	e1
+	s4:	LocLine:431;432;433;
+	e7
+	s5:	LocLine:434;
+	e8
+	q0:	LocLine:434;
+#Avg_var: 1.366667e+01
+#Avg_nolinearop: 4.233333e+00
+Dreal Time: 	50896.8ms
+
+target[1]:q1(9)
+[runlim] sample:		59.7 seconds, 473.5 MB
+[runlim] sample:		69.7 seconds, 515.6 MB
+[runlim] sample:		79.7 seconds, 541.1 MB
+[runlim] sample:		89.7 seconds, 570.2 MB
+[runlim] sample:		99.7 seconds, 601.7 MB
+[runlim] sample:		109.7 seconds, 654.5 MB
+[runlim] sample:		119.7 seconds, 698.4 MB
+[runlim] sample:		129.7 seconds, 716.1 MB
+[runlim] sample:		139.7 seconds, 724.9 MB
+[runlim] sample:		149.7 seconds, 729.0 MB
+[runlim] sample:		159.7 seconds, 764.6 MB
+[runlim] sample:		169.6 seconds, 792.2 MB
+[runlim] sample:		179.6 seconds, 819.3 MB
+target[1]:from s0(0) to q1(9)
+at line 436 is unreachable under bound 20 when check=
+Number of path checked:200
+#Avg_var: 1.390000e+01
+#Avg_nolinearop: 4.205000e+00
+Dreal Time: 	186823ms
+
+target[2]:q2(11)
+[runlim] sample:		189.6 seconds, 1049.2 MB
+[runlim] sample:		199.6 seconds, 1130.7 MB
+[runlim] sample:		209.6 seconds, 1169.9 MB
+[runlim] sample:		219.6 seconds, 1199.3 MB
+[runlim] sample:		229.6 seconds, 1228.7 MB
+[runlim] sample:		239.6 seconds, 1268.4 MB
+[runlim] sample:		249.6 seconds, 1318.4 MB
+[runlim] sample:		259.6 seconds, 1351.4 MB
+[runlim] sample:		269.6 seconds, 1365.1 MB
+[runlim] sample:		279.6 seconds, 1369.2 MB
+[runlim] sample:		289.6 seconds, 1388.0 MB
+[runlim] sample:		299.6 seconds, 1418.9 MB
+[runlim] end:			Sat May 28 18:26:21 2016
+[runlim] status:		out of time
+[runlim] result:		1
+[runlim] children:		6012
+[runlim] real:			300.99 seconds
+[runlim] time:			300.07 seconds
+[runlim] space:			1418.9 MB
+[runlim] samples:		3005
+Killed

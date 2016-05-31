@@ -1,0 +1,74 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_dawson_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 15:49:56 2016
+[runlim] main pid:		2581
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_dawson_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_dawson_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	3723ms
+MainFunc: gsl_sf_dawson_e
+#CallDepth: 3
+#Loc: 76
+#targetsize:	7
+target[0]:q0(5)
+target[1]:q1(15)
+target[2]:q2(24)
+target[3]:q3(27)
+target[4]:q4(34)
+target[5]:q5(36)
+target[6]:q6(40)
+
+target[0]:q0(5)
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007f4a1eddc340
+3  libc.so.6       0x00007f4a1e00acc9 gsignal + 57
+4  libc.so.6       0x00007f4a1e00e0d8 abort + 328
+5  libc.so.6       0x00007f4a1e047394
+6  libc.so.6       0x00007f4a1e0dec9c __fortify_fail + 92
+7  libc.so.6       0x00007f4a1e0ddb60
+8  libc.so.6       0x00007f4a1e0dd069
+9  libc.so.6       0x00007f4a1e04f70c _IO_default_xsputn + 188
+10 libc.so.6       0x00007f4a1e024b29 __printf_fp + 6217
+11 libc.so.6       0x00007f4a1e022793 _IO_vfprintf + 19107
+12 libc.so.6       0x00007f4a1e0dd0f4 __vsprintf_chk + 132
+13 libc.so.6       0x00007f4a1e0dd04d __sprintf_chk + 125
+14 libdreal.so     0x00007f4a1da3afee Egraph::mkNum(double) + 78
+15 buildCFG.so     0x00007f4a1ddb7ad1
+16 buildCFG.so     0x00007f4a1ddba05a
+17 buildCFG.so     0x00007f4a1ddba99b
+18 buildCFG.so     0x00007f4a1ddbb207
+19 buildCFG.so     0x00007f4a1ddbb4a3
+20 buildCFG.so     0x00007f4a1ddbbb34
+21 buildCFG.so     0x00007f4a1ddc21c7
+22 buildCFG.so     0x00007f4a1ddbc7f3
+23 opt             0x0000000001599ed7 llvm::FPPassManager::doInitialization(llvm::Module&) + 87
+24 opt             0x00000000015a33c7 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 375
+25 opt             0x00000000005df45c main + 3548
+26 libc.so.6       0x00007f4a1dff5ec5 __libc_start_main + 245
+27 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_dawson_e 
+Aborted (core dumped)
+[runlim] end:			Fri May 27 15:50:00 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		78
+[runlim] real:			4.50 seconds
+[runlim] time:			3.84 seconds
+[runlim] space:			59.9 MB
+[runlim] samples:		39

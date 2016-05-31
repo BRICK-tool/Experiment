@@ -1,0 +1,99 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_expint_3_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 22:40:33 2016
+[runlim] main pid:		2343
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_expint_3_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_expint_3_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	2513.91ms
+MainFunc: gsl_sf_expint_3_e
+#CallDepth: 2
+#Loc: 67
+#targetsize:	4
+target[0]:q0(7)
+target[1]:q1(16)
+target[2]:q2(18)
+target[3]:q3(21)
+
+target[0]:q0(7)
+[runlim] sample:		7.1 seconds, 184.1 MB
+target[0]:from s0(0) to q0(7)
+at line 15102 is unreachable under bound 20 when check=
+Number of path checked:23
+#Avg_var: 1.020000e+02
+#Avg_nolinearop: 2.652174e+00
+Dreal Time: 	13237.5ms
+
+target[1]:q1(16)
+[runlim] sample:		17.1 seconds, 478.8 MB
+[runlim] sample:		27.1 seconds, 617.3 MB
+target[1]:from s0(0) to q1(16)
+at line 20312 is unreachable under bound 20 when check=
+Number of path checked:46
+#Avg_var: 1.020000e+02
+#Avg_nolinearop: 2.652174e+00
+Dreal Time: 	26251.1ms
+
+target[2]:q2(18)
+[runlim] sample:		37.1 seconds, 951.1 MB
+target[2]:from s0(0) to q2(18)
+at line 20313 is unreachable under bound 20 when check=
+Number of path checked:69
+#Avg_var: 1.020000e+02
+#Avg_nolinearop: 2.652174e+00
+Dreal Time: 	39275.6ms
+
+target[3]:q3(21)
+[runlim] sample:		47.1 seconds, 1249.9 MB
+target[3]:from s0(0) to q3(21)
+at line 15102 is unreachable under bound 20 when check=
+Number of path checked:92
+#Avg_var: 1.020000e+02
+#Avg_nolinearop: 2.652174e+00
+Dreal Time: 	52431.8ms
+
+bound:	20	precision:	1.000000e-02	functionName:	gsl_sf_expint_3_e	check:	
+#Dreal Time: 	52.4318s
+#CPU Time: 55.056 s
+#Memory used: 1583.00 MB
+While deleting: [23 x double]* %expint3a_data
+Use still stuck around after Def is destroyed:@expint3a_data = internal global [23 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007f8405802340
+3  libc.so.6       0x00007f8404a30cc9 gsignal + 57
+4  libc.so.6       0x00007f8404a340d8 abort + 328
+5  libc.so.6       0x00007f8404a29b86
+6  libc.so.6       0x00007f8404a29c32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007f8404a1bec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_expint_3_e 
+Aborted (core dumped)
+[runlim] end:			Fri May 27 22:41:32 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1178
+[runlim] real:			59.38 seconds
+[runlim] time:			55.56 seconds
+[runlim] space:			1489.5 MB
+[runlim] samples:		587

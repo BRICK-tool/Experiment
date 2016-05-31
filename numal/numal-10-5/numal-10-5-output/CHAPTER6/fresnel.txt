@@ -1,0 +1,171 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/fresnel.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 19:35:35 2016
+[runlim] main pid:		26572
+bench/CHAPTER6/fresnel.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/fresnel.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/fresnel.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/fresnel.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/fresnel.bc>bench/CHAPTER6/fresnelbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	4081.95ms
+MainFunc: test
+#CallDepth: 4
+#Loc: 131
+#targetsize:	17
+target[0]:q0(3)
+target[1]:q1(5)
+target[2]:q2(9)
+target[3]:q3(11)
+target[4]:q4(19)
+target[5]:q5(21)
+target[6]:q6(25)
+target[7]:q7(27)
+target[8]:q8(41)
+target[9]:q9(43)
+target[10]:q10(45)
+target[11]:q11(49)
+target[12]:q12(51)
+target[13]:q13(53)
+target[14]:q14(56)
+target[15]:q15(58)
+target[16]:q16(60)
+
+target[0]:q0(3)
+[runlim] sample:		9.5 seconds, 272.4 MB
+target[0]:from s0(0) to q0(3)
+at line 7219 is unreachable under bound 10 when check=
+Number of path checked:37
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	7334.56ms
+
+target[1]:q1(5)
+target[1]:from s0(0) to q1(5)
+at line 7225 is unreachable under bound 10 when check=
+Number of path checked:74
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	14667.1ms
+
+target[2]:q2(9)
+[runlim] sample:		19.5 seconds, 684.4 MB
+target[2]:from s0(0) to q2(9)
+at line 7236 is unreachable under bound 10 when check=
+Number of path checked:111
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	21883.5ms
+
+target[3]:q3(11)
+[runlim] sample:		29.5 seconds, 1083.1 MB
+target[3]:from s0(0) to q3(11)
+at line 7243 is unreachable under bound 10 when check=
+Number of path checked:148
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	29089.8ms
+
+target[4]:q4(19)
+[runlim] sample:		39.4 seconds, 1504.3 MB
+target[4]:from s0(0) to q4(19)
+at line 7219 is unreachable under bound 10 when check=
+Number of path checked:185
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	36157ms
+
+target[5]:q5(21)
+[runlim] sample:		48.4 seconds, 1881.8 MB
+target[5]:from s0(0) to q5(21)
+at line 7225 is unreachable under bound 10 when check=
+Number of path checked:222
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	43668.7ms
+
+target[6]:q6(25)
+[runlim] end:			Sat May 28 19:36:34 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		1112
+[runlim] real:			59.96 seconds
+[runlim] time:			52.93 seconds
+[runlim] space:			2055.1 MB
+[runlim] samples:		554
+target[6]:from s0(0) to q6(25)
+at line 7236 is unreachable under bound 10 when check=
+Number of path checked:259
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	51606ms
+
+target[7]:q7(27)
+target[7]:from s0(0) to q7(27)
+at line 7243 is unreachable under bound 10 when check=
+Number of path checked:296
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	59232.4ms
+
+target[8]:q8(41)
+target[8]:from s0(0) to q8(41)
+at line 7128 is unreachable under bound 10 when check=
+Number of path checked:333
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	66951.6ms
+
+target[9]:q9(43)
+target[9]:from s0(0) to q9(43)
+at line 7137 is unreachable under bound 10 when check=
+Number of path checked:370
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	73985.3ms
+
+target[10]:q10(45)
+target[10]:from s0(0) to q10(45)
+at line 7144 is unreachable under bound 10 when check=
+Number of path checked:407
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	81596.8ms
+
+target[11]:q11(49)
+target[11]:from s0(0) to q11(49)
+at line 7146 is unreachable under bound 10 when check=
+Number of path checked:444
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	89310.7ms
+
+target[12]:q12(51)
+target[12]:from s0(0) to q12(51)
+at line 7156 is unreachable under bound 10 when check=
+Number of path checked:481
+#Avg_var: 2.521622e+01
+#Avg_nolinearop: 2.054054e+00
+Dreal Time: 	97316.5ms
+
+target[13]:q13(53)

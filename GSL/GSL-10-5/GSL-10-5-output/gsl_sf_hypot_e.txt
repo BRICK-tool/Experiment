@@ -1,0 +1,105 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_hypot_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:24:14 2016
+[runlim] main pid:		2857
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_hypot_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_hypot_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	544.389ms
+MainFunc: gsl_sf_hypot_e
+#CallDepth: 0
+#Loc: 27
+#targetsize:	3
+target[0]:q0(10)
+target[1]:q1(12)
+target[2]:q2(14)
+
+target[0]:q0(10)
+target[0]:from s0(0) to q0(10)
+at line 36627 in state q0 is reachable
+gsl_sf_hypot_e_x = [-5.000000e+01, -5.000000e+01]
+gsl_sf_hypot_e_y = [-5.000000e+01, -5.000000e+01]
+gsl_sf_hypot_e_result_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_hypot_e_result_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:7
+Witness:
+	s0:	LocLine:36613;36617;
+	e0
+	s3:	LocLine:36623;36624;36625;
+	e5
+	s5:	LocLine:36625;
+	e8
+	s6:	LocLine:36625;36626;
+	e9
+	s8:	LocLine:36626;
+	e12
+	s9:	LocLine:36626;36627;
+	e13
+	q0:	LocLine:36627;
+#Avg_var: 1.200000e+01
+#Avg_nolinearop: 2.000000e+00
+Dreal Time: 	16.134ms
+
+target[1]:q1(12)
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007fbd98f77340
+3  libc.so.6       0x00007fbd981a5cc9 gsignal + 57
+4  libc.so.6       0x00007fbd981a90d8 abort + 328
+5  libc.so.6       0x00007fbd981e2394
+6  libc.so.6       0x00007fbd98279c9c __fortify_fail + 92
+7  libc.so.6       0x00007fbd98278b60
+8  libc.so.6       0x00007fbd98278069
+9  libc.so.6       0x00007fbd981ea70c _IO_default_xsputn + 188
+10 libc.so.6       0x00007fbd981bfb29 __printf_fp + 6217
+11 libc.so.6       0x00007fbd981bd793 _IO_vfprintf + 19107
+12 libc.so.6       0x00007fbd982780f4 __vsprintf_chk + 132
+13 libc.so.6       0x00007fbd9827804d __sprintf_chk + 125
+14 libdreal.so     0x00007fbd97bd5fee Egraph::mkNum(double) + 78
+15 buildCFG.so     0x00007fbd97f4f985
+16 buildCFG.so     0x00007fbd97f5463e
+17 buildCFG.so     0x00007fbd97f5505a
+18 buildCFG.so     0x00007fbd97f5599b
+19 buildCFG.so     0x00007fbd97f56207
+20 buildCFG.so     0x00007fbd97f564a3
+21 buildCFG.so     0x00007fbd97f566b4
+22 buildCFG.so     0x00007fbd97f566b4
+23 buildCFG.so     0x00007fbd97f566b4
+24 buildCFG.so     0x00007fbd97f566b4
+25 buildCFG.so     0x00007fbd97f566b4
+26 buildCFG.so     0x00007fbd97f566b4
+27 buildCFG.so     0x00007fbd97f566b4
+28 buildCFG.so     0x00007fbd97f566b4
+29 buildCFG.so     0x00007fbd97f56b34
+30 buildCFG.so     0x00007fbd97f5d1c7
+31 buildCFG.so     0x00007fbd97f577f3
+32 opt             0x0000000001599ed7 llvm::FPPassManager::doInitialization(llvm::Module&) + 87
+33 opt             0x00000000015a33c7 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 375
+34 opt             0x00000000005df45c main + 3548
+35 libc.so.6       0x00007fbd98190ec5 __libc_start_main + 245
+36 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_hypot_e 
+Aborted (core dumped)
+[runlim] end:			Fri May 27 14:24:16 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		28
+[runlim] real:			2.45 seconds
+[runlim] time:			1.31 seconds
+[runlim] space:			87.7 MB
+[runlim] samples:		14

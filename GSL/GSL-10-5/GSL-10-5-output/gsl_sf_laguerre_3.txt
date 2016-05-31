@@ -1,0 +1,108 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_laguerre_3
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 16:11:10 2016
+[runlim] main pid:		3006
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_laguerre_3 <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_laguerre_3> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1123.33ms
+MainFunc: gsl_sf_laguerre_3
+#CallDepth: 1
+#Loc: 32
+#targetsize:	3
+target[0]:q0(6)
+target[1]:q1(8)
+target[2]:q2(10)
+
+target[0]:q0(6)
+target[0]:from s0(0) to q0(6)
+at line 30084 in state q0 is reachable
+gsl_sf_laguerre_3_a = [-1.010000e+00, -1.002462e+00]
+gsl_sf_laguerre_3_x = [-1.000000e+02, -9.999390e+01]
+Number of path checked:5
+Witness:
+	s0:	LocLine:30186;30188;
+	e0
+	s1:	LocLine:30066;30070;
+	e1
+	s3:	LocLine:30077;
+	e4
+	s5:	LocLine:30083;30084;
+	e7
+	q0:	LocLine:30084;
+#Avg_var: 1.220000e+01
+#Avg_nolinearop: 4.000000e-01
+Dreal Time: 	27.407ms
+
+target[1]:q1(8)
+target[1]:from s0(0) to q1(8)
+at line 30085 in state q1 is reachable
+gsl_sf_laguerre_3_a = [-2.005000e+00, -2.000000e+00]
+gsl_sf_laguerre_3_x = [-1.000000e+02, -9.999390e+01]
+Number of path checked:12
+Witness:
+	s0:	LocLine:30186;30188;
+	e0
+	s1:	LocLine:30066;30070;
+	e1
+	s3:	LocLine:30077;
+	e4
+	s5:	LocLine:30083;30084;
+	e8
+	s6:	LocLine:30084;30085;
+	e9
+	q1:	LocLine:30085;
+#Avg_var: 1.250000e+01
+#Avg_nolinearop: 5.000000e-01
+Dreal Time: 	66.202ms
+
+target[2]:q2(10)
+target[2]:from s0(0) to q2(10)
+at line 30086 in state q2 is reachable
+gsl_sf_laguerre_3_a = [-3.003333e+00, -3.000000e+00]
+gsl_sf_laguerre_3_x = [-1.000000e+02, -9.999390e+01]
+Number of path checked:21
+Witness:
+	s0:	LocLine:30186;30188;
+	e0
+	s1:	LocLine:30066;30070;
+	e1
+	s3:	LocLine:30077;
+	e4
+	s5:	LocLine:30083;30084;
+	e8
+	s6:	LocLine:30084;30085;
+	e10
+	s7:	LocLine:30085;30086;
+	e11
+	q2:	LocLine:30086;
+#Avg_var: 1.271429e+01
+#Avg_nolinearop: 5.714286e-01
+Dreal Time: 	118.883ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_laguerre_3	check:	
+#Dreal Time: 	0.118883s
+#CPU Time: 1.368 s
+#Memory used: 146.00 MB
+[runlim] end:			Fri May 27 16:11:12 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		30
+[runlim] real:			2.48 seconds
+[runlim] time:			1.48 seconds
+[runlim] space:			102.3 MB
+[runlim] samples:		15

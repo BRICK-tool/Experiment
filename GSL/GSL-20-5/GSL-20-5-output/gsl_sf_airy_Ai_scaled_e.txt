@@ -1,0 +1,62 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_airy_Ai_scaled_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 22:18:12 2016
+[runlim] main pid:		2314
+[runlim] sample:		0.0 seconds, 34.7 MB
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_airy_Ai_scaled_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_airy_Ai_scaled_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+[runlim] sample:		6.1 seconds, 60.6 MB
+#BUILDCFG Time: 	6551.29ms
+MainFunc: gsl_sf_airy_Ai_scaled_e
+#CallDepth: 9
+#Loc: 111
+#targetsize:	15
+target[0]:q0(4)
+target[1]:q1(7)
+target[2]:q2(18)
+target[3]:q3(30)
+target[4]:q4(33)
+target[5]:q5(44)
+target[6]:q6(60)
+target[7]:q7(71)
+target[8]:q8(82)
+target[9]:q9(87)
+target[10]:q10(89)
+target[11]:q11(91)
+target[12]:q12(94)
+target[13]:q13(104)
+target[14]:q14(106)
+
+target[0]:q0(4)
+[runlim] sample:		16.1 seconds, 1095.2 MB
+[runlim] end:			Fri May 27 22:18:51 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		785
+[runlim] real:			39.79 seconds
+[runlim] time:			25.48 seconds
+[runlim] space:			2085.0 MB
+[runlim] samples:		394
+target[0]:from s0(0) to q0(4)
+at line 4776 is unreachable under bound 20 when check=
+Number of path checked:63
+#Avg_var: 3.713175e+02
+#Avg_nolinearop: 1.111111e+00
+Dreal Time: 	60231.2ms
+
+target[1]:q1(7)

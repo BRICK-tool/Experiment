@@ -1,0 +1,130 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_expint_E1
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:08:28 2016
+[runlim] main pid:		4041
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_expint_E1 <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_expint_E1> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1448.61ms
+MainFunc: gsl_sf_expint_E1
+#CallDepth: 5
+#Loc: 112
+#targetsize:	8
+target[0]:q0(7)
+target[1]:q1(12)
+target[2]:q2(15)
+target[3]:q3(20)
+target[4]:q4(25)
+target[5]:q5(30)
+target[6]:q6(40)
+target[7]:q7(46)
+
+target[0]:q0(7)
+target[0]:from s0(0) to q0(7)
+at line 20633 is unreachable under bound 10 when check=
+Number of path checked:29
+#Avg_var: 1.007241e+02
+#Avg_nolinearop: 2.379310e+00
+Dreal Time: 	1141.51ms
+
+target[1]:q1(12)
+target[1]:from s0(0) to q1(12)
+at line 20635 is unreachable under bound 10 when check=
+Number of path checked:58
+#Avg_var: 1.007241e+02
+#Avg_nolinearop: 2.379310e+00
+Dreal Time: 	2283.86ms
+
+target[2]:q2(15)
+target[2]:from s0(0) to q2(15)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:87
+#Avg_var: 1.007241e+02
+#Avg_nolinearop: 2.379310e+00
+Dreal Time: 	3426.01ms
+
+target[3]:q3(20)
+target[3]:from s0(0) to q3(20)
+at line 20642 is unreachable under bound 10 when check=
+Number of path checked:116
+#Avg_var: 1.007241e+02
+#Avg_nolinearop: 2.379310e+00
+Dreal Time: 	4567.56ms
+
+target[4]:q4(25)
+target[4]:from s0(0) to q4(25)
+at line 20644 is unreachable under bound 10 when check=
+Number of path checked:145
+#Avg_var: 1.007241e+02
+#Avg_nolinearop: 2.379310e+00
+Dreal Time: 	5712.3ms
+
+target[5]:q5(30)
+target[5]:from s0(0) to q5(30)
+at line 20651 is unreachable under bound 10 when check=
+Number of path checked:174
+#Avg_var: 1.007241e+02
+#Avg_nolinearop: 2.379310e+00
+Dreal Time: 	6855ms
+
+target[6]:q6(40)
+target[6]:from s0(0) to q6(40)
+at line 20664 is unreachable under bound 10 when check=
+Number of path checked:203
+#Avg_var: 1.007241e+02
+#Avg_nolinearop: 2.379310e+00
+Dreal Time: 	7997.51ms
+
+target[7]:q7(46)
+[runlim] sample:		10.0 seconds, 1852.6 MB
+[runlim] end:			Fri May 27 14:08:39 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		216
+[runlim] real:			11.55 seconds
+[runlim] time:			10.78 seconds
+[runlim] space:			2053.4 MB
+[runlim] samples:		108
+target[7]:from s0(0) to q7(46)
+at line 20674 is unreachable under bound 10 when check=
+Number of path checked:232
+#Avg_var: 1.007241e+02
+#Avg_nolinearop: 2.379310e+00
+Dreal Time: 	9192.03ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_expint_E1	check:	
+#Dreal Time: 	9.19203s
+#CPU Time: 10.78 s
+#Memory used: 2288.00 MB
+While deleting: [39 x double]* %AE11_data
+Use still stuck around after Def is destroyed:@AE11_data = internal global [39 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007fb2d9a71340
+3  libc.so.6       0x00007fb2d8c9fcc9 gsignal + 57
+4  libc.so.6       0x00007fb2d8ca30d8 abort + 328
+5  libc.so.6       0x00007fb2d8c98b86
+6  libc.so.6       0x00007fb2d8c98c32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007fb2d8c8aec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_expint_E1 

@@ -1,0 +1,76 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/logonepl.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 21:42:33 2016
+[runlim] main pid:		2646
+bench/CHAPTER6/logonepl.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/logonepl.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/logonepl.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/logonepl.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/logonepl.bc>bench/CHAPTER6/logoneplbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	145.728ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 19
+#targetsize:	2
+target[0]:q0(6)
+target[1]:q1(9)
+
+target[0]:q0(6)
+target[0]:from s0(0) to q0(6)
+at line 7540 in state q0 is reachable
+Number of path checked:14
+Witness:
+	s0:	LocLine:8294;8295;
+	e0
+	s1:	LocLine:7533;7535;7537;
+	e1
+	s3:	LocLine:7539;
+	e5
+	s5:	LocLine:7540;
+	e8
+	q0:	LocLine:7540;
+#Avg_var: 5.428571e+00
+#Avg_nolinearop: 3.571429e-01
+Dreal Time: 	1244ms
+
+target[1]:q1(9)
+target[1]:from s0(0) to q1(9)
+at line 7542 is unreachable under bound 20 when check=
+Number of path checked:34
+#Avg_var: 5.352941e+00
+#Avg_nolinearop: 3.823529e-01
+Dreal Time: 	2496.79ms
+
+bound:	20	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	2.49679s
+#CPU Time: 2.68506 s
+#Memory used: 173.00 MB
+[runlim] end:			Sat May 28 21:42:39 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		143
+[runlim] real:			6.80 seconds
+[runlim] time:			2.70 seconds
+[runlim] space:			83.9 MB
+[runlim] samples:		66

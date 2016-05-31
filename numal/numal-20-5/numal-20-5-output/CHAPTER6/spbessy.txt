@@ -1,0 +1,126 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/spbessy.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 22:10:42 2016
+[runlim] main pid:		2807
+bench/CHAPTER6/spbessy.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/spbessy.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/spbessy.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/spbessy.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/spbessy.bc>bench/CHAPTER6/spbessybuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	195.366ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 21
+#targetsize:	4
+target[0]:q0(3)
+target[1]:q1(6)
+target[2]:q2(8)
+target[3]:q3(12)
+
+target[0]:q0(3)
+target[0]:from s0(0) to q0(3)
+at line 8128 in state q0 is reachable
+Number of path checked:17
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:8125;8127;
+	e2
+	s2:	LocLine:8128;
+	e3
+	q0:	LocLine:8128;
+#Avg_var: 1.017647e+01
+#Avg_nolinearop: 2.117647e+00
+Dreal Time: 	1263.73ms
+
+target[1]:q1(6)
+target[1]:from s0(0) to q1(6)
+at line 8132 in state q1 is reachable
+Number of path checked:21
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:8125;8127;
+	e1
+	s4:	LocLine:8130;8131;8132;
+	e6
+	q1:	LocLine:8132;
+#Avg_var: 9.809524e+00
+#Avg_nolinearop: 1.904762e+00
+Dreal Time: 	1276.06ms
+
+target[2]:q2(8)
+target[2]:from s0(0) to q2(8)
+at line 8133 in state q2 is reachable
+Number of path checked:27
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:8125;8127;
+	e1
+	s4:	LocLine:8130;8131;8132;
+	e7
+	s5:	LocLine:8132;8133;
+	e8
+	q2:	LocLine:8133;
+#Avg_var: 9.592593e+00
+#Avg_nolinearop: 1.851852e+00
+Dreal Time: 	1629.26ms
+
+target[3]:q3(12)
+target[3]:from s0(0) to q3(12)
+at line 8135 in state q3 is reachable
+Number of path checked:40
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;
+	e0
+	s1:	LocLine:8125;8127;
+	e1
+	s4:	LocLine:8130;8131;8132;
+	e7
+	s5:	LocLine:8132;8133;
+	e9
+	s6:	LocLine:8133;8134;
+	e10
+	s7:	LocLine:8134;
+	e12
+	s8:	LocLine:8135;
+	e13
+	q3:	LocLine:8135;
+#Avg_var: 9.550000e+00
+#Avg_nolinearop: 1.900000e+00
+Dreal Time: 	2146.67ms
+
+bound:	20	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	2.14667s
+#CPU Time: 2.38971 s
+#Memory used: 173.00 MB
+[runlim] end:			Sat May 28 22:10:45 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		56
+[runlim] real:			3.13 seconds
+[runlim] time:			2.40 seconds
+[runlim] space:			90.9 MB
+[runlim] samples:		27

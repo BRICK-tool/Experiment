@@ -1,0 +1,141 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_I0_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 21:33:02 2016
+[runlim] main pid:		2312
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=gsl_sf_bessel_I0_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_I0_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	5289.24ms
+MainFunc: gsl_sf_bessel_I0_e
+#CallDepth: 5
+#Loc: 103
+#targetsize:	14
+target[0]:q0(5)
+target[1]:q1(19)
+target[2]:q2(28)
+target[3]:q3(30)
+target[4]:q4(33)
+target[5]:q5(40)
+target[6]:q6(42)
+target[7]:q7(44)
+target[8]:q8(47)
+target[9]:q9(49)
+target[10]:q10(52)
+target[11]:q11(59)
+target[12]:q12(61)
+target[13]:q13(63)
+
+target[0]:q0(5)
+[runlim] sample:		7.0 seconds, 194.1 MB
+target[0]:from s0(0) to q0(5)
+at line 15102 is unreachable under bound 20 when check=
+Number of path checked:31
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	5912.63ms
+
+target[1]:q1(19)
+[runlim] sample:		17.0 seconds, 1324.6 MB
+target[1]:from s0(0) to q1(19)
+at line 15102 is unreachable under bound 20 when check=
+Number of path checked:62
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	11695ms
+
+target[2]:q2(28)
+[runlim] end:			Fri May 27 21:33:28 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		528
+[runlim] real:			26.69 seconds
+[runlim] time:			23.21 seconds
+[runlim] space:			2078.0 MB
+[runlim] samples:		262
+target[2]:from s0(0) to q2(28)
+at line 8233 is unreachable under bound 20 when check=
+Number of path checked:93
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	17613.9ms
+
+target[3]:q3(30)
+target[3]:from s0(0) to q3(30)
+at line 8235 is unreachable under bound 20 when check=
+Number of path checked:124
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	25509.7ms
+
+target[4]:q4(33)
+target[4]:from s0(0) to q4(33)
+at line 15102 is unreachable under bound 20 when check=
+Number of path checked:155
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	33094.8ms
+
+target[5]:q5(40)
+target[5]:from s0(0) to q5(40)
+at line 8236 is unreachable under bound 20 when check=
+Number of path checked:186
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	40569ms
+
+target[6]:q6(42)
+target[6]:from s0(0) to q6(42)
+at line 8237 is unreachable under bound 20 when check=
+Number of path checked:217
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	49395.5ms
+
+target[7]:q7(44)
+target[7]:from s0(0) to q7(44)
+at line 8238 is unreachable under bound 20 when check=
+Number of path checked:248
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	57767.6ms
+
+target[8]:q8(47)
+target[8]:from s0(0) to q8(47)
+at line 8243 is unreachable under bound 20 when check=
+Number of path checked:279
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	64447.5ms
+
+target[9]:q9(49)
+target[9]:from s0(0) to q9(49)
+at line 8245 is unreachable under bound 20 when check=
+Number of path checked:310
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	71108.4ms
+
+target[10]:q10(52)
+target[10]:from s0(0) to q10(52)
+at line 15102 is unreachable under bound 20 when check=
+Number of path checked:341
+#Avg_var: 1.443226e+02
+#Avg_nolinearop: 5.870968e+00
+Dreal Time: 	79808.5ms
+
+target[11]:q11(59)
+Killed

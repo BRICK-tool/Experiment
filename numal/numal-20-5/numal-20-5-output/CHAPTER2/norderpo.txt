@@ -1,0 +1,94 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER2/norderpo.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:42:18 2016
+[runlim] main pid:		8625
+bench/CHAPTER2/norderpo.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER2/norderpo.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER2/norderpo.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER2/norderpo.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER2/norderpo.bc>bench/CHAPTER2/norderpobuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	303.25ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 31
+#targetsize:	1
+target[0]:q0(17)
+
+target[0]:q0(17)
+
+
+
+
+
+
+
+
+
+
+
+
+
+target[0]:from s0(0) to q0(17)
+at line 1924 in state q0 is reachable
+Number of path checked:17
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;8298;
+	e0
+	s1:	LocLine:1904;1908;1909;1911;
+	e2
+	s2:	LocLine:1912;1913;1914;
+	e3
+	s3:	LocLine:1914;
+	e4
+	s6:	LocLine:1918;1919;1920;
+	e8
+	s7:	LocLine:1920;
+	e9
+	s10:	LocLine:1921;
+	e13
+	s11:	LocLine:1921;
+	e15
+	s12:	LocLine:1922;1923;
+	e16
+	s13:	LocLine:1923;
+	e17
+	s16:	LocLine:1924;
+	e21
+	q0:	LocLine:1924;
+#Avg_var: 1.435294e+01
+#Avg_nolinearop: 1.176471e-01
+Dreal Time: 	405.39ms
+
+bound:	20	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0.40539s
+#CPU Time: 0.749276 s
+#Memory used: 125.00 MB
+[runlim] end:			Sat May 28 18:42:19 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		22
+[runlim] real:			1.12 seconds
+[runlim] time:			0.76 seconds
+[runlim] space:			53.8 MB
+[runlim] samples:		10

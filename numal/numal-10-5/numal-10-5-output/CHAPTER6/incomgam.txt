@@ -1,0 +1,101 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/incomgam.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 20:01:13 2016
+[runlim] main pid:		2712
+bench/CHAPTER6/incomgam.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER6/incomgam.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER6/incomgam.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+2 warnings generated.
+<bench/CHAPTER6/incomgam.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/incomgam.bc>bench/CHAPTER6/incomgambuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	674.253ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 78
+#targetsize:	11
+target[0]:q0(2)
+target[1]:q1(8)
+target[2]:q2(11)
+target[3]:q3(13)
+target[4]:q4(15)
+target[5]:q5(20)
+target[6]:q6(23)
+target[7]:q7(27)
+target[8]:q8(29)
+target[9]:q9(31)
+target[10]:q10(33)
+
+target[0]:q0(2)
+target[0]:from s0(0) to q0(2)
+at line 7347 in state q0 is reachable
+Number of path checked:3
+Witness:
+	s0:	LocLine:8294;8295;8296;8297;8298;8299;8300;
+	e0
+	s1:	LocLine:7342;7344;7345;7347;
+	e1
+	q0:	LocLine:7347;
+#Avg_var: 2.066667e+01
+#Avg_nolinearop: 0.000000e+00
+Dreal Time: 	3.357ms
+
+target[1]:q1(8)
+[runlim] sample:		9.7 seconds, 64.7 MB
+[runlim] sample:		19.6 seconds, 64.7 MB
+[runlim] sample:		29.6 seconds, 64.7 MB
+[runlim] sample:		39.6 seconds, 64.7 MB
+[runlim] sample:		49.6 seconds, 64.7 MB
+[runlim] sample:		59.6 seconds, 64.7 MB
+[runlim] sample:		69.6 seconds, 68.9 MB
+[runlim] sample:		79.6 seconds, 69.9 MB
+[runlim] sample:		89.6 seconds, 69.9 MB
+[runlim] sample:		99.6 seconds, 69.9 MB
+[runlim] sample:		109.6 seconds, 69.9 MB
+[runlim] sample:		119.6 seconds, 69.9 MB
+[runlim] sample:		129.6 seconds, 69.9 MB
+[runlim] sample:		139.6 seconds, 69.9 MB
+[runlim] sample:		149.5 seconds, 69.9 MB
+[runlim] sample:		159.5 seconds, 69.9 MB
+[runlim] sample:		169.5 seconds, 69.9 MB
+[runlim] sample:		179.5 seconds, 69.9 MB
+[runlim] sample:		189.5 seconds, 69.9 MB
+[runlim] sample:		199.5 seconds, 69.9 MB
+[runlim] sample:		209.5 seconds, 69.9 MB
+[runlim] sample:		219.5 seconds, 69.9 MB
+[runlim] sample:		229.5 seconds, 69.9 MB
+[runlim] sample:		239.5 seconds, 69.9 MB
+[runlim] sample:		249.5 seconds, 69.9 MB
+[runlim] sample:		259.5 seconds, 69.9 MB
+[runlim] sample:		269.4 seconds, 69.9 MB
+[runlim] sample:		279.4 seconds, 69.9 MB
+[runlim] sample:		289.4 seconds, 69.9 MB
+[runlim] sample:		299.4 seconds, 69.9 MB
+[runlim] end:			Sat May 28 20:06:14 2016
+[runlim] status:		out of time
+[runlim] result:		1
+[runlim] children:		6015
+[runlim] real:			301.17 seconds
+[runlim] time:			300.03 seconds
+[runlim] space:			69.9 MB
+[runlim] samples:		3006
+Killed

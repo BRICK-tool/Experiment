@@ -1,0 +1,97 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_y0
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 13:53:57 2016
+[runlim] main pid:		3523
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_y0 <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_y0> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1119.35ms
+MainFunc: gsl_sf_bessel_y0
+#CallDepth: 2
+#Loc: 93
+#targetsize:	2
+target[0]:q0(17)
+target[1]:q1(19)
+
+target[0]:q0(17)
+target[0]:from s0(0) to q0(17)
+at line 13016 in state q0 is reachable
+gsl_sf_bessel_y0_x = [5.562680e-309, 1.000000e-02]
+Number of path checked:26
+Witness:
+	s0:	LocLine:13194;13196;
+	e0
+	s1:	LocLine:13003;13007;
+	e1
+	s3:	LocLine:13010;
+	e3
+	s5:	LocLine:13014;13015;
+	e5
+	s6:	LocLine:36537;36542;36543;36544;36546;36548;
+	e7
+	s7:	LocLine:36549;36550;36551;36552;
+	e8
+	s15:	LocLine:36609;
+	e18
+	s16:	LocLine:13015;13016;
+	e19
+	q0:	LocLine:13016;
+#Avg_var: 2.488462e+01
+#Avg_nolinearop: 1.076923e+00
+Dreal Time: 	1448.77ms
+
+target[1]:q1(19)
+target[1]:from s0(0) to q1(19)
+at line 13017 in state q1 is reachable
+gsl_sf_bessel_y0_x = [5.562680e-309, 1.220700e-04]
+Number of path checked:54
+Witness:
+	s0:	LocLine:13194;13196;
+	e0
+	s1:	LocLine:13003;13007;
+	e1
+	s3:	LocLine:13010;
+	e3
+	s5:	LocLine:13014;13015;
+	e5
+	s6:	LocLine:36537;36542;36543;36544;36546;36548;
+	e7
+	s7:	LocLine:36549;36550;36551;36552;
+	e8
+	s15:	LocLine:36609;
+	e18
+	s16:	LocLine:13015;13016;
+	e20
+	s17:	LocLine:13016;13017;
+	e21
+	q1:	LocLine:13017;
+#Avg_var: 2.500000e+01
+#Avg_nolinearop: 1.148148e+00
+Dreal Time: 	2907.36ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_y0	check:	
+#Dreal Time: 	2.90736s
+#CPU Time: 4.18 s
+#Memory used: 428.00 MB
+[runlim] end:			Fri May 27 13:54:02 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		88
+[runlim] real:			5.21 seconds
+[runlim] time:			4.38 seconds
+[runlim] space:			362.9 MB
+[runlim] samples:		44

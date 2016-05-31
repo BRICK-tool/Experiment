@@ -1,0 +1,35 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER6/fg.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 20:38:33 2016
+[runlim] main pid:		9578
+[runlim] sample:		0.0 seconds, 4.1 MB
+[runlim] sample:		0.0 seconds, 0.6 MB
+[runlim] sample:		0.2 seconds, 0.6 MB
+clang: error: unable to execute command: Killed
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 3.5.0 (tags/RELEASE_350/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+clang: note: diagnostic msg: PLEASE submit a bug report to http://llvm.org/bugs/ and include the crash backtrace, preprocessed source, and associated run script.
+clang: error: unable to execute command: posix_spawn failed: Cannot allocate memory
+clang: note: diagnostic msg: Error generating preprocessed source(s).
+<bench/CHAPTER6/fg.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER6/fg.bc>bench/CHAPTER6/fgbuildCFG.bc
+sh: 1: cannot open bench/CHAPTER6/fg.bc: No such file
+[runlim] end:			Sat May 28 20:42:14 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		761
+[runlim] real:			221.30 seconds
+[runlim] time:			1.77 seconds
+[runlim] space:			5.1 MB
+[runlim] samples:		398

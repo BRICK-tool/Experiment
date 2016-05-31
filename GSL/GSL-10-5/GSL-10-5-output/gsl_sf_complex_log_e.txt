@@ -1,0 +1,147 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_complex_log_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:45:56 2016
+[runlim] main pid:		3263
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_complex_log_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_complex_log_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	555.584ms
+MainFunc: gsl_sf_complex_log_e
+#CallDepth: 0
+#Loc: 18
+#targetsize:	4
+target[0]:q0(9)
+target[1]:q1(11)
+target[2]:q2(13)
+target[3]:q3(15)
+
+target[0]:q0(9)
+target[0]:from s0(0) to q0(9)
+at line 33649 in state q0 is reachable
+gsl_sf_complex_log_e_zr = [0.000000e+00, 0.000000e+00]
+gsl_sf_complex_log_e_zi = [-1.000000e+02, -9.999390e+01]
+gsl_sf_complex_log_e_lnr_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_log_e_lnr_1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_log_e_theta_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_log_e_theta_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:9
+Witness:
+	s0:	LocLine:33639;33644;
+	e0
+	s1:	LocLine:33644;
+	e3
+	s2:	LocLine:33645;33646;33647;
+	e5
+	s3:	LocLine:33647;
+	e6
+	s5:	LocLine:33647;33648;
+	e8
+	s7:	LocLine:33648;
+	e11
+	s8:	LocLine:33648;33649;
+	e12
+	q0:	LocLine:33649;
+#Avg_var: 1.333333e+01
+#Avg_nolinearop: 1.555556e+00
+Dreal Time: 	23.039ms
+
+target[1]:q1(11)
+target[1]:from s0(0) to q1(11)
+at line 33649 in state q1 is reachable
+gsl_sf_complex_log_e_zr = [0.000000e+00, 0.000000e+00]
+gsl_sf_complex_log_e_zi = [-1.000000e+02, -9.999390e+01]
+gsl_sf_complex_log_e_lnr_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_log_e_lnr_1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_log_e_theta_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_log_e_theta_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:20
+Witness:
+	s0:	LocLine:33639;33644;
+	e0
+	s1:	LocLine:33644;
+	e3
+	s2:	LocLine:33645;33646;33647;
+	e5
+	s3:	LocLine:33647;
+	e6
+	s5:	LocLine:33647;33648;
+	e8
+	s7:	LocLine:33648;
+	e11
+	s8:	LocLine:33648;33649;
+	e13
+	s9:	LocLine:33649;
+	e14
+	q1:	LocLine:33649;
+#Avg_var: 1.320000e+01
+#Avg_nolinearop: 1.800000e+00
+Dreal Time: 	57.255ms
+
+target[2]:q2(13)
+target[2]:from s0(0) to q2(13)
+at line 33649 in state q2 is reachable
+gsl_sf_complex_log_e_zr = [0.000000e+00, 0.000000e+00]
+gsl_sf_complex_log_e_zi = [-1.000000e+02, -9.999390e+01]
+gsl_sf_complex_log_e_lnr_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_log_e_lnr_1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_log_e_theta_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_complex_log_e_theta_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:33
+Witness:
+	s0:	LocLine:33639;33644;
+	e0
+	s1:	LocLine:33644;
+	e3
+	s2:	LocLine:33645;33646;33647;
+	e5
+	s3:	LocLine:33647;
+	e6
+	s5:	LocLine:33647;33648;
+	e8
+	s7:	LocLine:33648;
+	e11
+	s8:	LocLine:33648;33649;
+	e13
+	s9:	LocLine:33649;
+	e15
+	s10:	LocLine:33649;
+	e16
+	q2:	LocLine:33649;
+#Avg_var: 1.309091e+01
+#Avg_nolinearop: 2.000000e+00
+Dreal Time: 	105.038ms
+
+target[3]:q3(15)
+target[3]:from s0(0) to q3(15)
+at line 33649 is unreachable under bound 10 when check=
+Number of path checked:88
+#Avg_var: 1.322727e+01
+#Avg_nolinearop: 2.852273e+00
+Dreal Time: 	2660.49ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_complex_log_e	check:	
+#Dreal Time: 	2.66049s
+#CPU Time: 3.344 s
+#Memory used: 313.00 MB
+[runlim] end:			Fri May 27 14:45:59 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		70
+[runlim] real:			3.54 seconds
+[runlim] time:			3.49 seconds
+[runlim] space:			225.9 MB
+[runlim] samples:		35

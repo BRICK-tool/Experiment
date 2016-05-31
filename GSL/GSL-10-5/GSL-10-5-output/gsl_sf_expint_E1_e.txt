@@ -1,0 +1,74 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_expint_E1_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:08:39 2016
+[runlim] main pid:		4049
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_expint_E1_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_expint_E1_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1987.81ms
+MainFunc: gsl_sf_expint_E1_e
+#CallDepth: 4
+#Loc: 109
+#targetsize:	10
+target[0]:q0(6)
+target[1]:q1(11)
+target[2]:q2(14)
+target[3]:q3(19)
+target[4]:q4(24)
+target[5]:q5(27)
+target[6]:q6(32)
+target[7]:q7(38)
+target[8]:q8(45)
+target[9]:q9(52)
+
+target[0]:q0(6)
+[runlim] sample:		2.1 seconds, 33.7 MB
+[runlim] sample:		3.9 seconds, 440.0 MB
+[runlim] sample:		7.0 seconds, 868.4 MB
+target[0]:from s0(0) to q0(6)
+at line 20633 is unreachable under bound 10 when check=
+Number of path checked:34
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.735294e+00
+Dreal Time: 	4788.52ms
+
+target[1]:q1(11)
+[runlim] sample:		11.7 seconds, 1677.3 MB
+target[1]:from s0(0) to q1(11)
+at line 20635 is unreachable under bound 10 when check=
+Number of path checked:68
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.735294e+00
+Dreal Time: 	9502.1ms
+
+target[2]:q2(14)
+[runlim] end:			Fri May 27 14:09:38 2016
+[runlim] status:		out of memory
+[runlim] result:		1
+[runlim] children:		966
+[runlim] real:			59.16 seconds
+[runlim] time:			13.62 seconds
+[runlim] space:			2075.5 MB
+[runlim] samples:		483
+target[2]:from s0(0) to q2(14)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:102
+#Avg_var: 1.815588e+02
+#Avg_nolinearop: 2.735294e+00
+Dreal Time: 	14749.5ms
+
+target[3]:q3(19)

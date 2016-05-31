@@ -1,0 +1,85 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_log_1plusx_e
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:45:52 2016
+[runlim] main pid:		3254
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_log_1plusx_e <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_log_1plusx_e> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	1796.88ms
+MainFunc: gsl_sf_log_1plusx_e
+#CallDepth: 1
+#Loc: 66
+#targetsize:	3
+target[0]:q0(6)
+target[1]:q1(9)
+target[2]:q2(17)
+
+target[0]:q0(6)
+target[0]:from s0(0) to q0(6)
+at line 33685 is unreachable under bound 10 when check=
+Number of path checked:16
+#Avg_var: 5.981250e+01
+#Avg_nolinearop: 3.312500e+00
+Dreal Time: 	322.468ms
+
+target[1]:q1(9)
+target[1]:from s0(0) to q1(9)
+at line 15102 is unreachable under bound 10 when check=
+Number of path checked:32
+#Avg_var: 5.981250e+01
+#Avg_nolinearop: 3.312500e+00
+Dreal Time: 	644.501ms
+
+target[2]:q2(17)
+target[2]:from s0(0) to q2(17)
+at line 33693 is unreachable under bound 10 when check=
+Number of path checked:48
+#Avg_var: 5.981250e+01
+#Avg_nolinearop: 3.312500e+00
+Dreal Time: 	965.374ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_log_1plusx_e	check:	
+#Dreal Time: 	0.965374s
+#CPU Time: 2.888 s
+#Memory used: 431.00 MB
+While deleting: [21 x double]* %lopx_data
+Use still stuck around after Def is destroyed:@lopx_data = internal global [21 x double] <null operand!>, align 16
+opt: Value.cpp:80: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007f7cf070a340
+3  libc.so.6       0x00007f7cef938cc9 gsignal + 57
+4  libc.so.6       0x00007f7cef93c0d8 abort + 328
+5  libc.so.6       0x00007f7cef931b86
+6  libc.so.6       0x00007f7cef931c32
+7  opt             0x00000000015c6dbf
+8  opt             0x000000000157b620
+9  opt             0x00000000015ad39d llvm::Module::~Module() + 109
+10 opt             0x00000000005deabf main + 1087
+11 libc.so.6       0x00007f7cef923ec5 __libc_start_main + 245
+12 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_log_1plusx_e 
+Aborted (core dumped)
+[runlim] end:			Fri May 27 14:45:55 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		62
+[runlim] real:			4.00 seconds
+[runlim] time:			3.06 seconds
+[runlim] space:			362.0 MB
+[runlim] samples:		31

@@ -1,0 +1,96 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/comscl.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:21:20 2016
+[runlim] main pid:		7757
+bench/CHAPTER1/comscl.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/comscl.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/comscl.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/comscl.c:8299:9: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+comscl( a, n, n1, n2, im);
+        ^
+bench/CHAPTER1/comscl.c:384:22: note: passing argument to parameter 'a' here
+void comscl(real_t **a, int n, int n1, int n2, real_t im[])
+                     ^
+3 warnings generated.
+<bench/CHAPTER1/comscl.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/comscl.bc>bench/CHAPTER1/comsclbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecayis PTR
+#BUILDCFG Time: 	570.318ms
+MainFunc: test
+#CallDepth: 1
+#Loc: 44
+#targetsize:	3
+target[0]:q0(12)
+target[1]:q1(14)
+target[2]:q2(31)
+
+target[0]:q0(12)
+
+
+
+
+
+
+
+
+
+
+1  opt             0x0000000001696ad4
+2  libpthread.so.0 0x00007ff78623d340
+3  buildCFG.so     0x00007ff7851dfd49
+4  buildCFG.so     0x00007ff7852143ec
+5  buildCFG.so     0x00007ff785217e63
+6  buildCFG.so     0x00007ff78521a05a
+7  buildCFG.so     0x00007ff78521a99b
+8  buildCFG.so     0x00007ff78521b207
+9  buildCFG.so     0x00007ff78521b4a3
+10 buildCFG.so     0x00007ff78521b6b4
+11 buildCFG.so     0x00007ff78521b6b4
+12 buildCFG.so     0x00007ff78521b6b4
+13 buildCFG.so     0x00007ff78521b6b4
+14 buildCFG.so     0x00007ff78521b6b4
+15 buildCFG.so     0x00007ff78521b6b4
+16 buildCFG.so     0x00007ff78521b6b4
+17 buildCFG.so     0x00007ff78521b6b4
+18 buildCFG.so     0x00007ff78521b6b4
+19 buildCFG.so     0x00007ff78521b6b4
+20 buildCFG.so     0x00007ff78521b6b4
+21 buildCFG.so     0x00007ff78521bb34
+22 buildCFG.so     0x00007ff7852221c7
+23 buildCFG.so     0x00007ff78521c7f3
+24 opt             0x000000000161a457 llvm::FPPassManager::doInitialization(llvm::Module&) + 87
+25 opt             0x0000000001624167 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 391
+26 opt             0x0000000000617fbd main + 2813
+27 libc.so.6       0x00007ff785455ec5 __libc_start_main + 245
+28 opt             0x000000000063b78a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test 
+Segmentation fault (core dumped)
+[runlim] end:			Sat May 28 18:21:21 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		26
+[runlim] real:			1.49 seconds
+[runlim] time:			0.86 seconds
+[runlim] space:			47.6 MB
+[runlim] samples:		12

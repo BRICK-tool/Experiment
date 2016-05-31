@@ -1,0 +1,55 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		bench/CHAPTER1/resvec.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		test
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		20
+[runlim] argv[6]:		-d
+[runlim] start:			Sat May 28 18:31:54 2016
+[runlim] main pid:		8338
+bench/CHAPTER1/resvec.c:3312:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+                                if (fabs(exponent) > 1.0) {
+                                    ^
+bench/CHAPTER1/resvec.c:3312:9: note: use function 'abs' instead
+                                if (fabs(exponent) > 1.0) {
+                                    ^~~~
+                                    abs
+bench/CHAPTER1/resvec.c:5565:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+bench/CHAPTER1/resvec.c:8302:25: warning: incompatible pointer types passing 'real_t [5][5]' to parameter of type 'real_t **' (aka 'float **') [-Wincompatible-pointer-types]
+resvec( lr, ur, lc, uc, a, b, c, x);
+                        ^
+bench/CHAPTER1/resvec.c:1299:54: note: passing argument to parameter 'a' here
+void resvec(int lr, int ur, int lc, int uc, real_t **a, real_t b[], real_t c[], real_t x)
+                                                     ^
+3 warnings generated.
+<bench/CHAPTER1/resvec.c> 
+opt -load buildCFG.so -buildCFG -bound=20 -pre=0.01 -mode=2 -func=test <bench/CHAPTER1/resvec.bc>bench/CHAPTER1/resvecbuildCFG.bc
+START CHECK FUNCTION <test> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+1.Transform: warning 10086: test_arraydecayis PTR
+#BUILDCFG Time: 	251.948ms
+MainFunc: test
+#CallDepth: 2
+#Loc: 24
+#targetsize:	0
+Has no exceptions~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bound:	20	precision:	1.000000e-02	functionName:	test	check:	
+#Dreal Time: 	0s
+#CPU Time: 0.289841 s
+#Memory used: 90.00 MB
+[runlim] end:			Sat May 28 18:31:55 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		12
+[runlim] real:			1.42 seconds
+[runlim] time:			0.26 seconds
+[runlim] space:			34.5 MB
+[runlim] samples:		5

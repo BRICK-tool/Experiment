@@ -1,0 +1,110 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_rect_to_polar
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 14:23:55 2016
+[runlim] main pid:		2813
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_rect_to_polar <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_rect_to_polar> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	697.622ms
+MainFunc: gsl_sf_rect_to_polar
+#CallDepth: 1
+#Loc: 38
+#targetsize:	3
+target[0]:q0(11)
+target[1]:q1(13)
+target[2]:q2(15)
+
+target[0]:q0(11)
+target[0]:from s0(0) to q0(11)
+at line 36627 in state q0 is reachable
+gsl_sf_rect_to_polar_x = [-5.000000e+01, -5.000000e+01]
+gsl_sf_rect_to_polar_y = [-5.000000e+01, -5.000000e+01]
+gsl_sf_rect_to_polar_r_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_rect_to_polar_r_1_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_rect_to_polar_theta_0_0 = [-1.000000e+02, 1.000000e+02]
+gsl_sf_rect_to_polar_theta_1_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:8
+Witness:
+	s0:	LocLine:36819;36820;36822;
+	e0
+	s1:	LocLine:36613;36617;
+	e1
+	s4:	LocLine:36623;36624;36625;
+	e6
+	s6:	LocLine:36625;
+	e9
+	s7:	LocLine:36625;36626;
+	e10
+	s9:	LocLine:36626;
+	e13
+	s10:	LocLine:36626;36627;
+	e14
+	q0:	LocLine:36627;
+#Avg_var: 1.775000e+01
+#Avg_nolinearop: 1.750000e+00
+Dreal Time: 	26.46ms
+
+target[1]:q1(13)
+0  opt             0x00000000016128d2 llvm::sys::PrintStackTrace(_IO_FILE*) + 34
+1  opt             0x00000000016124f4
+2  libpthread.so.0 0x00007ff16add2340
+3  libc.so.6       0x00007ff16a000cc9 gsignal + 57
+4  libc.so.6       0x00007ff16a0040d8 abort + 328
+5  libc.so.6       0x00007ff16a03d394
+6  libc.so.6       0x00007ff16a0d4c9c __fortify_fail + 92
+7  libc.so.6       0x00007ff16a0d3b60
+8  libc.so.6       0x00007ff16a0d3069
+9  libc.so.6       0x00007ff16a04570c _IO_default_xsputn + 188
+10 libc.so.6       0x00007ff16a01ab29 __printf_fp + 6217
+11 libc.so.6       0x00007ff16a018793 _IO_vfprintf + 19107
+12 libc.so.6       0x00007ff16a0d30f4 __vsprintf_chk + 132
+13 libc.so.6       0x00007ff16a0d304d __sprintf_chk + 125
+14 libdreal.so     0x00007ff169a30fee Egraph::mkNum(double) + 78
+15 buildCFG.so     0x00007ff169daa985
+16 buildCFG.so     0x00007ff169daf63e
+17 buildCFG.so     0x00007ff169db005a
+18 buildCFG.so     0x00007ff169db099b
+19 buildCFG.so     0x00007ff169db1207
+20 buildCFG.so     0x00007ff169db14a3
+21 buildCFG.so     0x00007ff169db16b4
+22 buildCFG.so     0x00007ff169db16b4
+23 buildCFG.so     0x00007ff169db16b4
+24 buildCFG.so     0x00007ff169db16b4
+25 buildCFG.so     0x00007ff169db16b4
+26 buildCFG.so     0x00007ff169db16b4
+27 buildCFG.so     0x00007ff169db16b4
+28 buildCFG.so     0x00007ff169db16b4
+29 buildCFG.so     0x00007ff169db16b4
+30 buildCFG.so     0x00007ff169db1b34
+31 buildCFG.so     0x00007ff169db81c7
+32 buildCFG.so     0x00007ff169db27f3
+33 opt             0x0000000001599ed7 llvm::FPPassManager::doInitialization(llvm::Module&) + 87
+34 opt             0x00000000015a33c7 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 375
+35 opt             0x00000000005df45c main + 3548
+36 libc.so.6       0x00007ff169febec5 __libc_start_main + 245
+37 opt             0x000000000060256a
+Stack dump:
+0.	Program arguments: opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_rect_to_polar 
+Aborted (core dumped)
+[runlim] end:			Fri May 27 14:23:57 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		34
+[runlim] real:			2.61 seconds
+[runlim] time:			1.66 seconds
+[runlim] space:			93.5 MB
+[runlim] samples:		17

@@ -1,0 +1,93 @@
+[runlim] version:		1.7
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		./BRICK
+[runlim] argv[1]:		gsl_sf.c
+[runlim] argv[2]:		-f
+[runlim] argv[3]:		gsl_sf_bessel_kl_scaled_array
+[runlim] argv[4]:		-b
+[runlim] argv[5]:		10
+[runlim] argv[6]:		-d
+[runlim] start:			Fri May 27 16:00:58 2016
+[runlim] main pid:		2704
+error: unable to open output file 'gsl_sf.bc': ''
+1 error generated.
+<gsl_sf.c> 
+opt -load buildCFG.so -buildCFG -bound=10 -pre=0.01 -mode=2 -func=gsl_sf_bessel_kl_scaled_array <gsl_sf.bc>gsl_sfbuildCFG.bc
+START CHECK FUNCTION <gsl_sf_bessel_kl_scaled_array> in precision 1.000000e-02~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckMode: 2
+Check div-0 and domain error only
+Warning: There is no main function in the Module!
+#BUILDCFG Time: 	536.828ms
+MainFunc: gsl_sf_bessel_kl_scaled_array
+#CallDepth: 2
+#Loc: 50
+#targetsize:	2
+target[0]:q0(9)
+target[1]:q1(11)
+
+target[0]:q0(9)
+target[0]:from s0(0) to q0(9)
+at line 10776 in state q0 is reachable
+gsl_sf_bessel_kl_scaled_array_lmax = [1.000000e+00, 1.000000e+00]
+gsl_sf_bessel_kl_scaled_array_x = [0.000000e+00, 5.000000e-03]
+gsl_sf_bessel_kl_scaled_array_result_array_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:7
+Witness:
+	s0:	LocLine:10857;10859;
+	e0
+	s1:	LocLine:10859;
+	e2
+	s3:	LocLine:10863;10864;10865;10866;10867;
+	e4
+	s4:	LocLine:10765;10769;
+	e5
+	s6:	LocLine:10772;
+	e7
+	s8:	LocLine:10776;
+	e9
+	q0:	LocLine:10776;
+#Avg_var: 1.314286e+01
+#Avg_nolinearop: 2.857143e-01
+Dreal Time: 	12.725ms
+
+target[1]:q1(11)
+target[1]:from s0(0) to q1(11)
+at line 10776 in state q1 is reachable
+gsl_sf_bessel_kl_scaled_array_lmax = [1.000000e+00, 1.000000e+00]
+gsl_sf_bessel_kl_scaled_array_x = [9.992049e-03, 1.000000e-02]
+gsl_sf_bessel_kl_scaled_array_result_array_0 = [-1.000000e+02, 1.000000e+02]
+Number of path checked:16
+Witness:
+	s0:	LocLine:10857;10859;
+	e0
+	s1:	LocLine:10859;
+	e2
+	s3:	LocLine:10863;10864;10865;10866;10867;
+	e4
+	s4:	LocLine:10765;10769;
+	e5
+	s6:	LocLine:10772;
+	e7
+	s8:	LocLine:10776;
+	e10
+	s9:	LocLine:10776;
+	e11
+	q1:	LocLine:10776;
+#Avg_var: 1.325000e+01
+#Avg_nolinearop: 3.750000e-01
+Dreal Time: 	206.215ms
+
+bound:	10	precision:	1.000000e-02	functionName:	gsl_sf_bessel_kl_scaled_array	check:	
+#Dreal Time: 	0.206215s
+#CPU Time: 0.848 s
+#Memory used: 128.00 MB
+[runlim] end:			Fri May 27 16:00:59 2016
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		24
+[runlim] real:			1.56 seconds
+[runlim] time:			0.97 seconds
+[runlim] space:			81.5 MB
+[runlim] samples:		12
